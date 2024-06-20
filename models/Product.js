@@ -38,7 +38,7 @@ const usageSchema = new mongoose.Schema(
 
 // Main product schema
 const productSchema = new mongoose.Schema({
-  productId: { type: Number },
+  productId: { type: Number, unique: true }, // Ensure productId is unique
   productName: { type: String },
   measure: { type: String },
   activeIngredient: { type: String },
@@ -59,6 +59,32 @@ const productSchema = new mongoose.Schema({
   productImage: { type: String },
   usageDetails: { type: usageSchema },
   pharmacology: { type: String },
+});
+
+// Pre-save hook to generate unique productId
+productSchema.pre("save", async function (next) {
+  try {
+    if (!this.isNew) {
+      return next(); // If not new document, do nothing
+    }
+
+    // Generate a unique productId
+    let lastProduct = await this.constructor.findOne(
+      {},
+      {},
+      { sort: { productId: -1 } }
+    ); // Find the last product based on productId descending
+    let newProductId = 1; // Default starting value
+
+    if (lastProduct) {
+      newProductId = lastProduct.productId + 1; // Increment the last productId by 1
+    }
+
+    this.productId = newProductId; // Assign the new productId
+    next();
+  } catch (err) {
+    next(err);
+  }
 });
 
 const Product = mongoose.model("Product", productSchema);

@@ -2,7 +2,7 @@ const Order = require("../models/Order");
 
 exports.getAllOrders = async (req, res) => {
   try {
-    const orders = await Order.find()
+    const orders = await Order.find() //.sort({ productId: 1 }).exec();
       .populate("userId")
       .populate("products.productId");
     res.json(orders);

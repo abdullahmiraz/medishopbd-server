@@ -3,32 +3,28 @@ const mongoose = require("mongoose");
 // Schema for packaging details
 const packagingSchema = new mongoose.Schema(
   {
-    unitsPerStrip: { type: Number, required: true },
-    stripsPerBox: { type: Number, required: true },
+    unitsPerStrip: { type: Number },
+    stripsPerBox: { type: Number },
   },
   { _id: false }
 );
-
-// Schema for indications
-const indicationsSchema = new mongoose.Schema(
-  {
-    mainTitle: { type: String, required: true },
-    subtitles: [{ type: String, required: true }],
-  },
-  { _id: false }
-);
-
-// Schema for dosage details for different age groups
 const dosageDetailSchema = new mongoose.Schema(
   {
-    ageRange: { type: String, required: true },
-    userGroup: { type: String, required: true },
-    dosageInstructions: [{ type: String, required: true }],
+    ageRange: { type: String },
+    userGroup: { type: String },
+    dosageInstructions: [{ type: String }],
   },
   { _id: false }
 );
 
-// Schema for usage details
+const indicationsSchema = new mongoose.Schema(
+  {
+    mainTitle: { type: String },
+    subtitles: [{ type: String }],
+  },
+  { _id: false }
+);
+
 const usageSchema = new mongoose.Schema(
   {
     indications: indicationsSchema,
@@ -40,25 +36,25 @@ const usageSchema = new mongoose.Schema(
 // Main product schema
 const productSchema = new mongoose.Schema({
   productId: { type: Number },
-  productName: { type: String, required: true },
+  productName: { type: String },
   measure: { type: String },
-  activeIngredient: { type: String, required: true },
-  dosageForm: { type: String, required: true },
-  applicationArea: { type: String, required: true },
+  activeIngredient: { type: String },
+  dosageForm: { type: String },
+  applicationArea: { type: String },
   primaryCategory: { type: String },
   subCategory: { type: String },
   productType: { type: String },
-  packaging: { type: packagingSchema, required: true },
-  pricePerUnit: { type: Number, required: true },
-  availableStock: { type: Number, required: true },
-  manufacturer: { type: String, required: true },
-  expirationDate: { type: Date, required: true },
-  batchNumber: { type: String, required: true },
-  aisleLocation: { type: String, required: true },
-  requiresPrescription: { type: Boolean, required: true },
-  pageCategory: { type: String, required: true },
-  productImage: { type: String, required: true },
-  usageDetails: { type: usageSchema },
+  packaging: { type: packagingSchema },
+  pricePerUnit: { type: Number },
+  availableStock: { type: Number },
+  manufacturer: { type: String },
+  expirationDate: { type: Date },
+  batchNumber: { type: String },
+  aisleLocation: { type: String },
+  requiresPrescription: { type: Boolean },
+  pageCategory: { type: String },
+  productImage: { type: String },
+  // usageDetails: { type: usageSchema },
   pharmacology: { type: String },
 });
 

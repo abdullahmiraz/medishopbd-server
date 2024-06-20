@@ -54,7 +54,7 @@ const productSchema = new mongoose.Schema({
   requiresPrescription: { type: Boolean },
   pageCategory: { type: String },
   productImage: { type: String },
-  // usageDetails: { type: usageSchema },
+  usageDetails: { type: usageSchema },
   pharmacology: { type: String },
 });
 

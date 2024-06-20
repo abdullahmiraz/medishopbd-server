@@ -40,7 +40,7 @@ exports.updateProduct = async (req, res) => {
       runValidators: true,
     });
 
-    console.log("Updated Product:", updatedProduct); // Check the updated product
+    console.log("Updated Product:", updatedProduct); // Che ck the updated product
 
     if (!updatedProduct) {
       return res.status(404).json({ message: "Product not found" });
@@ -48,7 +48,7 @@ exports.updateProduct = async (req, res) => {
 
     res.json(updatedProduct);
   } catch (err) {
-    console.error("Error updating product:", err); // Log any errors
+    console.error("Error updating product:", err); // Log aNy errors
     res.status(400).json({ message: err.message });
   }
 };

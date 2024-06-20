@@ -22,14 +22,15 @@ exports.getUserById = async (req, res) => {
 };
 
 exports.createUser = async (req, res) => {
-  const user = new User({
-    name: req.body.name,
-    email: req.body.email,
-    phone: req.body.phone,
-    address: req.body.address,
-    prescription: req.body.prescription,
-    orders: req.body.orders,
-  });
+  // const user = new User({
+  //   name: req.body.name,
+  //   email: req.body.email,
+  //   phone: req.body.phone,
+  //   address: req.body.address,
+  //   prescription: req.body.prescription,
+  //   orders: req.body.orders,
+  // });
+  const user = new User(req.body);
   try {
     const newUser = await user.save();
     res.status(201).json(newUser);

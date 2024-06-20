@@ -8,6 +8,7 @@ const packagingSchema = new mongoose.Schema(
   },
   { _id: false }
 );
+
 const dosageDetailSchema = new mongoose.Schema(
   {
     ageRange: { type: String },
@@ -32,6 +33,8 @@ const usageSchema = new mongoose.Schema(
   },
   { _id: false }
 );
+
+// Main product schema
 
 // Main product schema
 const productSchema = new mongoose.Schema({

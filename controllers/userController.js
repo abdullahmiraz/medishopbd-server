@@ -22,12 +22,34 @@ exports.getUserById = async (req, res) => {
 };
 
 exports.createUser = async (req, res) => {
-  const user = new User(req.body);
+  const { email, ...userData } = req.body;
+
   try {
-    const newUser = await user.save();
-    res.status(201).json(newUser);
-  } catch (err) {
-    res.status(400).json({ message: err.message });
+    let user = await User.findOne({ email });
+
+    if (user) {
+      return res.status(409).json({ message: "User already exists." });
+    }
+
+    user = new User({ email, ...userData });
+    await user.save();
+
+    res.status(201).json(user);
+  } catch (error) {
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
+// Get MongoDB _id by UID
+exports.getMongoIdByUid = async (req, res) => {
+  try {
+    const user = await User.findOne({ uid: req.params.uid }, '_id');
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    res.status(200).json({ id: user._id });
+  } catch (error) {
+    res.status(500).json({ message: "Server error", error });
   }
 };
 

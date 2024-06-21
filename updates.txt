@@ -2,8 +2,11 @@
 2. in the products list (in dashboard/productlist) :
         add another button that will take to a page , detailed about the product (tip: just copy the editproduct component system, instead of the input just use <p> tag</p> and show their value, that you've passed from)
 
-3. add login system for the user (watch from here: https://youtu.be/S_sV6bYWKXQ )
+done -----------3. add login system for the user (watch from here: https://youtu.be/S_sV6bYWKXQ )
 4. generate sales/orders report based on the dates/products sale etc
-5. user will be able to see their order history (save to 'orders' using mongoose)
+5.******  user will be able to see their order history (save to 'orders' using mongoose)
             #And from there, user will be able to generate the prescription again, those text which will be saved to generate the PDF
 
+step:
+based on the user's email, after each login mongodb will check if the user is already in the db or not, if not create a new object related to that user, now each order will be tracked, from the checkout/confirmation page, also each medicine sales report will be generated with dates.
+Note: do one thing at once

@@ -10,3 +10,5 @@ done -----------3. add login system for the user (watch from here: https://youtu
 step:
 based on the user's email, after each login mongodb will check if the user is already in the db or not, if not create a new object related to that user, now each order will be tracked, from the checkout/confirmation page, also each medicine sales report will be generated with dates.
 Note: do one thing at once
+
+remove orders from the User.js Schema, as its not needed, cause if i save the order details and already there is userId saved, then we dont need any, Note: dont check buyer using their id, using their email or phone number track their order history, date etc

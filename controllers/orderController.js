@@ -1,8 +1,9 @@
 const Order = require("../models/Order");
 
+// Get all orders
 exports.getAllOrders = async (req, res) => {
   try {
-    const orders = await Order.find() //.sort({ productId: 1 }).exec();
+    const orders = await Order.find()
       .populate("userId")
       .populate("products.productId");
     res.json(orders);
@@ -11,6 +12,7 @@ exports.getAllOrders = async (req, res) => {
   }
 };
 
+// Get order by ID
 exports.getOrderById = async (req, res) => {
   try {
     const order = await Order.findById(req.params.id)
@@ -25,8 +27,22 @@ exports.getOrderById = async (req, res) => {
   }
 };
 
+// Create a new order
 exports.createOrder = async (req, res) => {
-  const order = new Order(req.body);
+  const { userId, products, total } = req.body;
+
+  // Validate the request body
+  if (!userId || !products || !total) {
+    return res.status(400).json({ message: "Missing required fields" });
+  }
+
+  // Create the order
+  const order = new Order({
+    userId,
+    products,
+    total,
+  });
+
   try {
     const newOrder = await order.save();
     res.status(201).json(newOrder);
@@ -35,15 +51,13 @@ exports.createOrder = async (req, res) => {
   }
 };
 
+// Update an existing order
 exports.updateOrder = async (req, res) => {
   try {
     const order = await Order.findById(req.params.id);
     if (!order) {
       return res.status(404).json({ message: "Order not found" });
     }
-
-    // Log the request body to debug
-    console.log("Request body:", req.body);
 
     // Update the order fields with the request body
     Object.keys(req.body).forEach((key) => {
@@ -58,6 +72,7 @@ exports.updateOrder = async (req, res) => {
   }
 };
 
+// Delete an order
 exports.deleteOrder = async (req, res) => {
   try {
     const orderId = req.params.id;

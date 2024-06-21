@@ -2,7 +2,7 @@ const User = require("../models/User");
 
 exports.getAllUsers = async (req, res) => {
   try {
-    const users = await User.find(); //.sort({ productId: 1 }).exec();
+    const users = await User.find();
     res.json(users);
   } catch (err) {
     res.status(500).json({ message: err.message });
@@ -11,8 +11,15 @@ exports.getAllUsers = async (req, res) => {
 
 exports.getUserById = async (req, res) => {
   try {
-    const user = await User.findById(req.params.id);
-    if (user == null) {
+    const user = await User.findById(req.params.id).populate({
+      path: "orders",
+      populate: {
+        path: "products.productId",
+        model: "Product",
+        select: "name price", // Assuming the Product model has these fields
+      },
+    });
+    if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
     res.json(user);
@@ -56,7 +63,7 @@ exports.getMongoIdByUid = async (req, res) => {
 exports.updateUser = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
-    if (user == null) {
+    if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
 

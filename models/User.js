@@ -1,29 +1,14 @@
 const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
-  uid: { type: String, required: true, unique: true }, // firebase UID
+  uid: { type: String, required: true, unique: true }, // Firebase UID
   name: { type: String },
   email: { type: String, required: true, unique: true },
   photoURL: { type: String },
   phone: { type: String },
   address: { type: String },
   prescription: { type: String },
-  orders: [
-    {
-      orderId: String,
-      date: Date,
-      total: Number,
-      status: String,
-      items: [
-        {
-          id: Number,
-          name: String,
-          quantity: Number,
-          price: Number,
-        },
-      ],
-    },
-  ],
+  orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "Order" }],
 });
 
 const User = mongoose.model("User", userSchema);

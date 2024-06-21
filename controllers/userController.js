@@ -43,7 +43,7 @@ exports.createUser = async (req, res) => {
 // Get MongoDB _id by UID
 exports.getMongoIdByUid = async (req, res) => {
   try {
-    const user = await User.findOne({ uid: req.params.uid }, '_id');
+    const user = await User.findOne({ uid: req.params.uid }, "_id");
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
@@ -71,6 +71,22 @@ exports.updateUser = async (req, res) => {
     res.json(updatedUser);
   } catch (err) {
     res.status(400).json({ message: err.message });
+  }
+};
+
+exports.updateUserDetails = async (req, res) => {
+  try {
+    const updatedUser = await User.findOneAndUpdate(
+      { _id: req.params.id },
+      { $set: req.body },
+      { new: true }
+    );
+    if (!updatedUser) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    res.json(updatedUser);
+  } catch (error) {
+    res.status(500).json({ message: "Server error" });
   }
 };
 

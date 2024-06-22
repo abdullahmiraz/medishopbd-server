@@ -12,3 +12,7 @@ based on the user's email, after each login mongodb will check if the user is al
 Note: do one thing at once
 
 remove orders from the User.js Schema, as its not needed, cause if i save the order details and already there is userId saved, then we dont need any, Note: dont check buyer using their id, using their email or phone number track their order history, date etc
+
+* assign users to their roles and what they will be able to see
+* at the confirmation page tell that you will be called now
+* if the user has purchased something, dont add that users redundant array of things, just patch the value to the order history / or the best thing to do is filtering all the order history where the user is 'some_user_id';

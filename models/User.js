@@ -13,7 +13,6 @@ const userSchema = new mongoose.Schema({
   phone: { type: String },
   address: { type: String },
   prescription: { type: String },
-  orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "Order" }],
 });
 
 const User = mongoose.model("User", userSchema);

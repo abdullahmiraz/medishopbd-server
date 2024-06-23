@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const Order = require("../models/Order");
 
 exports.getAllUsers = async (req, res) => {
   try {
@@ -11,18 +12,22 @@ exports.getAllUsers = async (req, res) => {
 
 exports.getUserById = async (req, res) => {
   try {
-    const user = await User.findById(req.params.id).populate({
-      path: "orders",
-      populate: {
-        path: "products.productId",
-        model: "Product",
-        select: "name price", // Assuming the Product model has these fields
-      },
-    });
+    const user = await User.findById(req.params.id);
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
     res.json(user);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+// for gettting users history of orders:
+
+exports.getOrdersByUserId = async (req, res) => {
+  try {
+    const orders = await Order.find({ userId: req.params.userId });
+    res.json(orders);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

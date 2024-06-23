@@ -7,8 +7,7 @@ const userSchema = new mongoose.Schema({
   photoURL: { type: String },
   phone: { type: String },
   address: { type: String },
-  prescription: { type: String },
-  orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "Order" }],
+  prescription: { type: String }
 });
 
 const User = mongoose.model("User", userSchema);

@@ -1,4 +1,5 @@
 const User = require("../models/User");
+const Order = require("../models/Order");
 
 exports.getAllUsers = async (req, res) => {
   try {
@@ -11,11 +12,23 @@ exports.getAllUsers = async (req, res) => {
 
 exports.getUserById = async (req, res) => {
   try {
-    const user = await User.findById(req.params.id);
+    const user = await User.findById(req.params.id); // test commit
+
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
     res.json(user);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+// for gettting users history of orders:
+
+exports.getOrdersByUserId = async (req, res) => {
+  try {
+    const orders = await Order.find({ userId: req.params.userId });
+    res.json(orders);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }

@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
   photoURL: { type: String },
   phone: { type: String },
   address: { type: String },
+  prescription: { type: String }
   prescription: { type: String },
 });
 

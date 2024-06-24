@@ -16,6 +16,8 @@ remove orders from the User.js Schema, as its not needed, cause if i save the or
 * assign users to their roles and what they will be able to see
 * at the confirmation page tell that you will be called now
 * if the user has purchased something, dont add that users redundant array of things, just patch the value to the order history / or the best thing to do is filtering all the order history where the user is 'some_user_id';
- 
+
 
 * if the expiry date is passed already then, chnage the background color to red
+
+add customer photo update for the presecription and setup their image link with imgbb

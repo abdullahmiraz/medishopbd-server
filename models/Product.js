@@ -27,7 +27,7 @@ const indicationsSchema = new mongoose.Schema(
 );
 
 const usageSchema = new mongoose.Schema(
-  { 
+  {
     indications: indicationsSchema,
     dosageDetails: [dosageDetailSchema],
   },

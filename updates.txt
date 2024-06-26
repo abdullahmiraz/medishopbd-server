@@ -13,3 +13,7 @@ remove orders from the User.js Schema, as its not needed, cause if i save the or
 
 
 add customer photo update for the presecription and setup their image link with imgbb
+
+* change the background color like widen display, not limited screen size, but limited content - https://www.kyabrs.org/
+
+* user should only be able to see only their dashboard and others cannot go to other users dashboard

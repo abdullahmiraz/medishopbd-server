@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
 userSchema.pre("save", function (next) {
   if (!this.uid) {
     this.uid = uuidv4();
-    this.email = uuidv4();
+    // this.email = uuidv4();
   }
   next();
 });

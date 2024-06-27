@@ -103,7 +103,7 @@ exports.createUserByEmail = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
- 
+
 exports.updateUser = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);

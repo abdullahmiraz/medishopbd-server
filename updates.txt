@@ -17,3 +17,5 @@ add customer photo update for the presecription and setup their image link with 
 * change the background color like widen display, not limited screen size, but limited content - https://www.kyabrs.org/
 
 * user should only be able to see only their dashboard and others cannot go to other users dashboard
+
+* hide strip count if its talking about the nutrition

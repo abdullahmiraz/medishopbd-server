@@ -5,6 +5,7 @@ const packagingSchema = new mongoose.Schema(
   {
     unitsPerStrip: { type: Number },
     stripsPerBox: { type: Number },
+    singleProductsUnit: { type: Number },
   },
   { _id: false }
 );

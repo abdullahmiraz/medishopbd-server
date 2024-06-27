@@ -1,16 +1,22 @@
 const express = require("express");
 const router = express.Router();
 const userController = require("../controllers/userController");
+// const { checkUser } = require("../middleware/checkUser");
 
-router.get("/", userController.getAllUsers);
-router.get("/:id", userController.getUserById);
-router.get("/uid/:uid", userController.getMongoIdByUid); // firebase uid fetch by this route
-router.get("/:userId/orders", userController.getOrdersByUserId); // New route
+// Authentication routes
+router.post("/login", userController.loginUser); // Login route
+router.post("/signup", userController.createUser); // Signup route with middleware
 
-router.post("/", userController.createUser);
-router.put("/:id", userController.updateUser);
-router.patch("/:id", userController.updateUserDetails); // update user details(phone, address etc)
+// User management routes
+router.get("/", userController.getAllUsers); // Get all users
+router.get("/:id", userController.getUserById); // Get user by ID
+router.get("/uid/:uid", userController.getMongoIdByUid); // Get MongoDB _id by Firebase UID
+router.get("/:userId/orders", userController.getOrdersByUserId); // Get orders by user ID
 
-router.delete("/:id", userController.deleteUser);
+router.post("/", userController.createUserByEmail); // Create user by email
+router.put("/:id", userController.updateUser); // Update user by ID
+router.patch("/:id", userController.updateUserDetails); // Update user details (phone, address, etc.) by ID
+
+router.delete("/:id", userController.deleteUser); // Delete user by ID
 
 module.exports = router;

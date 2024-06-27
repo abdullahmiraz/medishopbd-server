@@ -2,14 +2,14 @@ const mongoose = require("mongoose");
 const { v4: uuidv4 } = require("uuid"); // Import UUID generator
 
 const userSchema = new mongoose.Schema({
-  uid: { type: String, unique: true }, // Firebase UID
+  uid: { type: String, unique: true },
   role: {
     type: String,
     enum: ["Admin", "Manager", "User"],
     default: "User",
   },
   name: { type: String },
-  email: { type: String, unique: true },
+  email: { type: String, unique: true, default: "" },
   photoURL: { type: String },
   phone: { type: String, unique: true },
   password: { type: String },

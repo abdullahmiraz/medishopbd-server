@@ -10,7 +10,6 @@ router.post("/signup", userController.createUser); // Signup route with middlewa
 // User management routes
 router.get("/", userController.getAllUsers); // Get all users
 router.get("/:id", userController.getUserById); // Get user by ID
-router.get("/uid/:uid", userController.getMongoIdByUid); // Get MongoDB _id by Firebase UID
 router.get("/:userId/orders", userController.getOrdersByUserId); // Get orders by user ID
 
 router.post("/", userController.createUserByEmail); // Create user by email

@@ -103,20 +103,7 @@ exports.createUserByEmail = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
-
-// Get MongoDB _id by UID
-exports.getMongoIdByUid = async (req, res) => {
-  try {
-    const user = await User.findOne({ uid: req.params.uid }, "_id");
-    if (!user) {
-      return res.status(404).json({ message: "User not found" });
-    }
-    res.status(200).json({ id: user._id });
-  } catch (error) {
-    res.status(500).json({ message: "Server error", error });
-  }
-};
-
+ 
 exports.updateUser = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);

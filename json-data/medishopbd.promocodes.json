@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "667e2f864a36c5635ab920da"
+  },
+  "code": "LES56",
+  "discount": 6,
+  "discountType": "percentage",
+  "expiryDate": {
+    "$date": "2024-06-26T00:00:00.000Z"
+  },
+  "usageLimit": 10,
+  "usageCount": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667e2fdc4a36c5635ab920e5"
+  },
+  "code": "NEW50",
+  "discount": 55,
+  "discountType": "fixed",
+  "expiryDate": {
+    "$date": "2024-07-09T00:00:00.000Z"
+  },
+  "usageLimit": 1,
+  "usageCount": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667e5430c5441cd3b22920d6"
+  },
+  "code": "20",
+  "discount": 10,
+  "discountType": "percentage",
+  "expiryDate": {
+    "$date": "2024-07-14T00:00:00.000Z"
+  },
+  "usageLimit": 333,
+  "usageCount": 22,
+  "__v": 0
+}]

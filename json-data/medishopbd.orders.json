@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "667ef8128c69daf18ec35d51"
+  },
+  "userId": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "667eb4b51a7a75a9b69de6b1"
+      },
+      "quantity": 2,
+      "price": 5,
+      "_id": {
+        "$oid": "667ef8128c69daf18ec35d52"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 10,
+    "discountedAmount": 1,
+    "deliveryFee": 60,
+    "total": 69
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-06-28T17:51:14.090Z"
+  },
+  "__v": 0
+}]

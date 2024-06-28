@@ -1,0 +1,139 @@
+[{
+  "_id": {
+    "$oid": "6672f2a0a49405f4cb1884fd"
+  },
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "phone": "+1234567890",
+  "address": "123 Main St, City, Country",
+  "prescription": "",
+  "orders": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66752382d6ee112567dbfdd9"
+  },
+  "name": "John Doe",
+  "email": "johnyy.doe@example.com",
+  "phone": "+1234567890",
+  "address": "123 Main Street, Springfield, USA",
+  "prescription": "https://example.com/prescriptions/johndoe.pdf",
+  "orders": [
+    {
+      "orderId": "ORD123456",
+      "date": {
+        "$date": "2024-06-20T10:30:00.000Z"
+      },
+      "total": 150.75,
+      "status": "Delivered",
+      "items": [
+        {
+          "id": 1,
+          "name": "Paracetamol",
+          "quantity": 2,
+          "price": 20.5,
+          "_id": {
+            "$oid": "66752382d6ee112567dbfddb"
+          }
+        },
+        {
+          "id": 2,
+          "name": "Ibuprofen",
+          "quantity": 1,
+          "price": 15,
+          "_id": {
+            "$oid": "66752382d6ee112567dbfddc"
+          }
+        },
+        {
+          "id": 3,
+          "name": "Cough Syrup",
+          "quantity": 1,
+          "price": 25.75,
+          "_id": {
+            "$oid": "66752382d6ee112567dbfddd"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "66752382d6ee112567dbfdda"
+      }
+    },
+    {
+      "orderId": "ORD123457",
+      "date": {
+        "$date": "2024-05-15T14:45:00.000Z"
+      },
+      "total": 80,
+      "status": "Shipped",
+      "items": [
+        {
+          "id": 4,
+          "name": "Vitamin C",
+          "quantity": 3,
+          "price": 10,
+          "_id": {
+            "$oid": "66752382d6ee112567dbfddf"
+          }
+        },
+        {
+          "id": 5,
+          "name": "Aspirin",
+          "quantity": 2,
+          "price": 15,
+          "_id": {
+            "$oid": "66752382d6ee112567dbfde0"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "66752382d6ee112567dbfdde"
+      }
+    }
+  ],
+  "__v": 0,
+  "role": "Admin"
+},
+{
+  "_id": {
+    "$oid": "667565ee2b1d2196e482c377"
+  },
+  "uid": "tNB9jz6dR6hFgQA8MoJdEuM77Wx2",
+  "name": "Anik Hasan",
+  "email": "abdullahmiraz2014@gmail.com",
+  "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJ-uVHtxspae9zYEX8pdJaq5WJWxq_RNI1AXhKHjigdFOlg2RkF=s96-c",
+  "phone": "01541554772",
+  "address": "3/A Uttara, Dhaka",
+  "prescription": "",
+  "orders": [],
+  "__v": 0,
+  "role": "Admin"
+},
+{
+  "_id": {
+    "$oid": "667bb8ed5bc8ffc89ff60527"
+  },
+  "uid": "YgBX5qdM73YyfPubcdX394h3NHF3",
+  "role": "User",
+  "name": "Abdullah Miraz",
+  "email": "abdullahmiraz2015@gmail.com",
+  "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJNVzFME9zMY0osrdY2M6KDQG-tqFlDd077yugP6BOu3XaYiGTX=s96-c",
+  "phone": "",
+  "address": "",
+  "prescription": "",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "role": "Admin",
+  "email": "admin@admin.com",
+  "phone": "01531554110",
+  "password": "$2b$10$wbrh.aZuoWM5gjG5BOXKxOprYjAyLj7GQ6EwspyCW6ZNOqx28j1xG",
+  "uid": "7a54c0f7-c0ca-4978-8016-59f32821a575",
+  "__v": 0,
+  "address": "Uttara, Dhaka",
+  "name": "admin"
+}]

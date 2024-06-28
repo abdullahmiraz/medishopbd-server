@@ -4,6 +4,7 @@ const cors = require("cors");
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
 const orderRoutes = require("./routes/orderRoutes");
+const promoCodeRoutes = require("./routes/promoCodeRoutes");
 
 const bodyParser = require("body-parser");
 
@@ -32,5 +33,6 @@ mongoose
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/promocodes", promoCodeRoutes);
 
 module.exports = app;

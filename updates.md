@@ -6,9 +6,6 @@
             #And from there, user will be able to generate the prescription again, those text which will be saved to generate the PDF
 
 
-
-remove orders from the User.js Schema, as its not needed, cause if i save the order details and already there is userId saved, then we dont need any, Note: dont check buyer using their id, using their email or phone number track their order history, date etc
-
 * assign users to their roles and what they will be able to see
 
 

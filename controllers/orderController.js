@@ -28,19 +28,26 @@ exports.getOrderById = async (req, res) => {
 };
 
 // Create a new order
+ 
 exports.createOrder = async (req, res) => {
-  const { userId, products, total } = req.body;
+  const { userId, products, checkoutAmount, status = "Pending" } = req.body;
 
   // Validate the request body
-  if (!userId || !products || !total) {
+  if (!userId || !products || !checkoutAmount) {
     return res.status(400).json({ message: "Missing required fields" });
+  }
+
+  if (!checkoutAmount.subtotal || !checkoutAmount.discountedAmount || !checkoutAmount.total) {
+    return res.status(400).json({ message: "Missing required checkout amount fields" });
   }
 
   // Create the order
   const order = new Order({
     userId,
     products,
-    total,
+    checkoutAmount,
+    status,
+    created_at: new Date() // Optional: Explicitly set the creation date
   });
 
   try {
@@ -50,6 +57,7 @@ exports.createOrder = async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
+
 
 // Update an existing order
 exports.updateOrder = async (req, res) => {

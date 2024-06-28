@@ -16,6 +16,7 @@ const orderSchema = new mongoose.Schema({
   checkoutAmount: {
     subtotal: { type: Number }, // Overall subtotal for the order
     discountedAmount: { type: Number }, // Discounted amount for the order
+    deliveryFee: { type: Number },
     total: { type: Number }, // Total amount after applying discounts
   },
   status: {

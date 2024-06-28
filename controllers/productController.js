@@ -34,13 +34,22 @@ exports.createProduct = async (req, res) => {
 exports.updateProduct = async (req, res) => {
   try {
     const { id } = req.params;
-    console.log("Request Body:", req.body); // Check the request body
-    const updatedProduct = await Product.findByIdAndUpdate(id, req.body, {
+    const updateData = req.body;
+
+    // Check if the updateData contains availableStock and validate it
+    if (
+      updateData.availableStock !== undefined &&
+      updateData.availableStock < 0
+    ) {
+      return res
+        .status(400)
+        .json({ message: "Available stock cannot be negative" });
+    }
+
+    const updatedProduct = await Product.findByIdAndUpdate(id, updateData, {
       new: true,
       runValidators: true,
     });
-
-    console.log("Updated Product:", updatedProduct); // Che ck the updated product
 
     if (!updatedProduct) {
       return res.status(404).json({ message: "Product not found" });
@@ -48,7 +57,7 @@ exports.updateProduct = async (req, res) => {
 
     res.json(updatedProduct);
   } catch (err) {
-    console.error("Error updating product:", err); // Log aNy errors
+    console.error("Error updating product:", err);
     res.status(400).json({ message: err.message });
   }
 };

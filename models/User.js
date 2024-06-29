@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const { v4: uuidv4 } = require("uuid"); // Import UUID generator
 
 const userSchema = new mongoose.Schema({
-  uid: { type: String, unique: true },
+  uid: { type: String, unique: true, sparse: true },
   role: {
     type: String,
     enum: ["Admin", "Manager", "Client"],

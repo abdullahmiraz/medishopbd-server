@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-// Schema for packaging details
 const packagingSchema = new mongoose.Schema(
   {
     unitsPerStrip: { type: Number },
@@ -34,11 +33,8 @@ const usageSchema = new mongoose.Schema(
   { _id: false }
 );
 
-// Main product schema
-
-// Main product schema
 const productSchema = new mongoose.Schema({
-  productId: { type: Number, unique: true }, // Ensure productId is unique
+  productId: { type: Number, unique: true },
   productName: { type: String },
   measure: { type: String },
   activeIngredient: { type: String },
@@ -64,7 +60,7 @@ const productSchema = new mongoose.Schema({
   pricePerUnit: { type: Number },
   availableStock: { type: Number },
   manufacturer: { type: String },
-  expirationDate: { type: Date },
+  expirationDate: { type: String },
   batchNumber: { type: String },
   aisleLocation: { type: String },
   requiresPrescription: { type: Boolean },
@@ -79,22 +75,20 @@ const productSchema = new mongoose.Schema({
 productSchema.pre("save", async function (next) {
   try {
     if (!this.isNew) {
-      return next(); // If not new document, do nothing
+      return next();
     }
-
-    // Generate a unique productId
     let lastProduct = await this.constructor.findOne(
       {},
       {},
       { sort: { productId: -1 } }
-    ); // Find the last product based on productId descending
-    let newProductId = 1; // Default starting value
+    );
+    let newProductId = 1;
 
     if (lastProduct) {
-      newProductId = lastProduct.productId + 1; // Increment the last productId by 1
+      newProductId = lastProduct.productId + 1;
     }
 
-    this.productId = newProductId; // Assign the new productId
+    this.productId = newProductId;
     next();
   } catch (err) {
     next(err);

@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const PromoCodeSchema = new mongoose.Schema({
   code: {
     type: String,
-
     unique: true,
   },
   discount: {
@@ -14,7 +13,7 @@ const PromoCodeSchema = new mongoose.Schema({
     enum: ["percentage", "fixed"],
   },
   expiryDate: {
-    type: Date,
+    type: String,
   },
   usageLimit: {
     type: Number,
@@ -22,6 +21,10 @@ const PromoCodeSchema = new mongoose.Schema({
   usageCount: {
     type: Number,
     default: 0,
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
   },
 });
 

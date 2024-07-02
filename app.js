@@ -6,6 +6,7 @@ const productRoutes = require("./routes/productRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const promoCodeRoutes = require("./routes/promoCodeRoutes");
 const reviewRoutes = require("./routes/reviewRoutes");
+const categoryRoutes = require("./routes/categoryRoutes");
 
 const bodyParser = require("body-parser");
 
@@ -36,5 +37,6 @@ app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/promocodes", promoCodeRoutes);
 app.use("/api/reviews", reviewRoutes);
+app.use("/api/categories", categoryRoutes);
 
 module.exports = app;

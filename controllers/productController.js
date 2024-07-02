@@ -22,10 +22,35 @@ exports.getProductById = async (req, res) => {
 };
 
 exports.createProduct = async (req, res) => {
-  const product = new Product(req.body);
   try {
-    const newProduct = await product.save();
-    res.status(201).json(newProduct);
+    const { primaryCategory, subCategory, ...rest } = req.body;
+
+    if (!primaryCategory?.id || !primaryCategory?.name) {
+      return res
+        .status(400)
+        .json({ message: "Primary Category must have id and name" });
+    }
+
+    if (!subCategory?.id || !subCategory?.name) {
+      return res
+        .status(400)
+        .json({ message: "Sub Category must have id and name" });
+    }
+
+    const newProduct = new Product({
+      ...rest,
+      primaryCategory: {
+        id: primaryCategory.id,
+        name: primaryCategory.name,
+      },
+      subCategory: {
+        id: subCategory.id,
+        name: subCategory.name,
+      },
+    });
+
+    const savedProduct = await newProduct.save();
+    res.status(201).json(savedProduct);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
@@ -44,6 +69,21 @@ exports.updateProduct = async (req, res) => {
       return res
         .status(400)
         .json({ message: "Available stock cannot be negative" });
+    }
+
+    // Handle primaryCategory and subCategory fields
+    if (updateData.primaryCategory) {
+      updateData.primaryCategory = {
+        id: updateData.primaryCategory.id,
+        name: updateData.primaryCategory.name,
+      };
+    }
+
+    if (updateData.subCategory) {
+      updateData.subCategory = {
+        id: updateData.subCategory.id,
+        name: updateData.subCategory.name,
+      };
     }
 
     const updatedProduct = await Product.findByIdAndUpdate(id, updateData, {

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const packagingSchema = new mongoose.Schema(
   {
@@ -40,14 +40,8 @@ const productSchema = new mongoose.Schema({
   activeIngredient: { type: String },
   dosageForm: { type: String },
   applicationArea: { type: String },
-  primaryCategory: {
-    id: { type: String, ref: 'Category' },
-    name: { type: String },
-  },
-  subCategory: {
-    id: { type: String, ref: 'Category' },
-    name: { type: String },
-  },
+  primaryCategory: { type: String },
+  subCategory: { type: String },
   productType: { type: String },
   packaging: { type: packagingSchema },
   pricePerUnit: { type: Number },
@@ -65,7 +59,7 @@ const productSchema = new mongoose.Schema({
 });
 
 // Pre-save hook to generate unique productId
-productSchema.pre('save', async function (next) {
+productSchema.pre("save", async function (next) {
   try {
     if (!this.isNew) {
       return next();
@@ -88,5 +82,5 @@ productSchema.pre('save', async function (next) {
   }
 });
 
-const Product = mongoose.model('Product', productSchema);
+const Product = mongoose.model("Product", productSchema);
 module.exports = Product;

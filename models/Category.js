@@ -11,12 +11,11 @@ const subCategorySchema = new mongoose.Schema({
 // Define Category schema
 const categorySchema = new mongoose.Schema({
   name: { type: String, required: true },
-  description: String,
-  categoryImage: String,
+  description: { type: String },
+  categoryImage: { type: String },
   categoryCode: { type: String, required: true, unique: true },
   subCategories: [subCategorySchema],
 });
-
 
 const Category = mongoose.model("Category", categorySchema);
 module.exports = Category;

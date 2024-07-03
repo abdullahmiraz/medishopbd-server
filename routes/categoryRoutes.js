@@ -7,6 +7,7 @@ router.get("/", categoryController.getAllCategories);
 router.get("/:id", categoryController.getCategoryById);
 router.put("/:id", categoryController.updateCategoryById);
 router.delete("/:id", categoryController.deleteCategoryById);
+
 router.post("/:categoryId/subcategories", categoryController.addSubCategory);
 router.put(
   "/:categoryId/subcategories/:subCategoryId",

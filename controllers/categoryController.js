@@ -123,7 +123,7 @@ exports.deleteSubCategory = async (req, res) => {
   try {
     const { categoryId, subCategoryId } = req.params;
 
-    const category = await Category.findByIdAndDelete(
+    const category = await Category.findByIdAndUpdate(
       categoryId,
       { $pull: { subCategories: { _id: subCategoryId } } },
       { new: true }

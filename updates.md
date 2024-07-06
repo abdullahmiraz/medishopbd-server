@@ -6,13 +6,16 @@
             #And from there, user will be able to generate the prescription again, those text which will be saved to generate the PDF
 
 
-* assign users to their roles and what they will be able to see
+ 
 
-
-add customer photo update for the presecription and setup their image link with imgbb
 
 * change the background color like widen display, not limited screen size, but limited content - https://www.kyabrs.org/
 
-* user should only be able to see only their dashboard and others cannot go to other users dashboard
 
-* hide strip count if its talking about the nutrition
+
+
+6th july - 2024
+* change the product (cause their's categories option has been added)
+* sort products by categories
+* sales report
+* Role Based Access Control

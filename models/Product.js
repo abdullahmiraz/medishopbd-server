@@ -1,22 +1,22 @@
 const mongoose = require("mongoose");
 
 // Define SubCategory schema
-// const subCategorySchema = new mongoose.Schema({
-//   name: { type: String, required: true },
-//   description: { type: String },
-//   categoryImage: { type: String },
-//   subCategoryCode: { type: String, required: true, unique: true },
-// });
+const subCategorySchema = new mongoose.Schema({
+  id: { type: mongoose.Schema.Types.ObjectId, ref: "SubCategory" },
+  name: { type: String },
+  description: { type: String },
+  categoryImage: { type: String },
+  subCategoryCode: { type: String },
+});
 
-// // Define Category schema
-// const categorySchema = new mongoose.Schema({
-//   name: { type: String, required: true },
-//   description: { type: String },
-//   categoryImage: { type: String },
-//   categoryCode: { type: String, required: true, unique: true },
-//   subCategories: [subCategorySchema],
-// });
-
+// Define Category schema
+const categorySchema = new mongoose.Schema({
+  id: { type: mongoose.Schema.Types.ObjectId, ref: "Category" },
+  name: { type: String },
+  description: { type: String },
+  categoryImage: { type: String },
+  categoryCode: { type: String },
+});
 
 // Define Product schema
 const packagingSchema = new mongoose.Schema(
@@ -48,9 +48,17 @@ const usageSchema = new mongoose.Schema(
   {
     indications: indicationsSchema,
     dosageDetails: [dosageDetailSchema],
+    pharmacology: { type: String },
   },
   { _id: false }
 );
+
+const stockSchema = new mongoose.Schema({
+  batchNumber: { type: String },
+  quantity: { type: Number },
+  expirationDate: { type: String },
+  aisleLocation: { type: String },
+});
 
 const productSchema = new mongoose.Schema({
   productId: { type: Number, unique: true },
@@ -59,41 +67,29 @@ const productSchema = new mongoose.Schema({
   activeIngredient: { type: String },
   dosageForm: { type: String },
   applicationArea: { type: String },
-  primaryCategory: {
-    id: { type: mongoose.Schema.Types.ObjectId, ref: 'Category' },
-    name: { type: String },
-    description: { type: String },
-    categoryImage: { type: String },
-    categoryCode: { type: String },
-  },
-  subCategory: {
-    id: { type: mongoose.Schema.Types.ObjectId, ref: 'SubCategory' },
-    name: { type: String },
-    description: { type: String },
-    categoryImage: { type: String },
-    subCategoryCode: { type: String },
-  },
+  primaryCategory: { type: String },
+  subCategory: { type: String },
   productType: { type: String },
   packaging: { type: packagingSchema },
   pricePerUnit: { type: Number },
-  availableStock: { type: Number },
+  stockDetails: [stockSchema],
   manufacturer: { type: String },
-  expirationDate: { type: String },
-  batchNumber: { type: String },
-  aisleLocation: { type: String },
   requiresPrescription: { type: Boolean },
   pageCategory: { type: String },
   productImage: { type: String },
   leafletImage: { type: String },
   usageDetails: { type: usageSchema },
-  pharmacology: { type: String },
 });
 
 // Pre-save hook to generate unique productId
 productSchema.pre("save", async function (next) {
   try {
     if (!this.isNew) return next();
-    const lastProduct = await this.constructor.findOne({}, {}, { sort: { productId: -1 } });
+    const lastProduct = await this.constructor.findOne(
+      {},
+      {},
+      { sort: { productId: -1 } }
+    );
     this.productId = lastProduct ? lastProduct.productId + 1 : 1;
     next();
   } catch (err) {

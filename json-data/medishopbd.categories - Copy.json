@@ -1,0 +1,755 @@
+[{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdd2"
+  },
+  "name": "Baby Care",
+  "description": "Products for baby care and health",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Baby%20Care",
+  "categoryCode": "baby-care",
+  "subCategories": [
+    {
+      "name": "Baby Food",
+      "description": "Nutritional food and snacks for babies",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Baby%20Food",
+      "subCategoryCode": "baby-food"
+    },
+    {
+      "name": "Diapers",
+      "description": "Baby diapers and related products",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Diapers",
+      "subCategoryCode": "diapers"
+    },
+    {
+      "name": "Baby Bath",
+      "description": "Bathing products for babies",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Baby%20Bath",
+      "subCategoryCode": "baby-bath"
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdd3"
+  },
+  "name": "Nutrition",
+  "description": "Nutritional supplements and health foods",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Nutrition",
+  "categoryCode": "nutrition",
+  "subCategories": [
+    {
+      "name": "Health Drinks",
+      "description": "Nutritious health drinks and powders",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Health%20Drinks",
+      "subCategoryCode": "health-drinks"
+    },
+    {
+      "name": "Protein Supplements",
+      "description": "Protein powders and supplements",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Protein%20Supplements",
+      "subCategoryCode": "protein-supplements"
+    },
+    {
+      "name": "Weight Management",
+      "description": "Products for weight management",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Weight%20Management",
+      "subCategoryCode": "weight-management"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdd4"
+  },
+  "name": "Medicine",
+  "description": "Medicinal products and health boosters",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Medicine",
+  "categoryCode": "medicine",
+  "subCategories": [
+    {
+      "name": "Prescription Medicine",
+      "description": "Medicines that require a prescription",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Prescription%20Medicine",
+      "subCategoryCode": "prescription-medicine"
+    },
+    {
+      "name": "Over-the-Counter Medicine",
+      "description": "Medicines available without a prescription",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Over-the-Counter%20Medicine",
+      "subCategoryCode": "otc-medicine"
+    },
+    {
+      "name": "Health Boosters",
+      "description": "Supplements to boost health and immunity",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Health%20Boosters",
+      "subCategoryCode": "health-boosters"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdd5"
+  },
+  "name": "Household",
+  "description": "Household products and essentials",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Household",
+  "categoryCode": "household",
+  "subCategories": [
+    {
+      "name": "Cleaning Supplies",
+      "description": "Cleaning products for home",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Cleaning%20Supplies",
+      "subCategoryCode": "cleaning-supplies"
+    },
+    {
+      "name": "Laundry Care",
+      "description": "Products for laundry care",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Laundry%20Care",
+      "subCategoryCode": "laundry-care"
+    },
+    {
+      "name": "Paper Products",
+      "description": "Tissues, toilet paper, and other paper products",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Paper%20Products",
+      "subCategoryCode": "paper-products"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdd6"
+  },
+  "name": "Beauty",
+  "description": "Beauty and cosmetic products",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Beauty",
+  "categoryCode": "beauty",
+  "subCategories": [
+    {
+      "name": "Makeup",
+      "description": "Makeup products for all skin types",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Makeup",
+      "subCategoryCode": "makeup"
+    },
+    {
+      "name": "Fragrances",
+      "description": "Perfumes and body sprays",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Fragrances",
+      "subCategoryCode": "fragrances"
+    },
+    {
+      "name": "Nail Care",
+      "description": "Nail polishes and other nail care products",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Nail%20Care",
+      "subCategoryCode": "nail-care"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdd7"
+  },
+  "name": "Fitness",
+  "description": "Fitness and exercise products",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Fitness",
+  "categoryCode": "fitness",
+  "subCategories": [
+    {
+      "name": "Exercise Equipment",
+      "description": "Equipment for home and gym workouts",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Exercise%20Equipment",
+      "subCategoryCode": "exercise-equipment"
+    },
+    {
+      "name": "Fitness Trackers",
+      "description": "Devices to track fitness and health metrics",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Fitness%20Trackers",
+      "subCategoryCode": "fitness-trackers"
+    },
+    {
+      "name": "Yoga & Pilates",
+      "description": "Products for yoga and pilates",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Yoga%20&%20Pilates",
+      "subCategoryCode": "yoga-pilates"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdd8"
+  },
+  "name": "Groceries",
+  "description": "Grocery items and everyday essentials",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Groceries",
+  "categoryCode": "groceries",
+  "subCategories": [
+    {
+      "name": "Organic Foods",
+      "description": "Organic and natural food products",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Organic%20Foods",
+      "subCategoryCode": "organic-foods"
+    },
+    {
+      "name": "Beverages",
+      "description": "Tea, coffee, and other beverages",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Beverages",
+      "subCategoryCode": "beverages"
+    },
+    {
+      "name": "Snacks",
+      "description": "Healthy and tasty snacks",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Snacks",
+      "subCategoryCode": "snacks"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdd9"
+  },
+  "name": "Allergy Relief",
+  "description": "Products for relieving allergy symptoms",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Allergy%20Relief",
+  "categoryCode": "allergy-relief",
+  "subCategories": [
+    {
+      "name": "Antihistamines",
+      "description": "Medications for treating allergy symptoms",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Antihistamines",
+      "subCategoryCode": "antihistamines"
+    },
+    {
+      "name": "Nasal Sprays",
+      "description": "Nasal sprays for relieving nasal congestion",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Nasal%20Sprays",
+      "subCategoryCode": "nasal-sprays"
+    },
+    {
+      "name": "Eye Drops",
+      "description": "Eye drops for allergy-related eye discomfort",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Eye%20Drops",
+      "subCategoryCode": "eye-drops"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdda"
+  },
+  "name": "Cold & Flu",
+  "description": "Products to treat cold and flu symptoms",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Cold%20&%20Flu",
+  "categoryCode": "cold-flu",
+  "subCategories": [
+    {
+      "name": "Cough Syrups",
+      "description": "Syrups for relieving cough symptoms",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Cough%20Syrups",
+      "subCategoryCode": "cough-syrups"
+    },
+    {
+      "name": "Decongestants",
+      "description": "Medications for relieving nasal congestion",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Decongestants",
+      "subCategoryCode": "decongestants"
+    },
+    {
+      "name": "Cold Remedies",
+      "description": "General remedies for cold symptoms",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Cold%20Remedies",
+      "subCategoryCode": "cold-remedies"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cddb"
+  },
+  "name": "Digestive Health",
+  "description": "Products for digestive health and comfort",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Digestive%20Health",
+  "categoryCode": "digestive-health",
+  "subCategories": [
+    {
+      "name": "Antacids",
+      "description": "Products for relieving heartburn and indigestion",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Antacids",
+      "subCategoryCode": "antacids"
+    },
+    {
+      "name": "Laxatives",
+      "description": "Products to relieve constipation",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Laxatives",
+      "subCategoryCode": "laxatives"
+    },
+    {
+      "name": "Probiotics",
+      "description": "Supplements for digestive health",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Probiotics",
+      "subCategoryCode": "probiotics"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cddc"
+  },
+  "name": "Women's Health",
+  "description": "Products focused on women's health and wellness",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Women%27s%20Health",
+  "categoryCode": "womens-health",
+  "subCategories": [
+    {
+      "name": "Menstrual Care",
+      "description": "Products for menstrual hygiene and relief",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Menstrual%20Care",
+      "subCategoryCode": "menstrual-care"
+    },
+    {
+      "name": "Prenatal Vitamins",
+      "description": "Vitamins and supplements for pregnant women",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Prenatal%20Vitamins",
+      "subCategoryCode": "prenatal-vitamins"
+    },
+    {
+      "name": "Feminine Hygiene",
+      "description": "Products for feminine hygiene and care",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Feminine%20Hygiene",
+      "subCategoryCode": "feminine-hygiene"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cddd"
+  },
+  "name": "Men's Health",
+  "description": "Products focused on men's health and wellness",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Men%27s%20Health",
+  "categoryCode": "mens-health",
+  "subCategories": [
+    {
+      "name": "Prostate Health",
+      "description": "Supplements and products for prostate health",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Prostate%20Health",
+      "subCategoryCode": "prostate-health"
+    },
+    {
+      "name": "Testosterone Boosters",
+      "description": "Supplements to boost testosterone levels",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Testosterone%20Boosters",
+      "subCategoryCode": "testosterone-boosters"
+    },
+    {
+      "name": "Hair Loss Treatments",
+      "description": "Products for treating hair loss and promoting growth",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Hair%20Loss%20Treatments",
+      "subCategoryCode": "hair-loss-treatments"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cdde"
+  },
+  "name": "Orthopedic Care",
+  "description": "Products for orthopedic health and injury prevention",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Orthopedic%20Care",
+  "categoryCode": "orthopedic-care",
+  "subCategories": [
+    {
+      "name": "Braces & Supports",
+      "description": "Braces and supports for joints and muscles",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Braces%20&%20Supports",
+      "subCategoryCode": "braces-supports"
+    },
+    {
+      "name": "Joint Health",
+      "description": "Supplements and products for joint health",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Joint%20Health",
+      "subCategoryCode": "joint-health"
+    },
+    {
+      "name": "Injury Recovery",
+      "description": "Products for recovering from injuries",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Injury%20Recovery",
+      "subCategoryCode": "injury-recovery"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cddf"
+  },
+  "name": "Eye Care",
+  "description": "Products for maintaining and improving eye health",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Eye%20Care",
+  "categoryCode": "eye-care",
+  "subCategories": [
+    {
+      "name": "Contact Lenses",
+      "description": "Contact lenses and lens care products",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Contact%20Lenses",
+      "subCategoryCode": "contact-lenses"
+    },
+    {
+      "name": "Eyeglasses",
+      "description": "Eyeglasses and eyewear accessories",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Eyeglasses",
+      "subCategoryCode": "eyeglasses"
+    },
+    {
+      "name": "Eye Vitamins",
+      "description": "Vitamins and supplements for eye health",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Eye%20Vitamins",
+      "subCategoryCode": "eye-vitamins"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde0"
+  },
+  "name": "Pet Care",
+  "description": "Health and wellness products for pets",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Pet%20Care",
+  "categoryCode": "pet-care",
+  "subCategories": [
+    {
+      "name": "Pet Supplements",
+      "description": "Supplements for pets' health and well-being",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Pet%20Supplements",
+      "subCategoryCode": "pet-supplements"
+    },
+    {
+      "name": "Flea & Tick Control",
+      "description": "Products for controlling fleas and ticks on pets",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Flea%20&%20Tick%20Control",
+      "subCategoryCode": "flea-tick-control"
+    },
+    {
+      "name": "Pet Grooming",
+      "description": "Grooming products for pets",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Pet%20Grooming",
+      "subCategoryCode": "pet-grooming"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde1"
+  },
+  "name": "Men's Grooming",
+  "description": "Grooming products and accessories for men",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Men%27s%20Grooming",
+  "categoryCode": "mens-grooming",
+  "subCategories": [
+    {
+      "name": "Shaving Products",
+      "description": "Razors, shaving creams, and aftershaves",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Shaving%20Products",
+      "subCategoryCode": "shaving-products"
+    },
+    {
+      "name": "Beard Care",
+      "description": "Products for beard grooming and maintenance",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Beard%20Care",
+      "subCategoryCode": "beard-care"
+    },
+    {
+      "name": "Men's Skincare",
+      "description": "Skincare products designed for men",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Men%27s%20Skincare",
+      "subCategoryCode": "mens-skincare"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde2"
+  },
+  "name": "Homeopathic Remedies",
+  "description": "Alternative medicine and homeopathic treatments",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Homeopathic%20Remedies",
+  "categoryCode": "homeopathic-remedies",
+  "subCategories": [
+    {
+      "name": "Homeopathic Medicines",
+      "description": "Medicines based on homeopathic principles",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Homeopathic%20Medicines",
+      "subCategoryCode": "homeopathic-medicines"
+    },
+    {
+      "name": "Herbal Supplements",
+      "description": "Herbal supplements for various health conditions",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Herbal%20Supplements",
+      "subCategoryCode": "herbal-supplements"
+    },
+    {
+      "name": "Natural Remedies",
+      "description": "Natural remedies for health and wellness",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Natural%20Remedies",
+      "subCategoryCode": "natural-remedies"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde3"
+  },
+  "name": "Sexual Health",
+  "description": "Products for sexual health and wellness",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Sexual%20Health",
+  "categoryCode": "sexual-health",
+  "subCategories": [
+    {
+      "name": "Condoms",
+      "description": "Condoms and related products for protection",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Condoms",
+      "subCategoryCode": "condoms"
+    },
+    {
+      "name": "Lubricants",
+      "description": "Lubricants for comfort and pleasure",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Lubricants",
+      "subCategoryCode": "lubricants"
+    },
+    {
+      "name": "Sexual Enhancers",
+      "description": "Products designed to enhance sexual experience",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Sexual%20Enhancers",
+      "subCategoryCode": "sexual-enhancers"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde4"
+  },
+  "name": "Senior Health",
+  "description": "Health products designed for seniors",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Senior%20Health",
+  "categoryCode": "senior-health",
+  "subCategories": [
+    {
+      "name": "Joint Care",
+      "description": "Products for joint pain and mobility",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Joint%20Care",
+      "subCategoryCode": "joint-care"
+    },
+    {
+      "name": "Memory Support",
+      "description": "Supplements for cognitive function and memory",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Memory%20Support",
+      "subCategoryCode": "memory-support"
+    },
+    {
+      "name": "Heart Health",
+      "description": "Products for cardiovascular health",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Heart%20Health",
+      "subCategoryCode": "heart-health"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde5"
+  },
+  "name": "Dental Care",
+  "description": "Products for maintaining oral health",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Dental%20Care",
+  "categoryCode": "dental-care",
+  "subCategories": [
+    {
+      "name": "Toothbrushes",
+      "description": "Toothbrushes for all dental care needs",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Toothbrushes",
+      "subCategoryCode": "toothbrushes"
+    },
+    {
+      "name": "Toothpaste",
+      "description": "Toothpaste for different oral health needs",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Toothpaste",
+      "subCategoryCode": "toothpaste"
+    },
+    {
+      "name": "Mouthwash",
+      "description": "Mouthwash for fresh breath and oral hygiene",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Mouthwash",
+      "subCategoryCode": "mouthwash"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde6"
+  },
+  "name": "Family Health",
+  "description": "Health products for the entire family",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Family%20Health",
+  "categoryCode": "family-health",
+  "subCategories": [
+    {
+      "name": "Multivitamins",
+      "description": "Multivitamins for adults and children",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Multivitamins",
+      "subCategoryCode": "multivitamins"
+    },
+    {
+      "name": "Cold & Flu Remedies",
+      "description": "Remedies for family cold and flu symptoms",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Cold%20&%20Flu%20Remedies",
+      "subCategoryCode": "cold-flu-remedies"
+    },
+    {
+      "name": "Health Monitors",
+      "description": "Health monitoring devices for the family",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Health%20Monitors",
+      "subCategoryCode": "health-monitors"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde7"
+  },
+  "name": "Emergency Supplies",
+  "description": "Essential supplies for emergency situations",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Emergency%20Supplies",
+  "categoryCode": "emergency-supplies",
+  "subCategories": [
+    {
+      "name": "First Aid Kits",
+      "description": "Comprehensive first aid kits for emergencies",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20First%20Aid%20Kits",
+      "subCategoryCode": "first-aid-kits"
+    },
+    {
+      "name": "Emergency Medications",
+      "description": "Medications for emergency situations",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Emergency%20Medications",
+      "subCategoryCode": "emergency-medications"
+    },
+    {
+      "name": "Survival Gear",
+      "description": "Gear and supplies for survival situations",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Survival%20Gear",
+      "subCategoryCode": "survival-gear"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde8"
+  },
+  "name": "Men's Vitamins",
+  "description": "Vitamins and supplements specifically for men",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Men%27s%20Vitamins",
+  "categoryCode": "mens-vitamins",
+  "subCategories": [
+    {
+      "name": "Men's Multivitamins",
+      "description": "Multivitamins formulated for men's health",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Men%27s%20Multivitamins",
+      "subCategoryCode": "mens-multivitamins"
+    },
+    {
+      "name": "Testosterone Supplements",
+      "description": "Supplements to support healthy testosterone levels",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Testosterone%20Supplements",
+      "subCategoryCode": "testosterone-supplements"
+    },
+    {
+      "name": "Prostate Supplements",
+      "description": "Supplements for maintaining prostate health",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Prostate%20Supplements",
+      "subCategoryCode": "prostate-supplements"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668916878f0b3a62fd04cde9"
+  },
+  "name": "Children's Health",
+  "description": "Health products and supplements for children",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Children%27s%20Health",
+  "categoryCode": "childrens-health",
+  "subCategories": [
+    {
+      "name": "Children's Vitamins",
+      "description": "Vitamins and supplements for children's health",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Children%27s%20Vitamins",
+      "subCategoryCode": "childrens-vitamins"
+    },
+    {
+      "name": "Kids' Cough & Cold",
+      "description": "Cough and cold remedies for children",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Kids%27%20Cough%20&%20Cold",
+      "subCategoryCode": "kids-cough-cold"
+    },
+    {
+      "name": "Children's Pain Relief",
+      "description": "Pain relief medications for children",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Children%27s%20Pain%20Relief",
+      "subCategoryCode": "childrens-pain-relief"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66892ce18f0b3a62fd04cdfb"
+  },
+  "name": "Healthcare",
+  "description": "General healthcare products",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Healthcare",
+  "categoryCode": "healthcare",
+  "subCategories": [
+    {
+      "name": "Vitamins & Supplements",
+      "description": "Vitamins, minerals, and dietary supplements",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Vitamins%20&%20Supplements",
+      "subCategoryCode": "vitamins-supplements"
+    },
+    {
+      "name": "First Aid",
+      "description": "First aid kits and medical supplies",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20First%20Aid",
+      "subCategoryCode": "first-aid"
+    },
+    {
+      "name": "Pain Relief",
+      "description": "Pain relief medications and products",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Pain%20Relief",
+      "subCategoryCode": "pain-relief"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66892ce18f0b3a62fd04cdfc"
+  },
+  "name": "Personal Care",
+  "description": "Products for personal hygiene and care",
+  "categoryImage": "https://placehold.co/600x400?text=Category:%20Personal%20Care",
+  "categoryCode": "personal-care",
+  "subCategories": [
+    {
+      "name": "Oral Care",
+      "description": "Toothpaste, mouthwash, and other oral care products",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Oral%20Care",
+      "subCategoryCode": "oral-care"
+    },
+    {
+      "name": "Skin Care",
+      "description": "Skin care products for various skin types",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Skin%20Care",
+      "subCategoryCode": "skin-care"
+    },
+    {
+      "name": "Hair Care",
+      "description": "Shampoos, conditioners, and other hair care products",
+      "categoryImage": "https://placehold.co/600x400?text=SubCategory:%20Hair%20Care",
+      "subCategoryCode": "hair-care"
+    }
+  ]
+}]

@@ -1,23 +1,6 @@
 const mongoose = require("mongoose");
 
-// Define SubCategory schema
-const subCategorySchema = new mongoose.Schema({
-  id: { type: mongoose.Schema.Types.ObjectId, ref: "SubCategory" },
-  name: { type: String },
-  description: { type: String },
-  categoryImage: { type: String },
-  subCategoryCode: { type: String },
-});
-
-// Define Category schema
-const categorySchema = new mongoose.Schema({
-  id: { type: mongoose.Schema.Types.ObjectId, ref: "Category" },
-  name: { type: String },
-  description: { type: String },
-  categoryImage: { type: String },
-  categoryCode: { type: String },
-});
-
+ 
 // Define Product schema
 const packagingSchema = new mongoose.Schema(
   {

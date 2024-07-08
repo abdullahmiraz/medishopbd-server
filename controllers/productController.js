@@ -1,23 +1,19 @@
 const Product = require("../models/Product");
 
-// Get all products with populated primaryCategory and subCategory
+// Get all products
 exports.getAllProducts = async (req, res) => {
   try {
-    const products = await Product.find()
-      .populate('primaryCategory.id', 'name description categoryImage categoryCode') // Populate Category fields
-      .populate('subCategory.id', 'name description categoryImage subCategoryCode'); // Populate SubCategory fields
+    const products = await Product.find();
     res.json(products);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 };
 
-// Get a product by ID with populated primaryCategory and subCategory
+// Get a product by ID
 exports.getProductById = async (req, res) => {
   try {
-    const product = await Product.findById(req.params.id)
-      .populate('primaryCategory.id', 'name description categoryImage categoryCode') // Populate Category fields
-      .populate('subCategory.id', 'name description categoryImage subCategoryCode'); // Populate SubCategory fields
+    const product = await Product.findById(req.params.id);
 
     if (!product) {
       return res.status(404).json({ message: "Product not found" });
@@ -46,17 +42,15 @@ exports.updateProduct = async (req, res) => {
   try {
     const { id } = req.params;
 
-    // Check if availableStock is valid
-    if (req.body.availableStock < 0) {
-      return res.status(400).json({ message: "Available stock cannot be negative" });
+    // Check if quantity in stockDetails is valid
+    if (req.body.stockDetails && req.body.stockDetails.some(stock => stock.quantity < 0)) {
+      return res.status(400).json({ message: "Quantity in stockDetails cannot be negative" });
     }
 
     const updatedProduct = await Product.findByIdAndUpdate(id, req.body, {
       new: true,
       runValidators: true,
-    })
-      .populate('primaryCategory.id', 'name description categoryImage categoryCode') // Populate Category fields
-      .populate('subCategory.id', 'name description categoryImage subCategoryCode'); // Populate SubCategory fields
+    });
 
     if (!updatedProduct) {
       return res.status(404).json({ message: "Product not found" });

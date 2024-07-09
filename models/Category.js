@@ -4,22 +4,22 @@ const mongoose = require("mongoose");
 const subCategorySchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String },
-  categoryImage: {
+  image: {
     type: String,
     default: "https://placehold.co/600x400?text=SubCategory",
   },
-  subCategoryCode: { type: String, required: true, unique: true },
+  code: { type: String, required: true, unique: true },
 });
 
 // Define Category schema
 const categorySchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String },
-  categoryImage: {
+  image: {
     type: String,
     default: "https://placehold.co/600x400?text=Category",
   },
-  categoryCode: { type: String, required: true, unique: true },
+  code: { type: String, required: true, unique: true },
   subCategories: [subCategorySchema],
 });
 

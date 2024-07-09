@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
- 
 // Define Product schema
 const packagingSchema = new mongoose.Schema(
   {
@@ -57,7 +56,7 @@ const productSchema = new mongoose.Schema({
   pricePerUnit: { type: Number },
   stockDetails: [stockSchema],
   manufacturer: { type: String },
-  requiresPrescription: { type: Boolean },
+  requiresPrescription: { type: String },
   pageCategory: { type: String },
   productImage: { type: String },
   leafletImage: { type: String },

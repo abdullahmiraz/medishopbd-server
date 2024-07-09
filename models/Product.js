@@ -42,26 +42,29 @@ const stockSchema = new mongoose.Schema({
   aisleLocation: { type: String },
 });
 
-const productSchema = new mongoose.Schema({
-  productId: { type: Number, unique: true },
-  productName: { type: String },
-  measure: { type: String },
-  activeIngredient: { type: String },
-  dosageForm: { type: String },
-  applicationArea: { type: String },
-  primaryCategory: { type: String },
-  subCategory: { type: String },
-  productType: { type: String },
-  packaging: { type: packagingSchema },
-  pricePerUnit: { type: Number },
-  stockDetails: [stockSchema],
-  manufacturer: { type: String },
-  requiresPrescription: { type: String },
-  pageCategory: { type: String },
-  productImage: { type: String },
-  leafletImage: { type: String },
-  usageDetails: { type: usageSchema },
-});
+const productSchema = new mongoose.Schema(
+  {
+    productId: { type: Number, unique: true },
+    productName: { type: String },
+    measure: { type: String },
+    activeIngredient: { type: String },
+    dosageForm: { type: String },
+    applicationArea: { type: String },
+    primaryCategory: { type: String },
+    subCategory: { type: String },
+    productType: { type: String },
+    packaging: { type: packagingSchema },
+    pricePerUnit: { type: Number },
+    stockDetails: [stockSchema],
+    manufacturer: { type: String },
+    requiresPrescription: { type: String },
+    pageCategory: { type: String },
+    productImage: { type: String },
+    leafletImage: { type: String },
+    usageDetails: { type: usageSchema },
+  },
+  { timestamps: true }
+);
 
 // Pre-save hook to generate unique productId
 productSchema.pre("save", async function (next) {

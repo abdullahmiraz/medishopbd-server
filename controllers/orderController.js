@@ -32,6 +32,7 @@ exports.getOrderById = async (req, res) => {
 exports.createOrder = async (req, res) => {
   const {
     userId,
+    orderNumber,
     products,
     deliveryFee,
     checkoutAmount,
@@ -56,6 +57,7 @@ exports.createOrder = async (req, res) => {
   // Create the order
   const order = new Order({
     userId,
+    orderNumber,
     products,
     deliveryFee,
     checkoutAmount,

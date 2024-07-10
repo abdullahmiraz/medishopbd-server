@@ -6,7 +6,7 @@ const subCategorySchema = new mongoose.Schema({
   description: { type: String },
   image: {
     type: String,
-    default: "https://placehold.co/600x400?text=SubCategory",
+    // default: "https://placehold.co/600x400?text=SubCategory",
   },
   code: { type: String, required: true, unique: true },
 });
@@ -17,11 +17,11 @@ const categorySchema = new mongoose.Schema({
   description: { type: String },
   image: {
     type: String,
-    default: "https://placehold.co/600x400?text=Category",
+    // default: "https://placehold.co/600x400?text=Category",
   },
-  code: { type: String, required: true, unique: true },
+  code: { type: String, unique: true },
   subCategories: [subCategorySchema],
 });
 
-const Category = mongoose.model("Category", categorySchema); 
+const Category = mongoose.model("Category", categorySchema);
 module.exports = Category;

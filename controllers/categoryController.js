@@ -3,13 +3,14 @@ const Category = require("../models/Category");
 // Create a new category
 exports.createCategory = async (req, res) => {
   try {
-    const { name, description, categoryImage, categoryCode } = req.body;
+    const { name, description, image, code } = req.body;
     const newCategory = new Category({
       name,
       description,
-      categoryImage,
-      categoryCode,
+      image,
+      code,
     });
+    console.log(newCategory);
     const category = await newCategory.save();
     res.status(201).json(category);
   } catch (error) {
@@ -77,12 +78,12 @@ exports.addSubCategory = async (req, res) => {
     if (!category) {
       return res.status(404).json({ message: "Category not found" });
     }
-    const { name, description, categoryImage, subCategoryCode } = req.body;
+    const { name, description, image, code } = req.body;
     const newSubCategory = {
       name,
       description,
-      categoryImage,
-      subCategoryCode,
+      image,
+      code,
     };
     category.subCategories.push(newSubCategory);
     await category.save();
@@ -102,8 +103,8 @@ exports.updateSubCategory = async (req, res) => {
         $set: {
           "subCategories.$.name": req.body.name,
           "subCategories.$.description": req.body.description,
-          "subCategories.$.categoryImage": req.body.categoryImage,
-          "subCategories.$.subCategoryCode": req.body.subCategoryCode,
+          "subCategories.$.image": req.body.image,
+          "subCategories.$.code": req.body.code,
         },
       },
       { new: true }

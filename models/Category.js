@@ -8,7 +8,7 @@ const subCategorySchema = new mongoose.Schema({
     type: String,
     // default: "https://placehold.co/600x400?text=SubCategory",
   },
-  code: { type: String, required: true, unique: true },
+  code: { type: String, unique: true },
 });
 
 // Define Category schema

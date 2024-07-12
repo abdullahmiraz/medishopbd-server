@@ -1,2333 +1,2244 @@
-[{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b0"
-  },
-  "productId": 1,
-  "productName": "Paracetamol",
-  "measure": "500mg",
-  "activeIngredient": "Paracetamol",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Pain Relief",
-  "productType": "OTC",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 10
-  },
-  "pricePerUnit": 1.5,
-  "availableStock": 980,
-  "manufacturer": "ACME Laboratories",
-  "expirationDate": "2025-12-31",
-  "batchNumber": "B12345",
-  "aisleLocation": "A1",
-  "requiresPrescription": false,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Pain Relief",
-      "subtitles": [
-        "Headache",
-        "Fever"
-      ]
-    },
-    "dosageDetails": [
+[
+  {
+    "productId": 1,
+    "productCode": "paracetamol-500mg-tablet-1",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "1-2 tablets every 4-6 hours"
-        ]
+        "batchNumber": "B12345",
+        "quantity": 980,
+        "expirationDate": "2025-12-31",
+        "aisleLocation": "A1"
       }
-    ]
-  },
-  "pharmacology": "Paracetamol is an analgesic and antipyretic agent."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b1"
-  },
-  "productId": 2,
-  "productName": "Horlicks",
-  "measure": "500g",
-  "activeIngredient": "Malt Extract",
-  "dosageForm": "Powder",
-  "applicationArea": "Oral",
-  "primaryCategory": "Nutrition",
-  "subCategory": "Health Drink",
-  "productType": "Food Supplement",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 5,
-  "availableStock": 110,
-  "manufacturer": "GlaxoSmithKline",
-  "expirationDate": "2024-10-15",
-  "batchNumber": "H67890",
-  "aisleLocation": "B2",
-  "requiresPrescription": false,
-  "pageCategory": "Nutrition",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Health Drink",
-      "subtitles": [
-        "Energy Booster",
-        "Nutritional Supplement"
-      ]
+    ],
+    "productName": "Paracetamol",
+    "measure": "500mg",
+    "activeIngredient": "Paracetamol",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Pain Relief",
+    "productType": "OTC",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 10
     },
-    "dosageDetails": [
+    "pricePerUnit": 1.5,
+    "manufacturer": "ACME Laboratories",
+    "requiresPrescription": false,
+    "pageCategory": "Medicine",
+    "productImage": "http://unsplash.it/400/300?gravity=center",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Pain Relief",
+        "subtitles": ["Headache", "Fever"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["1-2 tablets every 4-6 hours"]
+        }
+      ],
+      "pharmacology": "Paracetamol is an analgesic and antipyretic agent."
+    }
+  },
+  {
+    "productId": 2,
+    "productCode": "horlicks-500g-powder-2",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Add 2-3 tablespoons to a glass of milk"
-        ]
+        "batchNumber": "H67890",
+        "quantity": 110,
+        "expirationDate": "2024-10-15",
+        "aisleLocation": "B2"
       }
-    ]
-  },
-  "pharmacology": "Malt extract provides essential vitamins and minerals."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b2"
-  },
-  "productId": 3,
-  "productName": "Dettol Handwash",
-  "measure": "200ml",
-  "activeIngredient": "Chloroxylenol",
-  "dosageForm": "Liquid",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Handwash",
-  "productType": "Antiseptic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 2,
-  "availableStock": 300,
-  "manufacturer": "Reckitt Benckiser",
-  "expirationDate": "2025-01-01",
-  "batchNumber": "D34567",
-  "aisleLocation": "C3",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Hand Hygiene",
-      "subtitles": [
-        "Kills 99.9% of germs"
-      ]
+    ],
+    "productName": "Horlicks",
+    "measure": "500g",
+    "activeIngredient": "Malt Extract",
+    "dosageForm": "Powder",
+    "applicationArea": "Oral",
+    "primaryCategory": "Nutrition",
+    "subCategory": "Health Drink",
+    "productType": "Food Supplement",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 5,
+    "manufacturer": "GlaxoSmithKline",
+    "requiresPrescription": false,
+    "pageCategory": "Nutrition",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Health Drink",
+        "subtitles": ["Energy Booster", "Nutritional Supplement"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Add 2-3 tablespoons to a glass of milk"]
+        }
+      ],
+      "pharmacology": "Malt extract provides essential vitamins and minerals."
+    }
+  },
+  {
+    "productId": 3,
+    "productCode": "dettol-handwash-200ml-liquid-3",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply a small amount and wash hands"
-        ]
+        "batchNumber": "D34567",
+        "quantity": 300,
+        "expirationDate": "2025-01-01",
+        "aisleLocation": "C3"
       }
-    ]
-  },
-  "pharmacology": "Chloroxylenol is an antiseptic and disinfectant."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b3"
-  },
-  "productId": 4,
-  "productName": "Lactogen 1",
-  "measure": "400g",
-  "activeIngredient": "Milk Solids",
-  "dosageForm": "Powder",
-  "applicationArea": "Oral",
-  "primaryCategory": "Baby Food",
-  "subCategory": "Infant Formula",
-  "productType": "Food",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 10,
-  "availableStock": 117,
-  "manufacturer": "Nestle",
-  "expirationDate": "2023-11-20",
-  "batchNumber": "L89123",
-  "aisleLocation": "D4",
-  "requiresPrescription": false,
-  "pageCategory": "Baby Food",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Infant Nutrition",
-      "subtitles": [
-        "For infants from birth to 6 months"
-      ]
+    ],
+    "productName": "Dettol Handwash",
+    "measure": "200ml",
+    "activeIngredient": "Chloroxylenol",
+    "dosageForm": "Liquid",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Handwash",
+    "productType": "Antiseptic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 2,
+    "manufacturer": "Reckitt Benckiser",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Hand Hygiene",
+        "subtitles": ["Kills 99.9% of germs"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply a small amount and wash hands"]
+        }
+      ],
+      "pharmacology": "Chloroxylenol is an antiseptic and disinfectant."
+    }
+  },
+  {
+    "productId": 4,
+    "productCode": "lactogen-1-400g-powder-4",
+    "stockDetails": [
       {
-        "ageRange": "Infants",
-        "userGroup": "Babies",
-        "dosageInstructions": [
-          "Follow the instructions on the package"
-        ]
+        "batchNumber": "L89123",
+        "quantity": 117,
+        "expirationDate": "2023-11-20",
+        "aisleLocation": "D4"
       }
-    ]
-  },
-  "pharmacology": "Provides essential nutrients for infant growth."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b4"
-  },
-  "productId": 5,
-  "productName": "Rexona Deodorant",
-  "measure": "150ml",
-  "activeIngredient": "Aluminum Chlorohydrate",
-  "dosageForm": "Spray",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Men's Grooming",
-  "productType": "Deodorant",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 3.5,
-  "availableStock": 250,
-  "manufacturer": "Unilever",
-  "expirationDate": "2024-05-18",
-  "batchNumber": "R45678",
-  "aisleLocation": "E5",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Body Odor Prevention",
-      "subtitles": [
-        "Long-lasting protection"
-      ]
+    ],
+
+    "productName": "Lactogen 1",
+    "measure": "400g",
+    "activeIngredient": "Milk Solids",
+    "dosageForm": "Powder",
+    "applicationArea": "Oral",
+    "primaryCategory": "Baby Food",
+    "subCategory": "Infant Formula",
+    "productType": "Food",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 10,
+    "manufacturer": "Nestle",
+    "requiresPrescription": false,
+    "pageCategory": "Baby Food",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Infant Nutrition",
+        "subtitles": ["For infants from birth to 6 months"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Infants",
+          "userGroup": "Babies",
+          "dosageInstructions": ["Follow the instructions on the package"]
+        }
+      ],
+      "pharmacology": "Provides essential nutrients for infant growth."
+    }
+  },
+  {
+    "productId": 5,
+    "productCode": "rexona-deodorant-150ml-spray-5",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "Men",
-        "dosageInstructions": [
-          "Spray under arms daily"
-        ]
+        "batchNumber": "R45678",
+        "quantity": 250,
+        "expirationDate": "2024-05-18",
+        "aisleLocation": "E5"
       }
-    ]
-  },
-  "pharmacology": "Aluminum chlorohydrate reduces sweating."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b5"
-  },
-  "productId": 6,
-  "productName": "Himalaya Neem Face Wash",
-  "measure": "150ml",
-  "activeIngredient": "Neem",
-  "dosageForm": "Gel",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Herbal Products",
-  "productType": "Face Wash",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 4,
-  "availableStock": 101,
-  "manufacturer": "Himalaya",
-  "expirationDate": "2025-07-30",
-  "batchNumber": "H23456",
-  "aisleLocation": "F6",
-  "requiresPrescription": false,
-  "pageCategory": "Herbal Products",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Facial Cleanser",
-      "subtitles": [
-        "Purifies and cleanses skin"
-      ]
+    ],
+    "productName": "Rexona Deodorant",
+    "measure": "150ml",
+    "activeIngredient": "Aluminum Chlorohydrate",
+    "dosageForm": "Spray",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Men's Grooming",
+    "productType": "Deodorant",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 3.5,
+    "manufacturer": "Unilever",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Body Odor Prevention",
+        "subtitles": ["Long-lasting protection"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "Men",
+          "dosageInstructions": ["Spray under arms daily"]
+        }
+      ],
+      "pharmacology": "Aluminum chlorohydrate reduces sweating."
+    }
+  },
+  {
+    "productId": 6,
+    "productCode": "himalaya-neem-face-wash-150ml-gel-6",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use twice daily"
-        ]
+        "batchNumber": "H23456",
+        "quantity": 101,
+        "expirationDate": "2025-07-30",
+        "aisleLocation": "F6"
       }
-    ]
-  },
-  "pharmacology": "Neem has antibacterial properties."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b6"
-  },
-  "productId": 7,
-  "productName": "Dove Soap",
-  "measure": "100g",
-  "activeIngredient": "Moisturizing Cream",
-  "dosageForm": "Bar",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Soap",
-  "productType": "Moisturizing Soap",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 1,
-  "availableStock": 500,
-  "manufacturer": "Unilever",
-  "expirationDate": "2024-08-25",
-  "batchNumber": "D12345",
-  "aisleLocation": "G7",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Skin Care",
-      "subtitles": [
-        "Moisturizes and nourishes skin"
-      ]
+    ],
+    "productName": "Himalaya Neem Face Wash",
+    "measure": "150ml",
+    "activeIngredient": "Neem",
+    "dosageForm": "Gel",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Herbal Products",
+    "productType": "Face Wash",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 4,
+    "manufacturer": "Himalaya",
+    "requiresPrescription": false,
+    "pageCategory": "Herbal Products",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Facial Cleanser",
+        "subtitles": ["Purifies and cleanses skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use twice daily"]
+        }
+      ],
+      "pharmacology": "Neem has antibacterial properties."
+    }
+  },
+  {
+    "productId": 7,
+    "productCode": "dove-soap-100g-bar-7",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use daily during bath"
-        ]
+        "batchNumber": "D12345",
+        "quantity": 500,
+        "expirationDate": "2024-08-25",
+        "aisleLocation": "G7"
       }
-    ]
-  },
-  "pharmacology": "Contains moisturizing cream to hydrate skin."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b7"
-  },
-  "productId": 8,
-  "productName": "Johnson's Baby Powder",
-  "measure": "200g",
-  "activeIngredient": "Talc",
-  "dosageForm": "Powder",
-  "applicationArea": "Topical",
-  "primaryCategory": "Baby Care",
-  "subCategory": "Baby Powder",
-  "productType": "Body Powder",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 2.5,
-  "availableStock": 110,
-  "manufacturer": "Johnson & Johnson",
-  "expirationDate": "2025-09-10",
-  "batchNumber": "J78901",
-  "aisleLocation": "H8",
-  "requiresPrescription": false,
-  "pageCategory": "Baby Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Baby Skin Care",
-      "subtitles": [
-        "Prevents diaper rash"
-      ]
+    ],
+    "productName": "Dove Soap",
+    "measure": "100g",
+    "activeIngredient": "Moisturizing Cream",
+    "dosageForm": "Bar",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Soap",
+    "productType": "Moisturizing Soap",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 1,
+    "manufacturer": "Unilever",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Skin Care",
+        "subtitles": ["Moisturizes and nourishes skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use daily during bath"]
+        }
+      ],
+      "pharmacology": "Contains moisturizing cream to hydrate skin."
+    }
+  },
+  {
+    "productId": 8,
+    "productCode": "johnsons-baby-powder-200g-powder-8",
+    "stockDetails": [
       {
-        "ageRange": "Babies",
-        "userGroup": "Infants",
-        "dosageInstructions": [
-          "Apply after bath and diaper change"
-        ]
+        "batchNumber": "J78901",
+        "quantity": 110,
+        "expirationDate": "2025-09-10",
+        "aisleLocation": "H8"
       }
-    ]
-  },
-  "pharmacology": "Talc keeps skin dry and reduces friction."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b8"
-  },
-  "productId": 9,
-  "productName": "Vicks Vaporub",
-  "measure": "50g",
-  "activeIngredient": "Menthol",
-  "dosageForm": "Ointment",
-  "applicationArea": "Topical",
-  "primaryCategory": "Health Care",
-  "subCategory": "Cold and Cough",
-  "productType": "OTC",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 3,
-  "availableStock": 200,
-  "manufacturer": "Procter & Gamble",
-  "expirationDate": "2024-11-10",
-  "batchNumber": "V65432",
-  "aisleLocation": "I9",
-  "requiresPrescription": false,
-  "pageCategory": "Health Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Cold and Cough Relief",
-      "subtitles": [
-        "Soothes cough",
-        "Clears nasal congestion"
-      ]
+    ],
+    "productName": "Johnson's Baby Powder",
+    "measure": "200g",
+    "activeIngredient": "Talc",
+    "dosageForm": "Powder",
+    "applicationArea": "Topical",
+    "primaryCategory": "Baby Care",
+    "subCategory": "Baby Powder",
+    "productType": "Body Powder",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 2.5,
+    "manufacturer": "Johnson & Johnson",
+    "requiresPrescription": false,
+    "pageCategory": "Baby Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Baby Skin Care",
+        "subtitles": ["Prevents diaper rash"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Babies",
+          "userGroup": "Infants",
+          "dosageInstructions": ["Apply after bath and diaper change"]
+        }
+      ],
+      "pharmacology": "Talc keeps skin dry and reduces friction."
+    }
+  },
+  {
+    "productId": 9,
+    "productCode": "vicks-vaporub-50g-ointment-9",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply on chest and throat"
-        ]
+        "batchNumber": "V65432",
+        "quantity": 200,
+        "expirationDate": "2024-11-10",
+        "aisleLocation": "I9"
       }
-    ]
-  },
-  "pharmacology": "Menthol relieves cough and nasal congestion."
-},
-{
-  "_id": {
-    "$oid": "667eb4b51a7a75a9b69de6b9"
-  },
-  "productId": 10,
-  "productName": "Pantene Shampoo",
-  "measure": "180ml",
-  "activeIngredient": "Pro-Vitamin B5",
-  "dosageForm": "Liquid",
-  "applicationArea": "Hair",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Hair Care",
-  "productType": "Shampoo",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 3.5,
-  "availableStock": 300,
-  "manufacturer": "Procter & Gamble",
-  "expirationDate": "2025-03-01",
-  "batchNumber": "P98765",
-  "aisleLocation": "J10",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Hair Care",
-      "subtitles": [
-        "Strengthens and nourishes hair"
-      ]
+    ],
+
+    "productName": "Vicks Vaporub",
+    "measure": "50g",
+    "activeIngredient": "Menthol",
+    "dosageForm": "Ointment",
+    "applicationArea": "Topical",
+    "primaryCategory": "Health Care",
+    "subCategory": "Cold and Cough",
+    "productType": "OTC",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 3,
+    "manufacturer": "Procter & Gamble",
+    "requiresPrescription": false,
+    "pageCategory": "Health Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Cold and Cough Relief",
+        "subtitles": ["Soothes cough", "Clears nasal congestion"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply on chest and throat"]
+        }
+      ],
+      "pharmacology": "Menthol relieves cough and nasal congestion."
+    }
+  },
+  {
+    "productId": 10,
+    "productCode": "pantene-shampoo-180ml-liquid-10",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use daily for best results"
-        ]
+        "batchNumber": "P98765",
+        "quantity": 300,
+        "expirationDate": "2025-03-01",
+        "aisleLocation": "J10"
       }
-    ]
-  },
-  "pharmacology": "Pro-Vitamin B5 improves hair strength and shine."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6bb"
-  },
-  "productId": 11,
-  "productName": "Calpol Syrup",
-  "measure": "120ml",
-  "activeIngredient": "Paracetamol",
-  "dosageForm": "Syrup",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Pain Relief",
-  "productType": "OTC",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 2.5,
-  "availableStock": 500,
-  "manufacturer": "GlaxoSmithKline",
-  "expirationDate": "2025-09-30",
-  "batchNumber": "C23456",
-  "aisleLocation": "K11",
-  "requiresPrescription": false,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Pain Relief",
-      "subtitles": [
-        "Fever",
-        "Headache"
-      ]
+    ],
+
+    "productName": "Pantene Shampoo",
+    "measure": "180ml",
+    "activeIngredient": "Pro-Vitamin B5",
+    "dosageForm": "Liquid",
+    "applicationArea": "Hair",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Hair Care",
+    "productType": "Shampoo",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 3.5,
+    "manufacturer": "Procter & Gamble",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Hair Care",
+        "subtitles": ["Strengthens and nourishes hair"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use daily for best results"]
+        }
+      ],
+      "pharmacology": "Pro-Vitamin B5 improves hair strength and shine."
+    }
+  },
+  {
+    "productId": 11,
+    "productCode": "calpol-syrup-120ml-syrup-11",
+    "stockDetails": [
       {
-        "ageRange": "Children",
-        "userGroup": "Pediatric",
-        "dosageInstructions": [
-          "5-10 ml every 4-6 hours"
-        ]
+        "batchNumber": "C23456",
+        "quantity": 500,
+        "expirationDate": "2025-09-30",
+        "aisleLocation": "K11"
       }
-    ]
-  },
-  "pharmacology": "Paracetamol is an analgesic and antipyretic agent."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6bc"
-  },
-  "productId": 12,
-  "productName": "Ensure Powder",
-  "measure": "400g",
-  "activeIngredient": "Multivitamins",
-  "dosageForm": "Powder",
-  "applicationArea": "Oral",
-  "primaryCategory": "Nutrition",
-  "subCategory": "Health Drink",
-  "productType": "Food Supplement",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 7.5,
-  "availableStock": 100,
-  "manufacturer": "Abbott",
-  "expirationDate": "2024-12-10",
-  "batchNumber": "E34567",
-  "aisleLocation": "L12",
-  "requiresPrescription": false,
-  "pageCategory": "Nutrition",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Nutritional Supplement",
-      "subtitles": [
-        "Energy Booster"
-      ]
+    ],
+
+    "productName": "Calpol Syrup",
+    "measure": "120ml",
+    "activeIngredient": "Paracetamol",
+    "dosageForm": "Syrup",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Pain Relief",
+    "productType": "OTC",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 2.5,
+    "manufacturer": "GlaxoSmithKline",
+    "requiresPrescription": false,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Pain Relief",
+        "subtitles": ["Fever", "Headache"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Children",
+          "userGroup": "Pediatric",
+          "dosageInstructions": ["5-10 ml every 4-6 hours"]
+        }
+      ],
+      "pharmacology": "Paracetamol is an analgesic and antipyretic agent."
+    }
+  },
+  {
+    "productId": 12,
+    "productCode": "ensure-powder-400g-powder-12",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Mix with water or milk twice daily"
-        ]
+        "batchNumber": "E12345",
+        "quantity": 100,
+        "expirationDate": "2025-03-15",
+        "aisleLocation": "A12"
       }
-    ]
-  },
-  "pharmacology": "Provides essential vitamins and minerals for overall health."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6bd"
-  },
-  "productId": 13,
-  "productName": "Savlon Hand Sanitizer",
-  "measure": "100ml",
-  "activeIngredient": "Isopropyl Alcohol",
-  "dosageForm": "Liquid",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Handwash",
-  "productType": "Sanitizer",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 1.5,
-  "availableStock": 389,
-  "manufacturer": "ACI Limited",
-  "expirationDate": "2024-11-30",
-  "batchNumber": "S56789",
-  "aisleLocation": "M13",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Hand Hygiene",
-      "subtitles": [
-        "Kills 99.9% of germs"
-      ]
+    ],
+    "productName": "Ensure Powder",
+    "measure": "400g",
+    "activeIngredient": "Multivitamins",
+    "dosageForm": "Powder",
+    "applicationArea": "Oral",
+    "primaryCategory": "Nutrition",
+    "subCategory": "Health Drink",
+    "productType": "Food Supplement",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 7.5,
+    "manufacturer": "Abbott",
+    "requiresPrescription": false,
+    "pageCategory": "Nutrition",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Nutritional Supplement",
+        "subtitles": ["Energy Booster"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Mix with water or milk twice daily"]
+        }
+      ],
+      "pharmacology": "Provides essential vitamins and minerals for overall health."
+    }
+  },
+  {
+    "productId": 13,
+    "productCode": "savlon-hand-sanitizer-100ml-liquid-13",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply a small amount and rub hands together"
-        ]
+        "batchNumber": "S23456",
+        "quantity": 200,
+        "expirationDate": "2024-12-01",
+        "aisleLocation": "B13"
       }
-    ]
-  },
-  "pharmacology": "Isopropyl alcohol is an antiseptic and disinfectant."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6be"
-  },
-  "productId": 14,
-  "productName": "Cerelac Wheat",
-  "measure": "300g",
-  "activeIngredient": "Wheat",
-  "dosageForm": "Powder",
-  "applicationArea": "Oral",
-  "primaryCategory": "Baby Food",
-  "subCategory": "Infant Cereal",
-  "productType": "Food",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 6,
-  "availableStock": 200,
-  "manufacturer": "Nestle",
-  "expirationDate": "2023-10-15",
-  "batchNumber": "C67890",
-  "aisleLocation": "N14",
-  "requiresPrescription": false,
-  "pageCategory": "Baby Food",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Infant Nutrition",
-      "subtitles": [
-        "For infants from 6 months and above"
-      ]
+    ],
+
+    "productName": "Savlon Hand Sanitizer",
+    "measure": "100ml",
+    "activeIngredient": "Isopropyl Alcohol",
+    "dosageForm": "Liquid",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Handwash",
+    "productType": "Sanitizer",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 1.5,
+    "manufacturer": "ACI Limited",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Hand Hygiene",
+        "subtitles": ["Kills 99.9% of germs"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply a small amount and rub hands together"]
+        }
+      ],
+      "pharmacology": "Isopropyl alcohol is an antiseptic and disinfectant."
+    }
+  },
+  {
+    "productId": 14,
+    "productCode": "cerelac-wheat-300g-powder-14",
+    "stockDetails": [
       {
-        "ageRange": "Infants",
-        "userGroup": "Babies",
-        "dosageInstructions": [
-          "Mix with water or milk"
-        ]
+        "batchNumber": "C34567",
+        "quantity": 150,
+        "expirationDate": "2025-04-20",
+        "aisleLocation": "C14"
       }
-    ]
-  },
-  "pharmacology": "Provides essential nutrients for infant growth."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6bf"
-  },
-  "productId": 15,
-  "productName": "Vaseline Body Lotion",
-  "measure": "200ml",
-  "activeIngredient": "Petrolatum",
-  "dosageForm": "Lotion",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Skin Care",
-  "productType": "Moisturizer",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 3,
-  "availableStock": 300,
-  "manufacturer": "Unilever",
-  "expirationDate": "2025-03-01",
-  "batchNumber": "V23456",
-  "aisleLocation": "O15",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Skin Care",
-      "subtitles": [
-        "Moisturizes and nourishes skin"
-      ]
+    ],
+
+    "productName": "Cerelac Wheat",
+    "measure": "300g",
+    "activeIngredient": "Wheat",
+    "dosageForm": "Powder",
+    "applicationArea": "Oral",
+    "primaryCategory": "Baby Food",
+    "subCategory": "Infant Cereal",
+    "productType": "Food",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 6,
+    "manufacturer": "Nestle",
+    "requiresPrescription": false,
+    "pageCategory": "Baby Food",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Infant Nutrition",
+        "subtitles": ["For infants from 6 months and above"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Infants",
+          "userGroup": "Babies",
+          "dosageInstructions": ["Mix with water or milk"]
+        }
+      ],
+      "pharmacology": "Provides essential nutrients for infant growth."
+    }
+  },
+  {
+    "productId": 15,
+    "productCode": "vaseline-body-lotion-200ml-lotion-15",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply daily on dry skin"
-        ]
+        "batchNumber": "V45678",
+        "quantity": 120,
+        "expirationDate": "2024-11-30",
+        "aisleLocation": "D15"
       }
-    ]
-  },
-  "pharmacology": "Petrolatum forms a protective barrier on the skin."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6c0"
-  },
-  "productId": 16,
-  "productName": "Nestle Nan Pro 1",
-  "measure": "400g",
-  "activeIngredient": "Milk Protein",
-  "dosageForm": "Powder",
-  "applicationArea": "Oral",
-  "primaryCategory": "Baby Food",
-  "subCategory": "Infant Formula",
-  "productType": "Food",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 12,
-  "availableStock": 120,
-  "manufacturer": "Nestle",
-  "expirationDate": "2024-11-20",
-  "batchNumber": "N34567",
-  "aisleLocation": "P16",
-  "requiresPrescription": false,
-  "pageCategory": "Baby Food",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Infant Nutrition",
-      "subtitles": [
-        "For infants from birth to 6 months"
-      ]
+    ],
+    "productName": "Vaseline Body Lotion",
+    "measure": "200ml",
+    "activeIngredient": "Petrolatum",
+    "dosageForm": "Lotion",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Skin Care",
+    "productType": "Moisturizer",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 3,
+    "manufacturer": "Unilever",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Skin Care",
+        "subtitles": ["Moisturizes and nourishes skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply daily on dry skin"]
+        }
+      ],
+      "pharmacology": "Petrolatum forms a protective barrier on the skin."
+    }
+  },
+  {
+    "productId": 16,
+    "productCode": "nestle-nan-pro-1-400g-powder-16",
+    "stockDetails": [
       {
-        "ageRange": "Infants",
-        "userGroup": "Babies",
-        "dosageInstructions": [
-          "Follow the instructions on the package"
-        ]
+        "batchNumber": "N56789",
+        "quantity": 80,
+        "expirationDate": "2025-02-10",
+        "aisleLocation": "E16"
       }
-    ]
-  },
-  "pharmacology": "Provides essential nutrients for infant growth."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6c1"
-  },
-  "productId": 17,
-  "productName": "Pond's Cold Cream",
-  "measure": "50g",
-  "activeIngredient": "Mineral Oil",
-  "dosageForm": "Cream",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Skin Care",
-  "productType": "Moisturizer",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 2,
-  "availableStock": 250,
-  "manufacturer": "Unilever",
-  "expirationDate": "2024-10-05",
-  "batchNumber": "P45678",
-  "aisleLocation": "Q17",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Skin Care",
-      "subtitles": [
-        "Moisturizes and nourishes skin"
-      ]
+    ],
+
+    "productName": "Nestle Nan Pro 1",
+    "measure": "400g",
+    "activeIngredient": "Milk Protein",
+    "dosageForm": "Powder",
+    "applicationArea": "Oral",
+    "primaryCategory": "Baby Food",
+    "subCategory": "Infant Formula",
+    "productType": "Food",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 12,
+    "manufacturer": "Nestle",
+    "requiresPrescription": false,
+    "pageCategory": "Baby Food",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Infant Nutrition",
+        "subtitles": ["For infants from birth to 6 months"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Infants",
+          "userGroup": "Babies",
+          "dosageInstructions": ["Follow the instructions on the package"]
+        }
+      ],
+      "pharmacology": "Provides essential nutrients for infant growth."
+    }
+  },
+  {
+    "productId": 17,
+    "productCode": "ponds-cold-cream-50g-cream-17",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply daily on face and neck"
-        ]
+        "batchNumber": "P67890",
+        "quantity": 90,
+        "expirationDate": "2025-05-25",
+        "aisleLocation": "F17"
       }
-    ]
-  },
-  "pharmacology": "Mineral oil provides moisture and hydration to the skin."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6c2"
-  },
-  "productId": 18,
-  "productName": "Herbal Essences Shampoo",
-  "measure": "300ml",
-  "activeIngredient": "Aloe Vera",
-  "dosageForm": "Liquid",
-  "applicationArea": "Hair",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Hair Care",
-  "productType": "Shampoo",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 4,
-  "availableStock": 150,
-  "manufacturer": "Procter & Gamble",
-  "expirationDate": "2025-01-15",
-  "batchNumber": "H67890",
-  "aisleLocation": "R18",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Hair Care",
-      "subtitles": [
-        "Nourishes and strengthens hair"
-      ]
+    ],
+
+    "productName": "Pond's Cold Cream",
+    "measure": "50g",
+    "activeIngredient": "Mineral Oil",
+    "dosageForm": "Cream",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Skin Care",
+    "productType": "Moisturizer",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 2,
+    "manufacturer": "Unilever",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Skin Care",
+        "subtitles": ["Moisturizes and nourishes skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply daily on face and neck"]
+        }
+      ],
+      "pharmacology": "Mineral oil provides moisture and hydration to the skin."
+    }
+  },
+  {
+    "productId": 18,
+    "productCode": "herbal-essences-shampoo-300ml-liquid-18",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use daily for best results"
-        ]
+        "batchNumber": "H12345",
+        "quantity": 50,
+        "expirationDate": "2025-06-10",
+        "aisleLocation": "A18"
       }
-    ]
-  },
-  "pharmacology": "Aloe Vera provides hydration and nourishment to hair."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6c3"
-  },
-  "productId": 19,
-  "productName": "Dabur Chyawanprash",
-  "measure": "500g",
-  "activeIngredient": "Amla",
-  "dosageForm": "Paste",
-  "applicationArea": "Oral",
-  "primaryCategory": "Herbal Products",
-  "subCategory": "Immunity Booster",
-  "productType": "Food Supplement",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 5,
-  "availableStock": 100,
-  "manufacturer": "Dabur",
-  "expirationDate": "2025-05-10",
-  "batchNumber": "D89012",
-  "aisleLocation": "S19",
-  "requiresPrescription": false,
-  "pageCategory": "Herbal Products",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Immunity Booster",
-      "subtitles": [
-        "Enhances immunity",
-        "Rich in antioxidants"
-      ]
+    ],
+    "productName": "Herbal Essences Shampoo",
+    "measure": "300ml",
+    "activeIngredient": "Aloe Vera",
+    "dosageForm": "Liquid",
+    "applicationArea": "Hair",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Hair Care",
+    "productType": "Shampoo",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 4,
+    "manufacturer": "Procter & Gamble",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Hair Care",
+        "subtitles": ["Nourishes and strengthens hair"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use daily for best results"]
+        }
+      ],
+      "pharmacology": "Aloe Vera provides hydration and nourishment to hair."
+    }
+  },
+  {
+    "productId": 19,
+    "productCode": "dabur-chyawanprash-500g-paste-19",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Consume daily with milk or water"
-        ]
+        "batchNumber": "D67890",
+        "quantity": 30,
+        "expirationDate": "2025-08-15",
+        "aisleLocation": "B19"
       }
-    ]
-  },
-  "pharmacology": "Amla is rich in Vitamin C and antioxidants."
-},
-{
-  "_id": {
-    "$oid": "667eb5b01a7a75a9b69de6c4"
-  },
-  "productId": 20,
-  "productName": "Lifebuoy Handwash",
-  "measure": "200ml",
-  "activeIngredient": "Chloroxylenol",
-  "dosageForm": "Liquid",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Handwash",
-  "productType": "Handwash",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 1.8,
-  "availableStock": 400,
-  "manufacturer": "Unilever",
-  "expirationDate": "2024-09-15",
-  "batchNumber": "L12345",
-  "aisleLocation": "T20",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Hand Hygiene",
-      "subtitles": [
-        "Kills 99.9% of germs"
-      ]
+    ],
+
+    "productName": "Dabur Chyawanprash",
+    "measure": "500g",
+    "activeIngredient": "Amla",
+    "dosageForm": "Paste",
+    "applicationArea": "Oral",
+    "primaryCategory": "Herbal Products",
+    "subCategory": "Immunity Booster",
+    "productType": "Food Supplement",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 5,
+    "manufacturer": "Dabur",
+    "requiresPrescription": false,
+    "pageCategory": "Herbal Products",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Immunity Booster",
+        "subtitles": ["Enhances immunity", "Rich in antioxidants"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Consume daily with milk or water"]
+        }
+      ],
+      "pharmacology": "Amla is rich in Vitamin C and antioxidants."
+    }
+  },
+  {
+    "productId": 20,
+    "productCode": "lifebuoy-handwash-200ml-liquid-20",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply a small amount and rub hands together"
-        ]
+        "batchNumber": "L54321",
+        "quantity": 70,
+        "expirationDate": "2025-12-01",
+        "aisleLocation": "C20"
       }
-    ]
-  },
-  "pharmacology": "Chloroxylenol is an antiseptic and disinfectant."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6c6"
-  },
-  "productId": 21,
-  "productName": "Dolonex DT",
-  "measure": "20 Tablets",
-  "activeIngredient": "Piroxicam",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Pain Relief",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 2
-  },
-  "pricePerUnit": 15,
-  "availableStock": 200,
-  "manufacturer": "Pfizer",
-  "expirationDate": "2025-06-30",
-  "batchNumber": "D78901",
-  "aisleLocation": "A11",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Pain Relief",
-      "subtitles": [
-        "Rheumatic diseases",
-        "Postoperative pain"
-      ]
+    ],
+
+    "productName": "Lifebuoy Handwash",
+    "measure": "200ml",
+    "activeIngredient": "Chloroxylenol",
+    "dosageForm": "Liquid",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Handwash",
+    "productType": "Handwash",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 1.8,
+    "manufacturer": "Unilever",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Hand Hygiene",
+        "subtitles": ["Kills 99.9% of germs"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply a small amount and rub hands together"]
+        }
+      ],
+      "pharmacology": "Chloroxylenol is an antiseptic and disinfectant."
+    }
+  },
+  {
+    "productId": 21,
+    "productCode": "dolonex-dt-20-tablets-oral-21",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "1-2 tablets daily"
-        ]
+        "batchNumber": "D98765",
+        "quantity": 25,
+        "expirationDate": "2024-11-30",
+        "aisleLocation": "D21"
       }
-    ]
-  },
-  "pharmacology": "Piroxicam is a nonsteroidal anti-inflammatory drug (NSAID)."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6c7"
-  },
-  "productId": 22,
-  "productName": "Sustagen Hospital Formula",
-  "measure": "400g",
-  "activeIngredient": "Multivitamins and Minerals",
-  "dosageForm": "Powder",
-  "applicationArea": "Oral",
-  "primaryCategory": "Nutrition",
-  "subCategory": "Health Drink",
-  "productType": "Food Supplement",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 20,
-  "availableStock": 80,
-  "manufacturer": "Nestle",
-  "expirationDate": "2024-12-31",
-  "batchNumber": "S67890",
-  "aisleLocation": "B12",
-  "requiresPrescription": false,
-  "pageCategory": "Nutrition",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Nutritional Supplement",
-      "subtitles": [
-        "Supports recovery",
-        "Boosts energy"
-      ]
+    ],
+
+    "productName": "Dolonex DT",
+    "measure": "20 Tablets",
+    "activeIngredient": "Piroxicam",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Pain Relief",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 2
     },
-    "dosageDetails": [
+    "pricePerUnit": 15,
+    "manufacturer": "Pfizer",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Pain Relief",
+        "subtitles": ["Rheumatic diseases", "Postoperative pain"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["1-2 tablets daily"]
+        }
+      ],
+      "pharmacology": "Piroxicam is a nonsteroidal anti-inflammatory drug (NSAID)."
+    }
+  },
+  {
+    "productId": 22,
+    "productCode": "sustagen-hospital-formula-400g-powder-22",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Mix with water or milk twice daily"
-        ]
+        "batchNumber": "S13579",
+        "quantity": 20,
+        "expirationDate": "2025-01-15",
+        "aisleLocation": "E22"
       }
-    ]
-  },
-  "pharmacology": "Provides essential vitamins and minerals for recovery."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6c8"
-  },
-  "productId": 23,
-  "productName": "Savlon Antiseptic Liquid",
-  "measure": "500ml",
-  "activeIngredient": "Cetrimide, Chlorhexidine",
-  "dosageForm": "Liquid",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "First Aid",
-  "productType": "Antiseptic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 7,
-  "availableStock": 350,
-  "manufacturer": "ACI Limited",
-  "expirationDate": "2025-08-31",
-  "batchNumber": "S89012",
-  "aisleLocation": "C13",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Antiseptic",
-      "subtitles": [
-        "Wound cleansing",
-        "Disinfecting"
-      ]
+    ],
+
+    "productName": "Sustagen Hospital Formula",
+    "measure": "400g",
+    "activeIngredient": "Multivitamins and Minerals",
+    "dosageForm": "Powder",
+    "applicationArea": "Oral",
+    "primaryCategory": "Nutrition",
+    "subCategory": "Health Drink",
+    "productType": "Food Supplement",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 20,
+    "manufacturer": "Nestle",
+    "requiresPrescription": false,
+    "pageCategory": "Nutrition",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Nutritional Supplement",
+        "subtitles": ["Supports recovery", "Boosts energy"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Mix with water or milk twice daily"]
+        }
+      ],
+      "pharmacology": "Provides essential vitamins and minerals for recovery."
+    }
+  },
+  {
+    "productId": 23,
+    "productCode": "savlon-antiseptic-liquid-500ml-liquid-23",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Dilute with water for use"
-        ]
+        "batchNumber": "S24680",
+        "quantity": 40,
+        "expirationDate": "2025-04-25",
+        "aisleLocation": "F23"
       }
-    ]
-  },
-  "pharmacology": "Antiseptic agents that kill bacteria and prevent infections."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6c9"
-  },
-  "productId": 24,
-  "productName": "Nestle Lactogen 1",
-  "measure": "350g",
-  "activeIngredient": "Milk Protein",
-  "dosageForm": "Powder",
-  "applicationArea": "Oral",
-  "primaryCategory": "Baby Food",
-  "subCategory": "Infant Formula",
-  "productType": "Food",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 14,
-  "availableStock": 150,
-  "manufacturer": "Nestle",
-  "expirationDate": "2025-01-31",
-  "batchNumber": "L12345",
-  "aisleLocation": "D14",
-  "requiresPrescription": false,
-  "pageCategory": "Baby Food",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Infant Nutrition",
-      "subtitles": [
-        "For infants from birth to 6 months"
-      ]
+    ],
+
+    "productName": "Savlon Antiseptic Liquid",
+    "measure": "500ml",
+    "activeIngredient": "Cetrimide, Chlorhexidine",
+    "dosageForm": "Liquid",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "First Aid",
+    "productType": "Antiseptic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 7,
+    "manufacturer": "ACI Limited",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Antiseptic",
+        "subtitles": ["Wound cleansing", "Disinfecting"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Dilute with water for use"]
+        }
+      ],
+      "pharmacology": "Antiseptic agents that kill bacteria and prevent infections."
+    }
+  },
+  {
+    "productId": 24,
+    "productCode": "nestle-lactogen-1-350g-powder-24",
+    "stockDetails": [
       {
-        "ageRange": "Infants",
-        "userGroup": "Babies",
-        "dosageInstructions": [
-          "Follow the instructions on the package"
-        ]
+        "batchNumber": "N11223",
+        "quantity": 15,
+        "expirationDate": "2024-10-20",
+        "aisleLocation": "G24"
       }
-    ]
-  },
-  "pharmacology": "Provides essential nutrients for infant growth."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6ca"
-  },
-  "productId": 25,
-  "productName": "Bio-Oil",
-  "measure": "125ml",
-  "activeIngredient": "PurCellin Oil",
-  "dosageForm": "Oil",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Skin Care",
-  "productType": "Cosmetic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 25,
-  "availableStock": 200,
-  "manufacturer": "Union Swiss",
-  "expirationDate": "2026-02-15",
-  "batchNumber": "B23456",
-  "aisleLocation": "E15",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Skin Care",
-      "subtitles": [
-        "Scar treatment",
-        "Stretch marks"
-      ]
+    ],
+
+    "productName": "Nestle Lactogen 1",
+    "measure": "350g",
+    "activeIngredient": "Milk Protein",
+    "dosageForm": "Powder",
+    "applicationArea": "Oral",
+    "primaryCategory": "Baby Food",
+    "subCategory": "Infant Formula",
+    "productType": "Food",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 14,
+    "manufacturer": "Nestle",
+    "requiresPrescription": false,
+    "pageCategory": "Baby Food",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Infant Nutrition",
+        "subtitles": ["For infants from birth to 6 months"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Infants",
+          "userGroup": "Babies",
+          "dosageInstructions": ["Follow the instructions on the package"]
+        }
+      ],
+      "pharmacology": "Provides essential nutrients for infant growth."
+    }
+  },
+  {
+    "productId": 25,
+    "productCode": "bio-oil-125ml-oil-25",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply twice daily for 3 months"
-        ]
+        "batchNumber": "B22334",
+        "quantity": 10,
+        "expirationDate": "2025-03-30",
+        "aisleLocation": "H25"
       }
-    ]
-  },
-  "pharmacology": "PurCellin Oil improves the appearance of scars and stretch marks."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6cb"
-  },
-  "productId": 26,
-  "productName": "Dabur Honey",
-  "measure": "250g",
-  "activeIngredient": "Pure Honey",
-  "dosageForm": "Liquid",
-  "applicationArea": "Oral",
-  "primaryCategory": "Herbal Products",
-  "subCategory": "Natural Supplement",
-  "productType": "Food Supplement",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 8,
-  "availableStock": 220,
-  "manufacturer": "Dabur",
-  "expirationDate": "2024-09-30",
-  "batchNumber": "D34567",
-  "aisleLocation": "F16",
-  "requiresPrescription": false,
-  "pageCategory": "Herbal Products",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Natural Supplement",
-      "subtitles": [
-        "Boosts immunity",
-        "Aids digestion"
-      ]
+    ],
+
+    "productName": "Bio-Oil",
+    "measure": "125ml",
+    "activeIngredient": "PurCellin Oil",
+    "dosageForm": "Oil",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Skin Care",
+    "productType": "Cosmetic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 25,
+    "manufacturer": "Union Swiss",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Skin Care",
+        "subtitles": ["Scar treatment", "Stretch marks"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply twice daily for 3 months"]
+        }
+      ],
+      "pharmacology": "PurCellin Oil improves the appearance of scars and stretch marks."
+    }
+  },
+  {
+    "productId": 26,
+    "productCode": "dabur-honey-250g-liquid-26",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take 1-2 teaspoons daily"
-        ]
+        "batchNumber": "D55667",
+        "quantity": 45,
+        "expirationDate": "2025-05-20",
+        "aisleLocation": "I26"
       }
-    ]
-  },
-  "pharmacology": "Pure honey with natural health benefits."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6cc"
-  },
-  "productId": 27,
-  "productName": "Huggies Dry Pants",
-  "measure": "Size M, 56 pcs",
-  "activeIngredient": null,
-  "dosageForm": "Diaper",
-  "applicationArea": "Topical",
-  "primaryCategory": "Baby Care",
-  "subCategory": "Diapers",
-  "productType": "Baby Product",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 18,
-  "availableStock": 180,
-  "manufacturer": "Kimberly-Clark",
-  "expirationDate": "2025-03-31",
-  "batchNumber": "H45678",
-  "aisleLocation": "G17",
-  "requiresPrescription": false,
-  "pageCategory": "Baby Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Baby Care",
-      "subtitles": [
-        "Keeps baby dry and comfortable"
-      ]
+    ],
+
+    "productName": "Dabur Honey",
+    "measure": "250g",
+    "activeIngredient": "Pure Honey",
+    "dosageForm": "Liquid",
+    "applicationArea": "Oral",
+    "primaryCategory": "Herbal Products",
+    "subCategory": "Natural Supplement",
+    "productType": "Food Supplement",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 8,
+    "manufacturer": "Dabur",
+    "requiresPrescription": false,
+    "pageCategory": "Herbal Products",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Natural Supplement",
+        "subtitles": ["Boosts immunity", "Aids digestion"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Take 1-2 teaspoons daily"]
+        }
+      ],
+      "pharmacology": "Pure honey with natural health benefits."
+    }
+  },
+  {
+    "productId": 27,
+    "productCode": "huggies-dry-pants-size-m-56-pcs-27",
+    "stockDetails": [
       {
-        "ageRange": "Babies",
-        "userGroup": "Infants",
-        "dosageInstructions": [
-          "Change as needed"
-        ]
+        "batchNumber": "H77889",
+        "quantity": 35,
+        "expirationDate": "2024-12-15",
+        "aisleLocation": "J27"
       }
-    ]
-  },
-  "pharmacology": "Provides dryness and comfort for babies."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6cd"
-  },
-  "productId": 28,
-  "productName": "Selsun Blue",
-  "measure": "200ml",
-  "activeIngredient": "Selenium Sulfide",
-  "dosageForm": "Shampoo",
-  "applicationArea": "Hair",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Hair Care",
-  "productType": "Shampoo",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 12,
-  "availableStock": 140,
-  "manufacturer": "Sanofi",
-  "expirationDate": "2025-07-31",
-  "batchNumber": "S56789",
-  "aisleLocation": "H18",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Hair Care",
-      "subtitles": [
-        "Anti-dandruff",
-        "Scalp treatment"
-      ]
+    ],
+    "productName": "Huggies Dry Pants",
+    "measure": "Size M, 56 pcs",
+    "activeIngredient": null,
+    "dosageForm": "Diaper",
+    "applicationArea": "Topical",
+    "primaryCategory": "Baby Care",
+    "subCategory": "Diapers",
+    "productType": "Baby Product",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 18,
+    "manufacturer": "Kimberly-Clark",
+    "requiresPrescription": false,
+    "pageCategory": "Baby Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Baby Care",
+        "subtitles": ["Keeps baby dry and comfortable"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Babies",
+          "userGroup": "Infants",
+          "dosageInstructions": ["Change as needed"]
+        }
+      ],
+      "pharmacology": "Provides dryness and comfort for babies."
+    }
+  },
+  {
+    "productId": 28,
+    "productCode": "selsun-blue-200ml-shampoo-28",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use twice weekly"
-        ]
+        "batchNumber": "S99887",
+        "quantity": 28,
+        "expirationDate": "2025-07-10",
+        "aisleLocation": "K28"
       }
-    ]
-  },
-  "pharmacology": "Selenium Sulfide treats dandruff and seborrheic dermatitis."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6ce"
-  },
-  "productId": 29,
-  "productName": "Hamdard Safi",
-  "measure": "200ml",
-  "activeIngredient": "Herbal Extracts",
-  "dosageForm": "Liquid",
-  "applicationArea": "Oral",
-  "primaryCategory": "Herbal Products",
-  "subCategory": "Blood Purifier",
-  "productType": "Food Supplement",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 6,
-  "availableStock": 300,
-  "manufacturer": "Hamdard",
-  "expirationDate": "2024-11-30",
-  "batchNumber": "H67890",
-  "aisleLocation": "I19",
-  "requiresPrescription": false,
-  "pageCategory": "Herbal Products",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Blood Purifier",
-      "subtitles": [
-        "Cleanses the blood",
-        "Improves skin health"
-      ]
+    ],
+
+    "productName": "Selsun Blue",
+    "measure": "200ml",
+    "activeIngredient": "Selenium Sulfide",
+    "dosageForm": "Shampoo",
+    "applicationArea": "Hair",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Hair Care",
+    "productType": "Shampoo",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 12,
+    "manufacturer": "Sanofi",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Hair Care",
+        "subtitles": ["Anti-dandruff", "Scalp treatment"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use twice weekly"]
+        }
+      ],
+      "pharmacology": "Selenium Sulfide treats dandruff and seborrheic dermatitis."
+    }
+  },
+  {
+    "productId": 29,
+    "productCode": "hamdard-safi-200ml-liquid-29",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take 2 teaspoons daily"
-        ]
+        "batchNumber": "H33445",
+        "quantity": 33,
+        "expirationDate": "2025-09-05",
+        "aisleLocation": "L29"
       }
-    ]
-  },
-  "pharmacology": "Herbal extracts purify the blood and enhance skin health."
-},
-{
-  "_id": {
-    "$oid": "667eb6471a7a75a9b69de6cf"
-  },
-  "productId": 30,
-  "productName": "Dettol Soap",
-  "measure": "75g",
-  "activeIngredient": "Chloroxylenol",
-  "dosageForm": "Bar",
-  "applicationArea": "Topical",
-  "primaryCategory": "Personal Care",
-  "subCategory": "Soap",
-  "productType": "Antibacterial",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 1.5,
-  "availableStock": 500,
-  "manufacturer": "Reckitt Benckiser",
-  "expirationDate": "2025-04-30",
-  "batchNumber": "D78901",
-  "aisleLocation": "J20",
-  "requiresPrescription": false,
-  "pageCategory": "Personal Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Hand and Body Hygiene",
-      "subtitles": [
-        "Kills germs",
-        "Provides protection"
-      ]
+    ],
+    "productName": "Hamdard Safi",
+    "measure": "200ml",
+    "activeIngredient": "Herbal Extracts",
+    "dosageForm": "Liquid",
+    "applicationArea": "Oral",
+    "primaryCategory": "Herbal Products",
+    "subCategory": "Blood Purifier",
+    "productType": "Food Supplement",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 6,
+    "manufacturer": "Hamdard",
+    "requiresPrescription": false,
+    "pageCategory": "Herbal Products",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Blood Purifier",
+        "subtitles": ["Cleanses the blood", "Improves skin health"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Take 2 teaspoons daily"]
+        }
+      ],
+      "pharmacology": "Herbal extracts purify the blood and enhance skin health."
+    }
+  },
+  {
+    "productId": 30,
+    "productCode": "dettol-soap-75g-bar-30",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use daily on hands and body"
-        ]
+        "batchNumber": "D55678",
+        "quantity": 60,
+        "expirationDate": "2024-11-01",
+        "aisleLocation": "M30"
       }
-    ]
-  },
-  "pharmacology": "Chloroxylenol provides antibacterial protection."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d1"
-  },
-  "productId": 31,
-  "productName": "Nivea Soft Moisturizing Cream",
-  "measure": "200ml",
-  "activeIngredient": "Vitamin E, Jojoba Oil",
-  "dosageForm": "Cream",
-  "applicationArea": "Topical",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Moisturizer",
-  "productType": "Cosmetic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 7,
-  "availableStock": 100,
-  "manufacturer": "Nivea",
-  "expirationDate": "2025-05-30",
-  "batchNumber": "N12345",
-  "aisleLocation": "K21",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Skin Moisturization",
-      "subtitles": [
-        "Keeps skin soft",
-        "Hydrates skin"
-      ]
+    ],
+
+    "productName": "Dettol Soap",
+    "measure": "75g",
+    "activeIngredient": "Chloroxylenol",
+    "dosageForm": "Bar",
+    "applicationArea": "Topical",
+    "primaryCategory": "Personal Care",
+    "subCategory": "Soap",
+    "productType": "Antibacterial",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 1.5,
+    "manufacturer": "Reckitt Benckiser",
+    "requiresPrescription": false,
+    "pageCategory": "Personal Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Hand and Body Hygiene",
+        "subtitles": ["Kills germs", "Provides protection"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use daily on hands and body"]
+        }
+      ],
+      "pharmacology": "Chloroxylenol provides antibacterial protection."
+    }
+  },
+  {
+    "productId": 31,
+    "productCode": "nivea-soft-moisturizing-cream-200ml-cream-31",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply daily on face and body"
-        ]
+        "batchNumber": "N00001",
+        "quantity": 60,
+        "expirationDate": "2025-05-15",
+        "aisleLocation": "A31"
       }
-    ]
-  },
-  "pharmacology": "Vitamin E and Jojoba Oil provide hydration and softness."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d2"
-  },
-  "productId": 32,
-  "productName": "Himalaya Herbals Purifying Neem Face Wash",
-  "measure": "150ml",
-  "activeIngredient": "Neem, Turmeric",
-  "dosageForm": "Gel",
-  "applicationArea": "Face",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Cleanser",
-  "productType": "Herbal",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 5,
-  "availableStock": 200,
-  "manufacturer": "Himalaya",
-  "expirationDate": "2024-12-31",
-  "batchNumber": "H23456",
-  "aisleLocation": "K22",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Face Cleanser",
-      "subtitles": [
-        "Purifies skin",
-        "Prevents acne"
-      ]
+    ],
+
+    "productName": "Nivea Soft Moisturizing Cream",
+    "measure": "200ml",
+    "activeIngredient": "Vitamin E, Jojoba Oil",
+    "dosageForm": "Cream",
+    "applicationArea": "Topical",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Moisturizer",
+    "productType": "Cosmetic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 7,
+    "manufacturer": "Nivea",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Skin Moisturization",
+        "subtitles": ["Keeps skin soft", "Hydrates skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply daily on face and body"]
+        }
+      ],
+      "pharmacology": "Vitamin E and Jojoba Oil provide hydration and softness."
+    }
+  },
+  {
+    "productId": 32,
+    "productCode": "himalaya-herbals-purifying-neem-face-wash-150ml-gel-32",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use twice daily"
-        ]
+        "batchNumber": "H00002",
+        "quantity": 55,
+        "expirationDate": "2025-07-20",
+        "aisleLocation": "B32"
       }
-    ]
-  },
-  "pharmacology": "Neem and Turmeric cleanse and purify the skin."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d3"
-  },
-  "productId": 33,
-  "productName": "Cetaphil Gentle Skin Cleanser",
-  "measure": "500ml",
-  "activeIngredient": "Cetyl Alcohol, Propylene Glycol",
-  "dosageForm": "Liquid",
-  "applicationArea": "Face",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Cleanser",
-  "productType": "Cosmetic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 12,
-  "availableStock": 150,
-  "manufacturer": "Galderma",
-  "expirationDate": "2025-03-30",
-  "batchNumber": "C34567",
-  "aisleLocation": "K23",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Skin Cleanser",
-      "subtitles": [
-        "Gentle on skin",
-        "Suitable for all skin types"
-      ]
+    ],
+
+    "productName": "Himalaya Herbals Purifying Neem Face Wash",
+    "measure": "150ml",
+    "activeIngredient": "Neem, Turmeric",
+    "dosageForm": "Gel",
+    "applicationArea": "Face",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Cleanser",
+    "productType": "Herbal",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 5,
+    "manufacturer": "Himalaya",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Face Cleanser",
+        "subtitles": ["Purifies skin", "Prevents acne"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use twice daily"]
+        }
+      ],
+      "pharmacology": "Neem and Turmeric cleanse and purify the skin."
+    }
+  },
+  {
+    "productId": 33,
+    "productCode": "cetaphil-gentle-skin-cleanser-500ml-liquid-33",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use daily"
-        ]
+        "batchNumber": "C00003",
+        "quantity": 40,
+        "expirationDate": "2024-12-30",
+        "aisleLocation": "C33"
       }
-    ]
-  },
-  "pharmacology": "Gentle formulation cleanses without irritation."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d4"
-  },
-  "productId": 34,
-  "productName": "Vaseline Intensive Care Aloe Soothe Lotion",
-  "measure": "400ml",
-  "activeIngredient": "Aloe Vera",
-  "dosageForm": "Lotion",
-  "applicationArea": "Body",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Moisturizer",
-  "productType": "Cosmetic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 8,
-  "availableStock": 180,
-  "manufacturer": "Unilever",
-  "expirationDate": "2025-06-30",
-  "batchNumber": "V45678",
-  "aisleLocation": "K24",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Body Moisturizer",
-      "subtitles": [
-        "Soothes dry skin",
-        "Hydrates deeply"
-      ]
+    ],
+
+    "productName": "Cetaphil Gentle Skin Cleanser",
+    "measure": "500ml",
+    "activeIngredient": "Cetyl Alcohol, Propylene Glycol",
+    "dosageForm": "Liquid",
+    "applicationArea": "Face",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Cleanser",
+    "productType": "Cosmetic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 12,
+    "manufacturer": "Galderma",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Skin Cleanser",
+        "subtitles": ["Gentle on skin", "Suitable for all skin types"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use daily"]
+        }
+      ],
+      "pharmacology": "Gentle formulation cleanses without irritation."
+    }
+  },
+  {
+    "productId": 34,
+    "productCode": "vaseline-intensive-care-aloe-soothe-lotion-400ml-lotion-34",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply daily after shower"
-        ]
+        "batchNumber": "V00004",
+        "quantity": 30,
+        "expirationDate": "2025-03-10",
+        "aisleLocation": "D34"
       }
-    ]
-  },
-  "pharmacology": "Aloe Vera soothes and hydrates dry skin."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d5"
-  },
-  "productId": 35,
-  "productName": "Biotique Bio Papaya Revitalizing Tan-Removal Scrub",
-  "measure": "75g",
-  "activeIngredient": "Papaya",
-  "dosageForm": "Scrub",
-  "applicationArea": "Face",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Exfoliator",
-  "productType": "Herbal",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 6,
-  "availableStock": 120,
-  "manufacturer": "Biotique",
-  "expirationDate": "2025-02-28",
-  "batchNumber": "B56789",
-  "aisleLocation": "K25",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Face Exfoliator",
-      "subtitles": [
-        "Removes tan",
-        "Revitalizes skin"
-      ]
+    ],
+    "productName": "Vaseline Intensive Care Aloe Soothe Lotion",
+    "measure": "400ml",
+    "activeIngredient": "Aloe Vera",
+    "dosageForm": "Lotion",
+    "applicationArea": "Body",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Moisturizer",
+    "productType": "Cosmetic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 8,
+    "manufacturer": "Unilever",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Body Moisturizer",
+        "subtitles": ["Soothes dry skin", "Hydrates deeply"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply daily after shower"]
+        }
+      ],
+      "pharmacology": "Aloe Vera soothes and hydrates dry skin."
+    }
+  },
+  {
+    "productId": 35,
+    "productCode": "biotique-bio-papaya-revitalizing-tan-removal-scrub-75g-scrub-35",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use twice a week"
-        ]
+        "batchNumber": "B00005",
+        "quantity": 25,
+        "expirationDate": "2025-06-25",
+        "aisleLocation": "E35"
       }
-    ]
-  },
-  "pharmacology": "Papaya enzymes gently exfoliate and revitalize the skin."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d6"
-  },
-  "productId": 36,
-  "productName": "Neutrogena Ultra Sheer Dry-Touch Sunscreen SPF 50",
-  "measure": "88ml",
-  "activeIngredient": "Avobenzone, Oxybenzone",
-  "dosageForm": "Cream",
-  "applicationArea": "Face",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Sunscreen",
-  "productType": "Cosmetic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 10,
-  "availableStock": 140,
-  "manufacturer": "Neutrogena",
-  "expirationDate": "2024-11-30",
-  "batchNumber": "N67890",
-  "aisleLocation": "K26",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Sun Protection",
-      "subtitles": [
-        "Broad-spectrum SPF 50",
-        "Water-resistant"
-      ]
+    ],
+
+    "productName": "Biotique Bio Papaya Revitalizing Tan-Removal Scrub",
+    "measure": "75g",
+    "activeIngredient": "Papaya",
+    "dosageForm": "Scrub",
+    "applicationArea": "Face",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Exfoliator",
+    "productType": "Herbal",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 6,
+    "manufacturer": "Biotique",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Face Exfoliator",
+        "subtitles": ["Removes tan", "Revitalizes skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Use twice a week"]
+        }
+      ],
+      "pharmacology": "Papaya enzymes gently exfoliate and revitalize the skin."
+    }
+  },
+  {
+    "productId": 36,
+    "productCode": "neutrogena-ultra-sheer-dry-touch-sunscreen-spf-50-88ml-cream-36",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply generously 15 minutes before sun exposure"
-        ]
+        "batchNumber": "N00006",
+        "quantity": 50,
+        "expirationDate": "2025-08-15",
+        "aisleLocation": "F36"
       }
-    ]
-  },
-  "pharmacology": "Provides broad-spectrum protection against UVA and UVB rays."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d7"
-  },
-  "productId": 37,
-  "productName": "Clean & Clear Foaming Face Wash",
-  "measure": "150ml",
-  "activeIngredient": "Triclosan",
-  "dosageForm": "Liquid",
-  "applicationArea": "Face",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Cleanser",
-  "productType": "Cosmetic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 4,
-  "availableStock": 250,
-  "manufacturer": "Johnson & Johnson",
-  "expirationDate": "2024-10-31",
-  "batchNumber": "C78901",
-  "aisleLocation": "K27",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Face Cleanser",
-      "subtitles": [
-        "Removes oil",
-        "Prevents acne"
-      ]
+    ],
+    "productName": "Neutrogena Ultra Sheer Dry-Touch Sunscreen SPF 50",
+    "measure": "88ml",
+    "activeIngredient": "Avobenzone, Oxybenzone",
+    "dosageForm": "Cream",
+    "applicationArea": "Face",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Sunscreen",
+    "productType": "Cosmetic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 10,
+    "manufacturer": "Neutrogena",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Sun Protection",
+        "subtitles": ["Broad-spectrum SPF 50", "Water-resistant"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": [
+            "Apply generously 15 minutes before sun exposure"
+          ]
+        }
+      ],
+      "pharmacology": "Provides broad-spectrum protection against UVA and UVB rays."
+    }
+  },
+  {
+    "productId": 37,
+    "productCode": "clean-clear-foaming-face-wash-150ml-liquid-37",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use twice daily"
-        ]
+        "batchNumber": "C00007",
+        "quantity": 70,
+        "expirationDate": "2024-11-05",
+        "aisleLocation": "G37"
       }
-    ]
-  },
-  "pharmacology": "Triclosan helps to remove excess oil and prevent acne."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d8"
-  },
-  "productId": 38,
-  "productName": "L'Oréal Paris Revitalift Night Cream",
-  "measure": "50ml",
-  "activeIngredient": "Pro-Retinol, Centella Asiatica",
-  "dosageForm": "Cream",
-  "applicationArea": "Face",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Anti-Aging",
-  "productType": "Cosmetic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 15,
-  "availableStock": 90,
-  "manufacturer": "L'Oréal Paris",
-  "expirationDate": "2025-01-31",
-  "batchNumber": "L89012",
-  "aisleLocation": "K28",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Anti-Aging",
-      "subtitles": [
-        "Reduces wrinkles",
-        "Firms skin"
-      ]
+    ],
+
+    "productName": "Clean & Clear Foaming Face Wash",
+    "measure": "150ml",
+    "activeIngredient": "Triclosan",
+    "dosageForm": "Liquid",
+    "applicationArea": "Face",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Cleanser",
+    "productType": "Cosmetic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 4,
+    "manufacturer": "Johnson & Johnson",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Face Cleanser",
+        "subtitles": ["Removes oil", "Prevents acne"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use twice daily"]
+        }
+      ],
+      "pharmacology": "Triclosan helps to remove excess oil and prevent acne."
+    }
+  },
+  {
+    "productId": 38,
+    "productCode": "loreal-paris-revitalift-night-cream-50ml-cream-38",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply nightly before bed"
-        ]
+        "batchNumber": "L00008",
+        "quantity": 20,
+        "expirationDate": "2025-01-25",
+        "aisleLocation": "H38"
       }
-    ]
-  },
-  "pharmacology": "Pro-Retinol and Centella Asiatica help to reduce wrinkles and firm the skin."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6d9"
-  },
-  "productId": 39,
-  "productName": "The Body Shop Tea Tree Oil",
-  "measure": "20ml",
-  "activeIngredient": "Tea Tree Oil",
-  "dosageForm": "Oil",
-  "applicationArea": "Face",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Treatment",
-  "productType": "Herbal",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 12,
-  "availableStock": 130,
-  "manufacturer": "The Body Shop",
-  "expirationDate": "2025-04-30",
-  "batchNumber": "T90123",
-  "aisleLocation": "K29",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Acne Treatment",
-      "subtitles": [
-        "Reduces acne",
-        "Cleanses skin"
-      ]
+    ],
+
+    "productName": "L'Oréal Paris Revitalift Night Cream",
+    "measure": "50ml",
+    "activeIngredient": "Pro-Retinol, Centella Asiatica",
+    "dosageForm": "Cream",
+    "applicationArea": "Face",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Anti-Aging",
+    "productType": "Cosmetic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 15,
+    "manufacturer": "L'Oréal Paris",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Anti-Aging",
+        "subtitles": ["Reduces wrinkles", "Firms skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply nightly before bed"]
+        }
+      ],
+      "pharmacology": "Pro-Retinol and Centella Asiatica help to reduce wrinkles and firm the skin."
+    }
+  },
+  {
+    "productId": 39,
+    "productCode": "the-body-shop-tea-tree-oil-20ml-oil-39",
+    "stockDetails": [
       {
-        "ageRange": "Teens and Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Apply to affected areas twice daily"
-        ]
+        "batchNumber": "T00009",
+        "quantity": 15,
+        "expirationDate": "2025-04-30",
+        "aisleLocation": "I39"
       }
-    ]
-  },
-  "pharmacology": "Tea Tree Oil has natural antibacterial properties."
-},
-{
-  "_id": {
-    "$oid": "667eb92a1a7a75a9b69de6da"
-  },
-  "productId": 40,
-  "productName": "St. Ives Fresh Skin Apricot Scrub",
-  "measure": "170g",
-  "activeIngredient": "Apricot Extract",
-  "dosageForm": "Scrub",
-  "applicationArea": "Face",
-  "primaryCategory": "Skin Care",
-  "subCategory": "Exfoliator",
-  "productType": "Cosmetic",
-  "packaging": {
-    "unitsPerStrip": null,
-    "stripsPerBox": null
-  },
-  "pricePerUnit": 6,
-  "availableStock": 160,
-  "manufacturer": "St. Ives",
-  "expirationDate": "2025-05-31",
-  "batchNumber": "S01234",
-  "aisleLocation": "K30",
-  "requiresPrescription": false,
-  "pageCategory": "Skin Care",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Face Exfoliator",
-      "subtitles": [
-        "Removes dead skin cells",
-        "Reveals fresh skin"
-      ]
+    ],
+
+    "productName": "The Body Shop Tea Tree Oil",
+    "measure": "20ml",
+    "activeIngredient": "Tea Tree Oil",
+    "dosageForm": "Oil",
+    "applicationArea": "Face",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Treatment",
+    "productType": "Herbal",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 12,
+    "manufacturer": "The Body Shop",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Acne Treatment",
+        "subtitles": ["Reduces acne", "Cleanses skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Teens and Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Apply to affected areas twice daily"]
+        }
+      ],
+      "pharmacology": "Tea Tree Oil has natural antibacterial properties."
+    }
+  },
+  {
+    "productId": 40,
+    "productCode": "st-ives-fresh-skin-apricot-scrub-170g-scrub-40",
+    "stockDetails": [
       {
-        "ageRange": "All Ages",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Use twice a week"
-        ]
+        "batchNumber": "S00010",
+        "quantity": 45,
+        "expirationDate": "2025-05-10",
+        "aisleLocation": "J40"
       }
-    ]
-  },
-  "pharmacology": "Apricot extract gently exfoliates the skin."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6dc"
-  },
-  "productId": 41,
-  "productName": "Zoloft",
-  "measure": "50mg",
-  "activeIngredient": "Sertraline",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Antidepressant",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 0.75,
-  "availableStock": 200,
-  "manufacturer": "Pfizer",
-  "expirationDate": "2024-12-31",
-  "batchNumber": "Z00123",
-  "aisleLocation": "A31",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Depression Treatment",
-      "subtitles": [
-        "Treats depression",
-        "Reduces anxiety"
-      ]
+    ],
+
+    "productName": "St. Ives Fresh Skin Apricot Scrub",
+    "measure": "170g",
+    "activeIngredient": "Apricot Extract",
+    "dosageForm": "Scrub",
+    "applicationArea": "Face",
+    "primaryCategory": "Skin Care",
+    "subCategory": "Exfoliator",
+    "productType": "Cosmetic",
+    "packaging": {
+      "unitsPerStrip": null,
+      "stripsPerBox": null
     },
-    "dosageDetails": [
+    "pricePerUnit": 6,
+    "manufacturer": "St. Ives",
+    "requiresPrescription": false,
+    "pageCategory": "Skin Care",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Face Exfoliator",
+        "subtitles": ["Removes dead skin cells", "Reveals fresh skin"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "All Ages",
+          "userGroup": "General",
+          "dosageInstructions": ["Use twice a week"]
+        }
+      ],
+      "pharmacology": "Apricot extract gently exfoliates the skin."
+    }
+  },
+  {
+    "productId": 41,
+    "productCode": "zoloft-50mg-tablets-oral-41",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take once daily"
-        ]
+        "batchNumber": "Z00011",
+        "quantity": 35,
+        "expirationDate": "2025-02-28",
+        "aisleLocation": "K41"
       }
-    ]
-  },
-  "pharmacology": "Sertraline increases the levels of serotonin in the brain."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6dd"
-  },
-  "productId": 42,
-  "productName": "Synthroid",
-  "measure": "100mcg",
-  "activeIngredient": "Levothyroxine",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Thyroid Hormone",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 0.5,
-  "availableStock": 250,
-  "manufacturer": "Abbott",
-  "expirationDate": "2025-01-31",
-  "batchNumber": "S00234",
-  "aisleLocation": "A32",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Hypothyroidism Treatment",
-      "subtitles": [
-        "Replaces thyroid hormone",
-        "Regulates metabolism"
-      ]
+    ],
+
+    "productName": "Zoloft",
+    "measure": "50mg",
+    "activeIngredient": "Sertraline",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Antidepressant",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
     },
-    "dosageDetails": [
+    "pricePerUnit": 0.75,
+    "manufacturer": "Pfizer",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Depression Treatment",
+        "subtitles": ["Treats depression", "Reduces anxiety"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take once daily"]
+        }
+      ],
+      "pharmacology": "Sertraline increases the levels of serotonin in the brain."
+    }
+  },
+  {
+    "productId": 42,
+    "productCode": "synthroid-100mcg-tablets-oral-42",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take once daily on an empty stomach"
-        ]
+        "batchNumber": "S00012",
+        "quantity": 28,
+        "expirationDate": "2024-12-15",
+        "aisleLocation": "L42"
       }
-    ]
-  },
-  "pharmacology": "Levothyroxine is a synthetic thyroid hormone."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6de"
-  },
-  "productId": 43,
-  "productName": "Lipitor",
-  "measure": "20mg",
-  "activeIngredient": "Atorvastatin",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Statin",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 0.9,
-  "availableStock": 150,
-  "manufacturer": "Pfizer",
-  "expirationDate": "2024-11-30",
-  "batchNumber": "L00345",
-  "aisleLocation": "A33",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Cholesterol Management",
-      "subtitles": [
-        "Lowers cholesterol",
-        "Reduces risk of heart disease"
-      ]
+    ],
+
+    "productName": "Synthroid",
+    "measure": "100mcg",
+    "activeIngredient": "Levothyroxine",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Thyroid Hormone",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
     },
-    "dosageDetails": [
+    "pricePerUnit": 0.5,
+    "manufacturer": "Abbott",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Hypothyroidism Treatment",
+        "subtitles": ["Replaces thyroid hormone", "Regulates metabolism"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take once daily on an empty stomach"]
+        }
+      ],
+      "pharmacology": "Levothyroxine is a synthetic thyroid hormone."
+    }
+  },
+  {
+    "productId": 43,
+    "productCode": "lipitor-20mg-tablets-oral-43",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take once daily"
-        ]
+        "batchNumber": "L00013",
+        "quantity": 50,
+        "expirationDate": "2025-06-30",
+        "aisleLocation": "M43"
       }
-    ]
-  },
-  "pharmacology": "Atorvastatin inhibits HMG-CoA reductase, reducing cholesterol synthesis."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6df"
-  },
-  "productId": 44,
-  "productName": "Prozac",
-  "measure": "20mg",
-  "activeIngredient": "Fluoxetine",
-  "dosageForm": "Capsule",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Antidepressant",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 0.8,
-  "availableStock": 180,
-  "manufacturer": "Eli Lilly",
-  "expirationDate": "2025-02-28",
-  "batchNumber": "P00456",
-  "aisleLocation": "A34",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Depression Treatment",
-      "subtitles": [
-        "Treats depression",
-        "Reduces anxiety"
-      ]
+    ],
+
+    "productName": "Lipitor",
+    "measure": "20mg",
+    "activeIngredient": "Atorvastatin",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Statin",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
     },
-    "dosageDetails": [
+    "pricePerUnit": 0.9,
+    "manufacturer": "Pfizer",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Cholesterol Management",
+        "subtitles": ["Lowers cholesterol", "Reduces risk of heart disease"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take once daily"]
+        }
+      ],
+      "pharmacology": "Atorvastatin inhibits HMG-CoA reductase, reducing cholesterol synthesis."
+    }
+  },
+  {
+    "productId": 44,
+    "productCode": "prozac-20mg-capsule-oral-44",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take once daily"
-        ]
+        "batchNumber": "P00001",
+        "quantity": 100,
+        "expirationDate": "2023-12-31",
+        "aisleLocation": "A1"
+      },
+      {
+        "batchNumber": "P00002",
+        "quantity": 150,
+        "expirationDate": "2024-06-30",
+        "aisleLocation": "B2"
       }
-    ]
-  },
-  "pharmacology": "Fluoxetine increases serotonin levels in the brain."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6e0"
-  },
-  "productId": 45,
-  "productName": "Plavix",
-  "measure": "75mg",
-  "activeIngredient": "Clopidogrel",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Antiplatelet",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 1.2,
-  "availableStock": 130,
-  "manufacturer": "Sanofi",
-  "expirationDate": "2025-03-31",
-  "batchNumber": "P00567",
-  "aisleLocation": "A35",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Blood Thinner",
-      "subtitles": [
-        "Prevents blood clots",
-        "Reduces risk of stroke"
-      ]
+    ],
+
+    "productName": "Prozac",
+    "measure": "20mg",
+    "activeIngredient": "Fluoxetine",
+    "dosageForm": "Capsule",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Antidepressant",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
     },
-    "dosageDetails": [
+    "pricePerUnit": 0.8,
+    "manufacturer": "Eli Lilly",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Depression Treatment",
+        "subtitles": ["Treats depression", "Reduces anxiety"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take once daily"]
+        }
+      ],
+      "pharmacology": "Fluoxetine increases serotonin levels in the brain."
+    }
+  },
+  {
+    "productId": 45,
+    "productCode": "plavix-75mg-tablet-oral-45",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take once daily"
-        ]
+        "batchNumber": "L00013",
+        "quantity": 200,
+        "expirationDate": "2024-09-30",
+        "aisleLocation": "C3"
       }
-    ]
-  },
-  "pharmacology": "Clopidogrel inhibits platelet aggregation."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6e1"
-  },
-  "productId": 46,
-  "productName": "Glucophage",
-  "measure": "500mg",
-  "activeIngredient": "Metformin",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Antidiabetic",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 0.6,
-  "availableStock": 220,
-  "manufacturer": "Merck",
-  "expirationDate": "2025-04-30",
-  "batchNumber": "G00678",
-  "aisleLocation": "A36",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Diabetes Management",
-      "subtitles": [
-        "Lowers blood sugar",
-        "Improves insulin sensitivity"
-      ]
+    ],
+    "productName": "Plavix",
+    "measure": "75mg",
+    "activeIngredient": "Clopidogrel",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Antiplatelet",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
     },
-    "dosageDetails": [
+    "pricePerUnit": 1.2,
+    "manufacturer": "Sanofi",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Blood Thinner",
+        "subtitles": ["Prevents blood clots", "Reduces risk of stroke"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take once daily"]
+        }
+      ],
+      "pharmacology": "Clopidogrel inhibits platelet aggregation."
+    }
+  },
+  {
+    "productId": 46,
+    "productCode": "glucophage-500mg-tablet-oral-46",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take twice daily with meals"
-        ]
+        "batchNumber": "P00046",
+        "quantity": 150,
+        "expirationDate": "2025-11-30",
+        "aisleLocation": "A46"
       }
-    ]
-  },
-  "pharmacology": "Metformin decreases hepatic glucose production and increases insulin sensitivity."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6e2"
-  },
-  "productId": 47,
-  "productName": "Xanax",
-  "measure": "0.5mg",
-  "activeIngredient": "Alprazolam",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Anxiolytic",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 0.7,
-  "availableStock": 160,
-  "manufacturer": "Pfizer",
-  "expirationDate": "2024-09-30",
-  "batchNumber": "X00789",
-  "aisleLocation": "A37",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Anxiety Treatment",
-      "subtitles": [
-        "Reduces anxiety",
-        "Treats panic disorders"
-      ]
+    ],
+
+    "productName": "Glucophage",
+    "measure": "500mg",
+    "activeIngredient": "Metformin",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Antidiabetic",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
     },
-    "dosageDetails": [
+    "pricePerUnit": 0.6,
+    "manufacturer": "Merck",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Diabetes Management",
+        "subtitles": ["Lowers blood sugar", "Improves insulin sensitivity"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take twice daily with meals"]
+        }
+      ],
+      "pharmacology": "Metformin decreases hepatic glucose production and increases insulin sensitivity."
+    }
+  },
+  {
+    "productId": 47,
+    "productCode": "xanax-0.5mg-tablet-oral-47",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take as needed, up to three times daily"
-        ]
+        "batchNumber": "P00047",
+        "quantity": 120,
+        "expirationDate": "2025-09-30",
+        "aisleLocation": "A47"
       }
-    ]
-  },
-  "pharmacology": "Alprazolam enhances the effects of GABA in the brain."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6e3"
-  },
-  "productId": 48,
-  "productName": "Tamiflu",
-  "measure": "75mg",
-  "activeIngredient": "Oseltamivir",
-  "dosageForm": "Capsule",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Antiviral",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 2.5,
-  "availableStock": 110,
-  "manufacturer": "Roche",
-  "expirationDate": "2025-05-31",
-  "batchNumber": "T00890",
-  "aisleLocation": "A38",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Flu Treatment",
-      "subtitles": [
-        "Reduces flu symptoms",
-        "Shortens illness duration"
-      ]
+    ],
+
+    "productName": "Xanax",
+    "measure": "0.5mg",
+    "activeIngredient": "Alprazolam",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Anxiolytic",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
     },
-    "dosageDetails": [
+    "pricePerUnit": 0.7,
+    "manufacturer": "Pfizer",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Anxiety Treatment",
+        "subtitles": ["Reduces anxiety", "Treats panic disorders"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take as needed, up to three times daily"]
+        }
+      ],
+      "pharmacology": "Alprazolam enhances the effects of GABA in the brain."
+    }
+  },
+  {
+    "productId": 48,
+    "productCode": "tamiflu-75mg-capsule-oral-48",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take twice daily for 5 days"
-        ]
+        "batchNumber": "P00048",
+        "quantity": 80,
+        "expirationDate": "2025-10-15",
+        "aisleLocation": "A48"
       }
-    ]
-  },
-  "pharmacology": "Oseltamivir inhibits the neuraminidase enzyme of the flu virus."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6e4"
-  },
-  "productId": 49,
-  "productName": "Zithromax",
-  "measure": "250mg",
-  "activeIngredient": "Azithromycin",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Antibiotic",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 6,
-    "stripsPerBox": 4
-  },
-  "pricePerUnit": 1.5,
-  "availableStock": 140,
-  "manufacturer": "Pfizer",
-  "expirationDate": "2025-06-30",
-  "batchNumber": "Z00901",
-  "aisleLocation": "A39",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Bacterial Infections",
-      "subtitles": [
-        "Treats respiratory infections",
-        "Skin infections"
-      ]
+    ],
+
+    "productName": "Tamiflu",
+    "measure": "75mg",
+    "activeIngredient": "Oseltamivir",
+    "dosageForm": "Capsule",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Antiviral",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
     },
-    "dosageDetails": [
+    "pricePerUnit": 2.5,
+    "manufacturer": "Roche",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Flu Treatment",
+        "subtitles": ["Reduces flu symptoms", "Shortens illness duration"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take twice daily for 5 days"]
+        }
+      ],
+      "pharmacology": "Oseltamivir inhibits the neuraminidase enzyme of the flu virus."
+    }
+  },
+  {
+    "productId": 49,
+    "productCode": "zithromax-250mg-tablet-oral-49",
+    "stockDetails": [
       {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take once daily for 3-5 days"
-        ]
+        "batchNumber": "P00049",
+        "quantity": 60,
+        "expirationDate": "2026-03-31",
+        "aisleLocation": "A49"
       }
-    ]
-  },
-  "pharmacology": "Azithromycin inhibits bacterial protein synthesis."
-},
-{
-  "_id": {
-    "$oid": "667ebf541a7a75a9b69de6e5"
-  },
-  "productId": 50,
-  "productName": "Ambien",
-  "measure": "10mg",
-  "activeIngredient": "Zolpidem",
-  "dosageForm": "Tablet",
-  "applicationArea": "Oral",
-  "primaryCategory": "Medicine",
-  "subCategory": "Sedative",
-  "productType": "Prescription",
-  "packaging": {
-    "unitsPerStrip": 10,
-    "stripsPerBox": 5
-  },
-  "pricePerUnit": 0.85,
-  "availableStock": 190,
-  "manufacturer": "Sanofi",
-  "expirationDate": "2024-10-31",
-  "batchNumber": "A01012",
-  "aisleLocation": "A40",
-  "requiresPrescription": true,
-  "pageCategory": "Medicine",
-  "productImage": "https://placehold.co/250x150",
-  "leafletImage": "https://placehold.co/250x150",
-  "usageDetails": {
-    "indications": {
-      "mainTitle": "Insomnia Treatment",
-      "subtitles": [
-        "Improves sleep onset",
-        "Maintains sleep"
-      ]
+    ],
+
+    "productName": "Zithromax",
+    "measure": "250mg",
+    "activeIngredient": "Azithromycin",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Antibiotic",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 6,
+      "stripsPerBox": 4
     },
-    "dosageDetails": [
-      {
-        "ageRange": "Adults",
-        "userGroup": "General",
-        "dosageInstructions": [
-          "Take once nightly before bed"
-        ]
-      }
-    ]
+    "pricePerUnit": 1.5,
+    "manufacturer": "Pfizer",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Bacterial Infections",
+        "subtitles": ["Treats respiratory infections", "Skin infections"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take once daily for 3-5 days"]
+        }
+      ],
+      "pharmacology": "Azithromycin inhibits bacterial protein synthesis."
+    }
   },
-  "pharmacology": "Zolpidem enhances GABA effects in the brain, inducing sleep."
-}]
+  {
+    "productId": 50,
+    "productCode": "ambien-10mg-tablet-oral-50",
+    "stockDetails": [
+      {
+        "batchNumber": "P00050",
+        "quantity": 90,
+        "expirationDate": "2025-07-15",
+        "aisleLocation": "A50"
+      }
+    ],
+    "productName": "Ambien",
+    "measure": "10mg",
+    "activeIngredient": "Zolpidem",
+    "dosageForm": "Tablet",
+    "applicationArea": "Oral",
+    "primaryCategory": "Medicine",
+    "subCategory": "Sedative",
+    "productType": "Prescription",
+    "packaging": {
+      "unitsPerStrip": 10,
+      "stripsPerBox": 5
+    },
+    "pricePerUnit": 0.85,
+    "manufacturer": "Sanofi",
+    "requiresPrescription": true,
+    "pageCategory": "Medicine",
+    "productImage": "https://placehold.co/250x150",
+    "leafletImage": "https://placehold.co/250x150",
+    "usageDetails": {
+      "indications": {
+        "mainTitle": "Insomnia Treatment",
+        "subtitles": ["Improves sleep onset", "Maintains sleep"]
+      },
+      "dosageDetails": [
+        {
+          "ageRange": "Adults",
+          "userGroup": "General",
+          "dosageInstructions": ["Take once nightly before bed"]
+        }
+      ],
+      "pharmacology": "Zolpidem enhances GABA effects in the brain, inducing sleep."
+    }
+  }
+]

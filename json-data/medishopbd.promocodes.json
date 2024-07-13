@@ -1,19 +1,5 @@
 [{
   "_id": {
-    "$oid": "667e2f864a36c5635ab920da"
-  },
-  "code": "LES56",
-  "discount": 6,
-  "discountType": "percentage",
-  "expiryDate": {
-    "$date": "2024-06-26T00:00:00.000Z"
-  },
-  "usageLimit": 10,
-  "usageCount": 0,
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "667e2fdc4a36c5635ab920e5"
   },
   "code": "NEW50",
@@ -28,15 +14,42 @@
 },
 {
   "_id": {
-    "$oid": "667e5430c5441cd3b22920d6"
+    "$oid": "668374debba3392a68d387cb"
   },
-  "code": "20",
-  "discount": 10,
-  "discountType": "percentage",
+  "code": "22",
+  "discount": 222,
+  "discountType": "fixed",
   "expiryDate": {
-    "$date": "2024-07-14T00:00:00.000Z"
+    "$date": "2024-07-23T00:00:00.000Z"
   },
-  "usageLimit": 333,
-  "usageCount": 22,
+  "usageLimit": 555,
+  "usageCount": 23,
+  "__v": 0,
+  "disabled": false
+},
+{
+  "_id": {
+    "$oid": "6683763593a51be7fe2eef15"
+  },
+  "code": "Enim aute incididunt",
+  "discount": 44,
+  "discountType": "fixed",
+  "expiryDate": "2032-07-07",
+  "usageLimit": 53,
+  "usageCount": 0,
+  "disabled": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668376f793a51be7fe2eef5e"
+  },
+  "code": "55",
+  "discount": 55,
+  "discountType": "fixed",
+  "expiryDate": "2028-10-11",
+  "usageLimit": 1,
+  "usageCount": 1,
+  "disabled": false,
   "__v": 0
 }]

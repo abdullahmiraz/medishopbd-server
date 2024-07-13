@@ -28,4 +28,359 @@
     "$date": "2024-06-28T17:51:14.090Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "667fcb5dc82c730ef1d073f4"
+  },
+  "userId": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "667eb92a1a7a75a9b69de6d5"
+      },
+      "quantity": 2,
+      "price": 6,
+      "_id": {
+        "$oid": "667fcb5dc82c730ef1d073f5"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 12,
+    "discountedAmount": 1.2,
+    "deliveryFee": 60,
+    "total": 70.8
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-06-29T08:52:45.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6680d3023ff2c9f4e8ac2706"
+  },
+  "userId": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "667eb4b51a7a75a9b69de6b4"
+      },
+      "quantity": 250,
+      "price": 3.5,
+      "_id": {
+        "$oid": "6680d3023ff2c9f4e8ac2707"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 875,
+    "discountedAmount": 87.5,
+    "deliveryFee": 60,
+    "total": 847.5
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-06-30T03:37:38.183Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66823e57e58602cee233d699"
+  },
+  "userId": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "667eb4b51a7a75a9b69de6b6"
+      },
+      "quantity": 500,
+      "price": 1,
+      "_id": {
+        "$oid": "66823e57e58602cee233d69a"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 500,
+    "discountedAmount": 50,
+    "deliveryFee": 60,
+    "total": 510
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-01T05:27:51.514Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66839c67357d3ee0b3a61688"
+  },
+  "userId": {
+    "$oid": "66839b6ff0ed91e0c01841e6"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "667ebf541a7a75a9b69de6de"
+      },
+      "quantity": 3,
+      "price": 0.9,
+      "_id": {
+        "$oid": "66839c67357d3ee0b3a61689"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "667ebf541a7a75a9b69de6dd"
+      },
+      "quantity": 3,
+      "price": 0.5,
+      "_id": {
+        "$oid": "66839c67357d3ee0b3a6168a"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 210,
+    "discountedAmount": 0,
+    "deliveryFee": 60,
+    "total": 270
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-02T06:21:27.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6684c291aab46db4586f68a6"
+  },
+  "userId": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "667ebf541a7a75a9b69de6dc"
+      },
+      "quantity": 4,
+      "price": 0.75,
+      "_id": {
+        "$oid": "6684c291aab46db4586f68a7"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 150,
+    "discountedAmount": 0,
+    "deliveryFee": 60,
+    "total": 210
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-03T03:16:33.878Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668931b9f644a4a86e9358ad"
+  },
+  "userId": {
+    "$oid": "66839b6ff0ed91e0c01841e6"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "667eb4b51a7a75a9b69de6b0"
+      },
+      "quantity": 6,
+      "price": 1.5,
+      "_id": {
+        "$oid": "668931b9f644a4a86e9358ae"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 900,
+    "discountedAmount": 222,
+    "deliveryFee": 60,
+    "total": 738
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-06T11:59:53.459Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668cc23a0d9822ee0b38eced"
+  },
+  "userId": {
+    "$oid": "66839b6ff0ed91e0c01841e6"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "667eb4b51a7a75a9b69de6b0"
+      },
+      "quantity": 4,
+      "price": 1.5,
+      "_id": {
+        "$oid": "668cc23a0d9822ee0b38ecee"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 600,
+    "discountedAmount": 0,
+    "deliveryFee": 60,
+    "total": 660
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-09T04:53:14.807Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668cc3822c8125d15b68f3d2"
+  },
+  "userId": {
+    "$oid": "66839b6ff0ed91e0c01841e6"
+  },
+  "orderNumber": "INV-20240709-2A46E2",
+  "products": [
+    {
+      "productId": {
+        "$oid": "667eb4b51a7a75a9b69de6b0"
+      },
+      "quantity": 3,
+      "price": 1.5,
+      "_id": {
+        "$oid": "668cc3822c8125d15b68f3d3"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 450,
+    "discountedAmount": 0,
+    "deliveryFee": 60,
+    "total": 510
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-09T04:58:42.036Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6691f7368a3282d948fca079"
+  },
+  "userId": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "orderNumber": "INV-20240713-87F73D",
+  "products": [
+    {
+      "productId": {
+        "$oid": "6691ead25d56d61b38cd6507"
+      },
+      "quantity": 3,
+      "price": 1.5,
+      "_id": {
+        "$oid": "6691f7368a3282d948fca07a"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 4.5,
+    "discountedAmount": 0,
+    "deliveryFee": 60,
+    "total": 64.5
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-13T03:40:38.948Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6691f9f68a3282d948fcadd5"
+  },
+  "userId": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "orderNumber": "INV-20240713-38191B",
+  "products": [
+    {
+      "productId": {
+        "$oid": "6691ead25d56d61b38cd6507"
+      },
+      "quantity": 100,
+      "price": 1.5,
+      "_id": {
+        "$oid": "6691f9f68a3282d948fcadd6"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 150,
+    "discountedAmount": 0,
+    "deliveryFee": 60,
+    "total": 210
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-13T03:52:22.056Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6691fa0b8a3282d948fcafb6"
+  },
+  "userId": {
+    "$oid": "667e2afb58fb3361f4c0c92a"
+  },
+  "orderNumber": "INV-20240713-89336F",
+  "products": [
+    {
+      "productId": {
+        "$oid": "6691ead25d56d61b38cd6507"
+      },
+      "quantity": 10,
+      "price": 1.5,
+      "_id": {
+        "$oid": "6691fa0b8a3282d948fcafb7"
+      }
+    }
+  ],
+  "checkoutAmount": {
+    "subtotal": 15,
+    "discountedAmount": 0,
+    "deliveryFee": 60,
+    "total": 75
+  },
+  "status": "Pending",
+  "created_at": {
+    "$date": "2024-07-13T03:52:43.952Z"
+  },
+  "__v": 0
 }]

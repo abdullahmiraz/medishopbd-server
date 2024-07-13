@@ -12,91 +12,6 @@
 },
 {
   "_id": {
-    "$oid": "66752382d6ee112567dbfdd9"
-  },
-  "name": "John Doe",
-  "email": "johnyy.doe@example.com",
-  "phone": "+1234567890",
-  "address": "123 Main Street, Springfield, USA",
-  "prescription": "https://example.com/prescriptions/johndoe.pdf",
-  "orders": [
-    {
-      "orderId": "ORD123456",
-      "date": {
-        "$date": "2024-06-20T10:30:00.000Z"
-      },
-      "total": 150.75,
-      "status": "Delivered",
-      "items": [
-        {
-          "id": 1,
-          "name": "Paracetamol",
-          "quantity": 2,
-          "price": 20.5,
-          "_id": {
-            "$oid": "66752382d6ee112567dbfddb"
-          }
-        },
-        {
-          "id": 2,
-          "name": "Ibuprofen",
-          "quantity": 1,
-          "price": 15,
-          "_id": {
-            "$oid": "66752382d6ee112567dbfddc"
-          }
-        },
-        {
-          "id": 3,
-          "name": "Cough Syrup",
-          "quantity": 1,
-          "price": 25.75,
-          "_id": {
-            "$oid": "66752382d6ee112567dbfddd"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "66752382d6ee112567dbfdda"
-      }
-    },
-    {
-      "orderId": "ORD123457",
-      "date": {
-        "$date": "2024-05-15T14:45:00.000Z"
-      },
-      "total": 80,
-      "status": "Shipped",
-      "items": [
-        {
-          "id": 4,
-          "name": "Vitamin C",
-          "quantity": 3,
-          "price": 10,
-          "_id": {
-            "$oid": "66752382d6ee112567dbfddf"
-          }
-        },
-        {
-          "id": 5,
-          "name": "Aspirin",
-          "quantity": 2,
-          "price": 15,
-          "_id": {
-            "$oid": "66752382d6ee112567dbfde0"
-          }
-        }
-      ],
-      "_id": {
-        "$oid": "66752382d6ee112567dbfdde"
-      }
-    }
-  ],
-  "__v": 0,
-  "role": "Admin"
-},
-{
-  "_id": {
     "$oid": "667565ee2b1d2196e482c377"
   },
   "uid": "tNB9jz6dR6hFgQA8MoJdEuM77Wx2",
@@ -115,7 +30,7 @@
     "$oid": "667bb8ed5bc8ffc89ff60527"
   },
   "uid": "YgBX5qdM73YyfPubcdX394h3NHF3",
-  "role": "User",
+  "role": "Customer",
   "name": "Abdullah Miraz",
   "email": "abdullahmiraz2015@gmail.com",
   "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJNVzFME9zMY0osrdY2M6KDQG-tqFlDd077yugP6BOu3XaYiGTX=s96-c",
@@ -135,5 +50,22 @@
   "uid": "7a54c0f7-c0ca-4978-8016-59f32821a575",
   "__v": 0,
   "address": "Uttara, Dhaka",
-  "name": "admin"
+  "name": "admin",
+  "prescription": null,
+  "photoURL": "https://i.ibb.co/xDS0XTp/database-design-2.webp"
+},
+{
+  "_id": {
+    "$oid": "66839b6ff0ed91e0c01841e6"
+  },
+  "role": "Customer",
+  "email": "1",
+  "phone": "1",
+  "password": "$2b$10$H6vffnlnemgKLfXVQESyxOlczIMebqHljv0m.mn2aAsbKhstxAvwq",
+  "uid": "941f237c-eb74-42e1-aec9-9060a21eb57c",
+  "__v": 0,
+  "address": "1",
+  "name": "1",
+  "photoURL": "https://i.ibb.co/W2G3d7v/unregistered-medicine.jpg",
+  "prescription": "https://i.ibb.co/crxMqzv/database-design-2.webp"
 }]

@@ -12,3 +12,12 @@
 - sales report
 - Role Based Access Control
 - problem: for each tab i've to login again
+
+# add payment system
+# user can only comment if he has purchased that product
+# if product quantity is less than 10, or soon to be expired, show colors
+# zilla based delivery charges
+# customer satisfaction rating view section, in homepage
+only logged in users can give reviews
+only once the reivew can be done
+payment method adding.

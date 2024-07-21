@@ -55,6 +55,7 @@ const productSchema = new mongoose.Schema(
     subCategory: { type: String },
     productType: { type: String },
     packaging: { type: packagingSchema },
+    buyingPricePerUnit: { type: Number },
     pricePerUnit: { type: Number },
     stockDetails: [stockSchema],
     manufacturer: { type: String },

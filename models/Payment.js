@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const paymentSchema = new mongoose.Schema(
   {
-    orderId: { type: mongoose.Schema.Types.ObjectId, ref: "Order" },
+    sessionkey: { type: String },
     orderNumber: { type: String },
     name: { type: String },
     phone: { type: String },

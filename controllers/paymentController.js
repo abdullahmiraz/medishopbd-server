@@ -16,10 +16,10 @@ exports.createOrder = async (req, res) => {
     currency: "BDT",
     tran_id: tranId,
     orderNumber: orderNumber, // use unique tran_id for each api call
-    success_url: "http://localhost:3030/success",
-    fail_url: "http://localhost:3030/fail",
-    cancel_url: "http://localhost:3030/cancel",
-    ipn_url: "http://localhost:3030/ipn",
+    success_url: "http://localhost:3000/checkout/confirmation",
+    fail_url: "http://localhost:3000/fail",
+    cancel_url: "http://localhost:3000/cancel",
+    ipn_url: "http://localhost:3000/ipn",
     shipping_method: "Courier",
     product_name: "Computer.",
     product_category: "Electronic",
@@ -51,6 +51,7 @@ exports.createOrder = async (req, res) => {
     const { GatewayPageURL, sessionkey, tran_id } = apiResponse;
 
     const payment = new Payment({
+      sessionkey,
       orderNumber: orderNumber,
       name: "Customer Name",
       phone: "01711111111",

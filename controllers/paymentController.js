@@ -9,7 +9,7 @@ const store_passwd = process.env.SSL_PWD;
 const is_live = false;
 
 exports.createOrder = async (req, res) => {
-  const { checkoutAmount, orderNumber } = req?.body;
+  const { checkoutAmount, orderNumber, name, phone, address } = req?.body;
   const tranId = new mongoose.Types.ObjectId().toString();
   const data = {
     total_amount: checkoutAmount?.total,
@@ -24,15 +24,15 @@ exports.createOrder = async (req, res) => {
     product_name: "Computer.",
     product_category: "Electronic",
     product_profile: "general",
-    cus_name: "Customer Name",
+    cus_name: name,
     cus_email: "customer@example.com",
-    cus_add1: "Dhaka",
+    cus_add1: address,
     cus_add2: "Dhaka",
     cus_city: "Dhaka",
     cus_state: "Dhaka",
     cus_postcode: "1000",
     cus_country: "Bangladesh",
-    cus_phone: "01711111111",
+    cus_phone: phone,
     cus_fax: "01711111111",
     ship_name: "Customer Name",
     ship_add1: "Dhaka",
@@ -53,9 +53,9 @@ exports.createOrder = async (req, res) => {
     const payment = new Payment({
       sessionkey,
       orderNumber: orderNumber,
-      name: "Customer Name",
-      phone: "01711111111",
-      address: "Dhaka",
+      name,
+      phone,
+      address,
       paymentStatus: false,
     });
 

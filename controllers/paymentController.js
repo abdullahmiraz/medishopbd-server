@@ -15,7 +15,7 @@ exports.createOrder = async (req, res) => {
     total_amount: checkoutAmount?.total,
     currency: "BDT",
     tran_id: tranId,
-    orderNumber: orderNumber, // use unique tran_id for each api call
+    orderNumber: orderNumber,
     success_url: "http://localhost:3000/checkout/confirmation",
     fail_url: "http://localhost:3000/fail",
     cancel_url: "http://localhost:3000/cancel",
@@ -60,11 +60,12 @@ exports.createOrder = async (req, res) => {
     });
 
     try {
-      res.send({ url: GatewayPageURL });
-      console.log("GatewayPageURL: ", GatewayPageURL, sessionkey, tran_id);
+      res.send({ url: GatewayPageURL }); // Send the response
       await payment.save();
+      console.log("GatewayPageURL: ", GatewayPageURL, sessionkey, tran_id); // Log the success
     } catch (error) {
-      res.status(500).send("Failed to save payment details.");
+      console.error("Error saving payment:", error); // Log the error for debugging
+      // res.status(500).send("Failed to save payment details."); // Send an error response
     }
   });
 };

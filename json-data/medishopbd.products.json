@@ -37,7 +37,8 @@
       "unitsPerStrip": 10,
       "stripsPerBox": 10
     },
-    "pricePerUnit": 1.5,
+    "pricePerUnit":
+    
     "buyingPrice": 0.5,
     "manufacturer": "ACME Laboratories",
     "requiresPrescription": "false",

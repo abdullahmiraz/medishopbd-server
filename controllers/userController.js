@@ -32,7 +32,6 @@ exports.createUser = async (req, res) => {
   }
 };
 
-
 exports.loginUser = async (req, res) => {
   const { phone, password } = req.body;
 
@@ -48,7 +47,9 @@ exports.loginUser = async (req, res) => {
     }
 
     // You can generate and send a JWT token here if needed
-    res.status(200).json({ message: "Login successful", userId: user._id });
+    res
+      .status(200)
+      .json({ message: "Login successful", userId: user._id, role: user.role });
   } catch (err) {
     res.status(500).json({ message: "Server error", error: err.message });
   }

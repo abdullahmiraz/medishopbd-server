@@ -105,11 +105,18 @@ exports.getOrders = async (req, res) => {
   const { phone } = req.params;
   try {
     const result = await Payment.find({ phone });
-    res.status(200).json({
-      success: true,
-      message: "Successfully loaded data",
-      data: result,
+    res.status(200).json(result);
+  } catch (error) {
+    res.status(400).json({
+      success: false,
+      message: "Failed to load data",
     });
+  }
+};
+exports.getAllOrders = async (req, res) => {
+  try {
+    const result = await Payment.find();
+    res.status(200).json(result);
   } catch (error) {
     res.status(400).json({
       success: false,

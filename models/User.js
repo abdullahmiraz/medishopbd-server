@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { v4: uuidv4 } = require("uuid"); // Import UUID generator
 
 const userSchema = new mongoose.Schema({
   role: {

@@ -109,7 +109,7 @@ exports.failPayment = async (req, res) => {
   }
 };
 
-exports.getOrders = async (req, res) => {
+exports.getPaymentDetailsByPhone = async (req, res) => {
   const { phone } = req.params;
   try {
     const result = await Payment.find({ phone });
@@ -121,7 +121,7 @@ exports.getOrders = async (req, res) => {
     });
   }
 };
-exports.getAllOrders = async (req, res) => {
+exports.getAllPaymentDetails = async (req, res) => {
   try {
     const result = await Payment.find();
     res.status(200).json(result);

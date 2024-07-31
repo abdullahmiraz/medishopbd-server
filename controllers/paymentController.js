@@ -9,10 +9,18 @@ const store_passwd = process.env.SSL_PWD;
 const is_live = false;
 
 exports.createOrder = async (req, res) => {
-  const { checkoutAmount, orderNumber, name, phone, address } = req?.body;
+  const {
+    userId,
+    orderNumber,
+    name,
+    phone,
+    address,
+    products,
+    checkoutAmount,
+  } = req.body;
   const tranId = new mongoose.Types.ObjectId().toString();
   const data = {
-    total_amount: checkoutAmount?.total,
+    total_amount: checkoutAmount.total,
     currency: "BDT",
     tran_id: tranId,
     orderNumber: orderNumber,
@@ -32,7 +40,7 @@ exports.createOrder = async (req, res) => {
     cus_state: "Dhaka",
     cus_postcode: "1000",
     cus_country: "Bangladesh",
-    cus_phone: phone || '015388888888',
+    cus_phone: phone || "015388888888",
     cus_fax: "01711111111",
     ship_name: "Customer Name",
     ship_add1: "Dhaka",

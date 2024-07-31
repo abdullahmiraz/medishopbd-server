@@ -32,7 +32,7 @@ exports.createOrder = async (req, res) => {
     cus_state: "Dhaka",
     cus_postcode: "1000",
     cus_country: "Bangladesh",
-    cus_phone: phone,
+    cus_phone: phone || '015388888888',
     cus_fax: "01711111111",
     ship_name: "Customer Name",
     ship_add1: "Dhaka",

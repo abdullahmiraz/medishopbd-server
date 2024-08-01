@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const paymentSchema = new mongoose.Schema(
   {
     sessionkey: { type: String },
-    orderNumber: { type: String },
+    orderNumber: { type: String, unique: true },
     name: { type: String },
     phone: { type: String },
     address: { type: String },

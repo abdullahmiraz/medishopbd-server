@@ -8,6 +8,8 @@ const store_id = process.env.SSL_ID;
 const store_passwd = process.env.SSL_PWD;
 const is_live = false;
 
+const tranId = new mongoose.Types.ObjectId().toString();
+
 exports.createOrder = async (req, res) => {
   const {
     userId,
@@ -18,13 +20,13 @@ exports.createOrder = async (req, res) => {
     products,
     checkoutAmount,
   } = req.body;
-  const tranId = new mongoose.Types.ObjectId().toString();
   const data = {
     total_amount: checkoutAmount.total,
     currency: "BDT",
     tran_id: tranId,
     orderNumber: orderNumber,
-    success_url: "http://localhost:3000/checkout/confirmation",
+    // success_url: `http://localhost:3000/checkout/confirmation`,
+    success_url: `http://localhost:3000/checkout/sslpay/success/?oid=${orderNumber}`,
     fail_url: "http://localhost:3000/fail",
     cancel_url: "http://localhost:3000/cancel",
     ipn_url: "http://localhost:3000/ipn",
@@ -51,31 +53,44 @@ exports.createOrder = async (req, res) => {
     ship_country: "Bangladesh",
   };
 
-  console.log(data);
-
   const sslcz = new SSLCommerzPayment(store_id, store_passwd, is_live);
-  sslcz.init(data).then(async (apiResponse) => {
-    console.log(apiResponse);
-    const { GatewayPageURL, sessionkey, tran_id } = apiResponse;
+  sslcz
+    .init(data)
+    .then(async (apiResponse) => {
+      const { GatewayPageURL, sessionkey } = apiResponse;
 
-    const payment = new Payment({
-      sessionkey,
-      orderNumber: orderNumber,
-      name,
-      phone,
-      address,
-      paymentStatus: false,
+      const payment = new Payment({
+        sessionkey,
+        orderNumber: orderNumber,
+        name,
+        phone,
+        address,
+        paymentStatus: false,
+      });
+
+      try {
+        await payment.save();
+        console.log("Payment saved successfully.");
+      } catch (error) {
+        if (error.code === 11000) {
+          // Handle duplicate key error
+          console.warn(
+            "Duplicate orderNumber detected, skipping save:",
+            error.message
+          );
+        } else {
+          // Log other errors
+          console.error("Error saving payment:", error);
+        }
+      } finally {
+        // Send response regardless of whether saving was successful or not
+        res.send({ url: GatewayPageURL, sessionkey });
+      }
+    })
+    .catch((error) => {
+      console.error("SSLCommerz initialization error:", error);
+      res.status(500).send("Failed to initialize payment.");
     });
-
-    try {
-      res.send({ url: GatewayPageURL }); // Send the response
-      await payment.save();
-      console.log("GatewayPageURL: ", GatewayPageURL, sessionkey, tran_id); // Log the success
-    } catch (error) {
-      console.error("Error saving payment:", error); // Log the error for debugging
-      // res.status(500).send("Failed to save payment details."); // Send an error response
-    }
-  });
 };
 
 exports.successPayment = async (req, res) => {
@@ -86,7 +101,9 @@ exports.successPayment = async (req, res) => {
       { paymentStatus: true }
     );
     if (payment) {
-      res.redirect(`http://localhost:3000/payments/success/${tranId}`);
+      res.redirect(
+        `http://localhost:3000/checkout/sslpay/success/${orderNumber}`
+      );
     } else {
       res.status(404).send("Payment not found.");
     }
@@ -109,7 +126,7 @@ exports.failPayment = async (req, res) => {
   }
 };
 
-exports.getPaymentDetailsByPhone = async (req, res) => {
+exports.getOrders = async (req, res) => {
   const { phone } = req.params;
   try {
     const result = await Payment.find({ phone });
@@ -121,7 +138,7 @@ exports.getPaymentDetailsByPhone = async (req, res) => {
     });
   }
 };
-exports.getAllPaymentDetails = async (req, res) => {
+exports.getAllOrders = async (req, res) => {
   try {
     const result = await Payment.find();
     res.status(200).json(result);

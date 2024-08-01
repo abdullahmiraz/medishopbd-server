@@ -1,0 +1,277 @@
+[
+    // Products for "Baby Food"
+    {
+      "_id": { "$oid": "6691ead25d56d61b38cd6514" },
+      "productId": 1,
+      "productCode": "baby-care-baby-food-400g-001",
+      "stockDetails": [
+        {
+          "batchNumber": "BF12345",
+          "quantity": 120,
+          "expirationDate": "2025-01-15",
+          "aisleLocation": "A1",
+          "_id": { "$oid": "66a4ad7fd0e759a054598b01" }
+        }
+      ],
+      "productName": "Nestlé Cerelac",
+      "measure": "400g",
+      "activeIngredient": "Fortified Cereal",
+      "dosageForm": "Powder",
+      "applicationArea": "Oral",
+      "primaryCategory": "baby-care",
+      "subCategory": "baby-food",
+      "productType": "Food",
+      "packaging": { "unitsPerStrip": null, "stripsPerBox": null },
+      "pricePerUnit": 400,
+      "manufacturer": "Nestle",
+      "requiresPrescription": "false",
+      "pageCategory": "baby-food",
+      "productImage": "https://placehold.co/250x150",
+      "leafletImage": "https://placehold.co/250x150",
+      "usageDetails": {
+        "indications": {
+          "mainTitle": "Infant Nutrition",
+          "subtitles": ["For infants from 6 months onwards"]
+        },
+        "dosageDetails": [
+          {
+            "ageRange": "Infants",
+            "userGroup": "Babies",
+            "dosageInstructions": ["Follow the instructions on the package"]
+          }
+        ],
+        "pharmacology": "Provides essential nutrients for growth."
+      },
+      "buyingPricePerUnit": 350,
+      "updatedAt": { "$date": "2024-08-01T08:19:16.779Z" }
+    },
+    {
+      "_id": { "$oid": "6691ead25d56d61b38cd6515" },
+      "productId": 2,
+      "productCode": "baby-care-baby-food-300g-002",
+      "stockDetails": [
+        {
+          "batchNumber": "BF67890",
+          "quantity": 150,
+          "expirationDate": "2025-03-20",
+          "aisleLocation": "A2",
+          "_id": { "$oid": "66a4ad7fd0e759a054598b02" }
+        }
+      ],
+      "productName": "Gerber Organic Cereal",
+      "measure": "300g",
+      "activeIngredient": "Organic Cereal Grains",
+      "dosageForm": "Powder",
+      "applicationArea": "Oral",
+      "primaryCategory": "baby-care",
+      "subCategory": "baby-food",
+      "productType": "Food",
+      "packaging": { "unitsPerStrip": null, "stripsPerBox": null },
+      "pricePerUnit": 350,
+      "manufacturer": "Gerber",
+      "requiresPrescription": "false",
+      "pageCategory": "baby-food",
+      "productImage": "https://placehold.co/250x150",
+      "leafletImage": "https://placehold.co/250x150",
+      "usageDetails": {
+        "indications": {
+          "mainTitle": "Infant Nutrition",
+          "subtitles": ["Suitable for infants from 6 months"]
+        },
+        "dosageDetails": [
+          {
+            "ageRange": "Infants",
+            "userGroup": "Babies",
+            "dosageInstructions": ["Prepare according to package instructions"]
+          }
+        ],
+        "pharmacology": "Supports healthy growth with organic ingredients."
+      },
+      "buyingPricePerUnit": 300,
+      "updatedAt": { "$date": "2024-08-01T08:19:16.779Z" }
+    },
+
+    // Products for "Diapers"
+    {
+      "_id": { "$oid": "6691ead25d56d61b38cd6516" },
+      "productId": 3,
+      "productCode": "baby-care-diapers-32pk-003",
+      "stockDetails": [
+        {
+          "batchNumber": "D54321",
+          "quantity": 200,
+          "expirationDate": "2025-06-30",
+          "aisleLocation": "A3",
+          "_id": { "$oid": "66a4ad7fd0e759a054598b03" }
+        }
+      ],
+      "productName": "Huggies Little Snugglers",
+      "measure": "32pk",
+      "activeIngredient": "Absorbent Materials",
+      "dosageForm": "Diaper",
+      "applicationArea": "Wearable",
+      "primaryCategory": "baby-care",
+      "subCategory": "diapers",
+      "productType": "Hygiene",
+      "packaging": { "unitsPerStrip": null, "stripsPerBox": null },
+      "pricePerUnit": 950,
+      "manufacturer": "Huggies",
+      "requiresPrescription": "false",
+      "pageCategory": "diapers",
+      "productImage": "https://placehold.co/250x150",
+      "leafletImage": "https://placehold.co/250x150",
+      "usageDetails": {
+        "indications": {
+          "mainTitle": "Infant Care",
+          "subtitles": ["For newborns and toddlers"]
+        },
+        "dosageDetails": [
+          {
+            "ageRange": "Infants",
+            "userGroup": "Babies",
+            "dosageInstructions": ["Change as needed to ensure dryness"]
+          }
+        ],
+        "pharmacology": "Provides superior absorbency and comfort."
+      },
+      "buyingPricePerUnit": 900,
+      "updatedAt": { "$date": "2024-08-01T08:19:16.779Z" }
+    },
+    {
+      "_id": { "$oid": "6691ead25d56d61b38cd6517" },
+      "productId": 4,
+      "productCode": "baby-care-diapers-50pk-004",
+      "stockDetails": [
+        {
+          "batchNumber": "D65432",
+          "quantity": 180,
+          "expirationDate": "2025-07-15",
+          "aisleLocation": "A4",
+          "_id": { "$oid": "66a4ad7fd0e759a054598b04" }
+        }
+      ],
+      "productName": "Pampers Swaddlers",
+      "measure": "50pk",
+      "activeIngredient": "Absorbent Core",
+      "dosageForm": "Diaper",
+      "applicationArea": "Wearable",
+      "primaryCategory": "baby-care",
+      "subCategory": "diapers",
+      "productType": "Hygiene",
+      "packaging": { "unitsPerStrip": null, "stripsPerBox": null },
+      "pricePerUnit": 1050,
+      "manufacturer": "Pampers",
+      "requiresPrescription": "false",
+      "pageCategory": "diapers",
+      "productImage": "https://placehold.co/250x150",
+      "leafletImage": "https://placehold.co/250x150",
+      "usageDetails": {
+        "indications": {
+          "mainTitle": "Infant Care",
+          "subtitles": ["For infants and toddlers"]
+        },
+        "dosageDetails": [
+          {
+            "ageRange": "Infants",
+            "userGroup": "Babies",
+            "dosageInstructions": ["Change as needed"]
+          }
+        ],
+        "pharmacology": "Provides excellent absorbency and comfort."
+      },
+      "buyingPricePerUnit": 1000,
+      "updatedAt": { "$date": "2024-08-01T08:19:16.779Z" }
+    },
+
+    // Products for "Baby Bath"
+    {
+      "_id": { "$oid": "6691ead25d56d61b38cd6518" },
+      "productId": 5,
+      "productCode": "baby-care-baby-bath-200ml-005",
+      "stockDetails": [
+        {
+          "batchNumber": "B76543",
+          "quantity": 90,
+          "expirationDate": "2025-04-25",
+          "aisleLocation": "A5",
+          "_id": { "$oid": "66a4ad7fd0e759a054598b05" }
+        }
+      ],
+      "productName": "Johnson's Baby Bath",
+      "measure": "200ml",
+      "activeIngredient": "Mild Surfactants",
+      "dosageForm": "Liquid",
+      "applicationArea": "Topical",
+      "primaryCategory": "baby-care",
+      "subCategory": "baby-bath",
+      "productType": "Personal Care",
+      "packaging": { "unitsPerStrip": null, "stripsPerBox": null },
+      "pricePerUnit": 250,
+      "manufacturer": "Johnson & Johnson",
+      "requiresPrescription": "false",
+      "pageCategory": "baby-bath",
+      "productImage": "https://placehold.co/250x150",
+      "leafletImage": "https://placehold.co/250x150",
+      "usageDetails": {
+        "indications": {
+          "mainTitle": "Gentle Cleansing",
+          "subtitles": ["For daily use on baby's sensitive skin"]
+        },
+        "dosageDetails": [
+          {
+            "ageRange": "Infants",
+            "userGroup": "Babies",
+            "dosageInstructions": ["Apply to wet skin and rinse thoroughly"]
+          }
+        ],
+        "pharmacology": "Cleanses without irritation."
+      },
+      "buyingPricePerUnit": 200,
+      "updatedAt": { "$date": "2024-08-01T08:19:16.779Z" }
+    },
+    {
+      "_id": { "$oid": "6691ead25d56d61b38cd6519" },
+      "productId": 6,
+      "productCode": "baby-care-baby-bath-400ml-006",
+      "stockDetails": [
+        {
+          "batchNumber": "B87654",
+          "quantity": 70,
+          "expirationDate": "2025-05-10",
+          "aisleLocation": "A6",
+          "_id": { "$oid": "66a4ad7fd0e759a054598b06" }
+        }
+      ],
+      "productName": "Aveeno Baby Wash",
+      "measure": "400ml",
+      "activeIngredient": "Oat Extract",
+      "dosageForm": "Liquid",
+      "applicationArea": "Topical",
+      "primaryCategory": "baby-care",
+      "subCategory": "baby-bath",
+      "productType": "Personal Care",
+      "packaging": { "unitsPerStrip": null, "stripsPerBox": null },
+      "pricePerUnit": 350,
+      "manufacturer": "Aveeno",
+      "requiresPrescription": "false",
+      "pageCategory": "baby-bath",
+      "productImage": "https://placehold.co/250x150",
+      "leafletImage": "https://placehold.co/250x150",
+      "usageDetails": {
+        "indications": {
+          "mainTitle": "Soothing Wash",
+          "subtitles": ["For sensitive baby skin"]
+        },
+        "dosageDetails": [
+          {
+            "ageRange": "Infants",
+            "userGroup": "Babies",
+            "dosageInstructions": ["Use a small amount during bath time"]
+          }
+        ],
+        "pharmacology": "Provides soothing relief and gentle cleansing."
+      },
+      "buyingPricePerUnit": 300,
+      "updatedAt": { "$date": "2024-08-01T08:19:16.779Z" }
+    }
+  ]

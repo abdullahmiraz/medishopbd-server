@@ -28,10 +28,8 @@ const orderSchema = new mongoose.Schema(
       enum: ["Pending", "Processing", "Shipped", "Delivered"],
       default: "Pending",
     },
+    created_at: { type: Date, default: Date.now },
   },
-  {
-    timestamps: true,
-  }
 );
 
 const Order = mongoose.model("Order", orderSchema);

@@ -84,7 +84,7 @@ exports.createOrder = async (req, res) => {
         }
       } finally {
         // Send response regardless of whether saving was successful or not
-        res.send({ url: GatewayPageURL, sessionkey });
+        res.send({ url: GatewayPageURL, sessionkey, tranId });
       }
     })
     .catch((error) => {

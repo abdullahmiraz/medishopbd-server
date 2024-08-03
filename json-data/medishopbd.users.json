@@ -1,71 +1,82 @@
 [{
   "_id": {
-    "$oid": "6672f2a0a49405f4cb1824fd"
-  },
-  "name": "John Doe",
-  "email": "john.doe@example.com",
-  "phone": "+1234567890",
-  "address": "123 Main St, City, Country",
-  "prescription": "",
-  "orders": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "667565ee2b1d2196e482c377"
-  },
-  "uid": "tNB9jz6dR6hFgQA8MoJdEuM77Wx2",
-  "name": "Anik Hasan",
-  "email": "abdullahmiraz2014@gmail.com",
-  "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJ-uVHtxspae9zYEX8pdJaq5WJWxq_RNI1AXhKHjigdFOlg2RkF=s96-c",
-  "phone": "01541554772",
-  "address": "3/A Uttara, Dhaka",
-  "prescription": "",
-  "orders": [],
-  "__v": 0,
-  "role": "Admin"
-},
-{
-  "_id": {
-    "$oid": "667bb8ed5bc8ffc89ff60527"
-  },
-  "uid": "YgBX5qdM73YyfPubcdX394h3NHF3",
-  "role": "Customer",
-  "name": "Abdullah Miraz",
-  "email": "abdullahmiraz2015@gmail.com",
-  "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJNVzFME9zMY0osrdY2M6KDQG-tqFlDd077yugP6BOu3XaYiGTX=s96-c",
-  "phone": "",
-  "address": "",
-  "prescription": "",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "667e2afb58fb3361f4c0c92a"
+    "$oid": "66ad178f04c6a1f5eecb3613"
   },
   "role": "Admin",
-  "email": "admin@admin.com",
-  "phone": "01531554110",
-  "password": "$2b$10$wbrh.aZuoWM5gjG5BOXKxOprYjAyLj7GQ6EwspyCW6ZNOqx28j1xG",
-  "uid": "7a54c0f7-c0ca-4978-8016-59f32821a575",
+  "phone": "1",
+  "password": "$2b$10$urIw9vHZHVp/q6JhWektveOuZZf2GjXLHayE0B4cm9OLO8PihdADO",
   "__v": 0,
-  "address": "Uttara, Dhaka",
-  "name": "admin",
-  "prescription": null,
-  "photoURL": "https://i.ibb.co/xDS0XTp/database-design-2.webp"
+  "prescription": "https://i.ibb.co/Bgt7bVZ/image-44.webp"
 },
 {
   "_id": {
-    "$oid": "66839b6ff0ed91e0c01841e6"
+    "$oid": "66ad196004c6a1f5eecb3def"
+  },
+  "role": "Manager",
+  "phone": "2",
+  "password": "$2b$10$ULDW0hmFeIvWAGW.vQcOsu9Y6lECvuJ7i2pCEvJ8DBBi7eVWoTQkS",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ad235a04c6a1f5eecc9b77"
   },
   "role": "Customer",
-  "email": "1",
-  "phone": "1",
-  "password": "$2b$10$H6vffnlnemgKLfXVQESyxOlczIMebqHljv0m.mn2aAsbKhstxAvwq",
-  "uid": "941f237c-eb74-42e1-aec9-9060a21eb57c",
-  "__v": 0,
-  "address": "1",
-  "name": "1",
-  "photoURL": "https://i.ibb.co/W2G3d7v/unregistered-medicine.jpg",
-  "prescription": "https://i.ibb.co/crxMqzv/database-design-2.webp"
+  "phone": "3",
+  "password": "$2b$10$dDlYNnEqsWJMV3qoXYrzoO9iuORypmM2Zy/.yd8zBLg2kUkaQKjsS",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ad240304c6a1f5eeccbacb"
+  },
+  "role": "Customer",
+  "phone": "5",
+  "password": "$2b$10$jZqUToWk91lBSx46w.KO3.SbyiLUayhu2z6eUCjISEDbXGbdY0PEm",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ad242904c6a1f5eeccbacf"
+  },
+  "role": "Customer",
+  "phone": "7",
+  "password": "$2b$10$y9adgnvZJF5mFKu.4Yjc6e9jYeTSHAKI7FW9bFcDOsqWMwAPWLccS",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ad247704c6a1f5eeccbad3"
+  },
+  "role": "Customer",
+  "phone": "8",
+  "password": "$2b$10$eASiEg/Y8dLKPdHbNkXnfu8.OK1w77vTucYlXDISEFrEJxozXenJa",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ad24a104c6a1f5eeccbad8"
+  },
+  "role": "Customer",
+  "phone": "9",
+  "password": "$2b$10$c1ig3jwq3JkRTEYeDyKudO4cw9/Sbjm9cj.T2N2LssUXcvpZ0Y2iC",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ad250304c6a1f5eecd18d7"
+  },
+  "role": "Customer",
+  "phone": "55",
+  "password": "$2b$10$X6S/bs.5gSm4ySvbLfcxvugWLC34O9CwWFBCt7SQAbTCk1gFATM6a",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ad252804c6a1f5eecd2885"
+  },
+  "role": "Customer",
+  "phone": "22",
+  "password": "$2b$10$p7aiygRdDyTCQ4izod01p.R0U.i1tu4JBBckwOFpg0XXzZCqQ3B5a",
+  "__v": 0
 }]

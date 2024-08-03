@@ -845,11 +845,23 @@
 },
 {
   "_id": {
-    "$oid": "668e2e5b8aeb16fb8729c90b"
+    "$oid": "66955c7f8f25248fb69417ed"
   },
-  "name": "ee",
-  "description": "ee",
-  "image": "https://i.ibb.co/6ndd1Rh/database-design-2.webp",
+  "name": "Whoopi Lang",
+  "description": "Qui cillum aliquam d",
+  "image": "https://placehold.co/600x400?text=Category",
+  "code": "whoopi-lang",
+  "subCategories": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66955e3a8f25248fb69430df"
+  },
+  "name": "Quamar Petty",
+  "description": "Culpa proident max",
+  "image": "https://placehold.co/600x400?text=Category",
+  "code": "quamar-petty",
   "subCategories": [],
   "__v": 0
 }]

@@ -23,7 +23,7 @@
     "$date": "2024-07-23T00:00:00.000Z"
   },
   "usageLimit": 555,
-  "usageCount": 23,
+  "usageCount": 25,
   "__v": 0,
   "disabled": false
 },
@@ -50,6 +50,19 @@
   "expiryDate": "2028-10-11",
   "usageLimit": 1,
   "usageCount": 1,
+  "disabled": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669cda8b8629f064eed6543a"
+  },
+  "code": "11",
+  "discount": 11,
+  "discountType": "percentage",
+  "expiryDate": "2024-11-20",
+  "usageLimit": 11111,
+  "usageCount": 20,
   "disabled": false,
   "__v": 0
 }]

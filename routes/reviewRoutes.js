@@ -15,5 +15,6 @@ router.delete("/:reviewId", reviewController.deleteReview);
 
 // Get reviews for a specific product
 router.get("/product/:productId", reviewController.getReviewsByProduct);
+router.get("/", reviewController.getAllReviews);
 
 module.exports = router;

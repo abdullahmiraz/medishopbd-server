@@ -105,26 +105,26 @@ exports.createUserByEmail = async (req, res) => {
   }
 };
 
-exports.updateUser = async (req, res) => {
-  try {
-    const user = await User.findById(req.params.id);
-    if (!user) {
-      return res.status(404).json({ message: "User not found" });
-    }
+// exports.updateUser = async (req, res) => {
+//   try {
+//     const user = await User.findById(req.params.id);
+//     if (!user) {
+//       return res.status(404).json({ message: "User not found" });
+//     }
 
-    user.name = req.body.name || user.name;
-    user.email = req.body.email || user.email;
-    user.phone = req.body.phone || user.phone;
-    user.address = req.body.address || user.address;
-    user.prescription = req.body.prescription || user.prescription;
-    user.orders = req.body.orders || user.orders;
+//     user.name = req.body.name || user.name;
+//     user.email = req.body.email || user.email;
+//     user.phone = req.body.phone || user.phone;
+//     user.address = req.body.address || user.address;
+//     user.prescription = req.body.prescription || user.prescription;
+//     user.orders = req.body.orders || user.orders;
 
-    const updatedUser = await user.save();
-    res.json(updatedUser);
-  } catch (err) {
-    res.status(400).json({ message: err.message });
-  }
-};
+//     const updatedUser = await user.save();
+//     res.json(updatedUser);
+//   } catch (err) {
+//     res.status(400).json({ message: err.message });
+//   }
+// };
 
 exports.updateUserDetails = async (req, res) => {
   try {
@@ -133,6 +133,7 @@ exports.updateUserDetails = async (req, res) => {
       { $set: req.body },
       { new: true }
     );
+    console.log(updatedUser);
     if (!updatedUser) {
       return res.status(404).json({ message: "User not found" });
     }

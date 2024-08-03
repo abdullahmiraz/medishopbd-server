@@ -5,9 +5,9 @@ const Product = require("../models/Product");
 const User = require("../models/User");
 
 // Create a new review
-const createReview = async (req, res) => {
+exports.createReview = async (req, res) => {
   try {
-    const { productId, userId,name, rating, comment } = req.body;
+    const { productId, userId, name, rating, comment } = req.body;
 
     // Validate product and user existence
     const product = await Product.findById(productId);
@@ -39,7 +39,7 @@ const createReview = async (req, res) => {
 };
 
 // Update a review
-const updateReview = async (req, res) => {
+exports.updateReview = async (req, res) => {
   try {
     const { reviewId } = req.params;
     const { rating, comment } = req.body;
@@ -63,7 +63,7 @@ const updateReview = async (req, res) => {
 };
 
 // Delete a review
-const deleteReview = async (req, res) => {
+exports.deleteReview = async (req, res) => {
   try {
     const { reviewId } = req.params;
 
@@ -81,13 +81,13 @@ const deleteReview = async (req, res) => {
 };
 
 // Get reviews for a specific product
-const getReviewsByProduct = async (req, res) => {
+exports.getReviewsByProduct = async (req, res) => {
   try {
     const { productId } = req.params;
 
     const reviews = await Review.find({ productId })
-      .populate('userId', 'username')  // Populate the username of the user who wrote the review
-      .sort({ createdAt: -1 });       // Sort reviews by most recent first
+      .populate("userId", "username") // Populate the username of the user who wrote the review
+      .sort({ createdAt: -1 }); // Sort reviews by most recent first
 
     res.status(200).json(reviews);
   } catch (error) {
@@ -95,10 +95,13 @@ const getReviewsByProduct = async (req, res) => {
     res.status(500).json({ error: "Server error" });
   }
 };
-
-module.exports = {
-  createReview,
-  updateReview,
-  deleteReview,
-  getReviewsByProduct,
+// Get reviews for a specific product
+exports.getAllReviews = async (req, res) => {
+  try {
+    const reviews = await Review.find();
+    res.status(200).json(reviews);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Server error" });
+  }
 };

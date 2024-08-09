@@ -5,7 +5,9 @@ exports.getAllOrders = async (req, res) => {
   try {
     const orders = await Order.find()
       .populate("userId")
-      .populate("products.productId");
+      .populate("products.productId")
+      .sort({ created_at: -1 }); // Sort by creation date, descending
+
     res.json(orders);
   } catch (err) {
     res.status(500).json({ message: err.message });
@@ -18,7 +20,9 @@ exports.getOrderById = async (req, res) => {
     console.log(req.params.id);
     const order = await Order.find({ userId: req.params.id })
       .populate("userId")
-      .populate("products.productId");
+      .populate("products.productId")
+      .sort({ created_at: -1 }); // Sort by creation date, descending
+
     if (!order) {
       return res.status(404).json({ message: "Order not found" });
     }

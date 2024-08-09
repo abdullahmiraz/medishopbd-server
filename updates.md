@@ -1,30 +1,4 @@
-1. if the user selected a medicine that requires presecriptions, you have to upload a presecription image immediately, or else you cannot proceed to the '/checkout' page
-
-2. generate sales/orders report based on the dates/products sale etc 5.**\*\*** user will be able to see their order history (save to 'orders' using mongoose)
-   #And from there, user will be able to generate the prescription again, those text which will be saved to generate the PDF
-
-- change the background color like widen display, not limited screen size, but limited content - https://www.kyabrs.org/
-
-6th july - 2024
-
-- change the product (cause their's categories option has been added)
-- sort products by categories
-- sales report
 - Role Based Access Control
-- problem: for each tab i've to login again
 
-# add payment system
-
-`#` user can only comment if he has purchased that product
-`# `if product quantity is less than 10, or soon to be expired, show colors
-`#` zilla based delivery charges
-
-# customer satisfaction rating view section, in homepage
-
-````only logged in users can give reviews
-```only once the reivew can be done
-payment method adding.
-
-
-# user based, role based access control
-````
+contact us
+product filter - per req (startech filteration)

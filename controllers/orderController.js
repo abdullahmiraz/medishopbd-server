@@ -15,7 +15,8 @@ exports.getAllOrders = async (req, res) => {
 // Get order by ID
 exports.getOrderById = async (req, res) => {
   try {
-    const order = await Order.findById(req.params.id)
+    console.log(req.params.id);
+    const order = await Order.find({ userId: req.params.id })
       .populate("userId")
       .populate("products.productId");
     if (!order) {
@@ -26,8 +27,6 @@ exports.getOrderById = async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 };
-
-// Create a new order
 
 // Create a new order
 exports.createOrder = async (req, res) => {

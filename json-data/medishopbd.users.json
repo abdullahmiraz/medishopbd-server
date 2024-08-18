@@ -6,7 +6,11 @@
   "phone": "1",
   "password": "$2b$10$urIw9vHZHVp/q6JhWektveOuZZf2GjXLHayE0B4cm9OLO8PihdADO",
   "__v": 0,
-  "prescription": "https://i.ibb.co/Bgt7bVZ/image-44.webp"
+  "prescription": "https://i.ibb.co/Bgt7bVZ/image-44.webp",
+  "address": "1",
+  "email": "1",
+  "name": "1",
+  "photoURL": "https://i.ibb.co/xzVSZ7S/image-44.webp"
 },
 {
   "_id": {
@@ -22,9 +26,14 @@
     "$oid": "66ad235a04c6a1f5eecc9b77"
   },
   "role": "Customer",
-  "phone": "3",
+  "phone": "31",
   "password": "$2b$10$dDlYNnEqsWJMV3qoXYrzoO9iuORypmM2Zy/.yd8zBLg2kUkaQKjsS",
-  "__v": 0
+  "__v": 0,
+  "address": "21",
+  "email": "11",
+  "name": "11",
+  "photoURL": "https://i.ibb.co/fDsbLhm/IMG20240602075849.jpg",
+  "prescription": null
 },
 {
   "_id": {
@@ -79,4 +88,17 @@
   "phone": "22",
   "password": "$2b$10$p7aiygRdDyTCQ4izod01p.R0U.i1tu4JBBckwOFpg0XXzZCqQ3B5a",
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b64782fcf22c7100a8d0b1"
+  },
+  "role": "Customer",
+  "phone": "3",
+  "password": "$2b$10$4OqZYRbLQaLu/ZUntaal1O1Ac4OTmsAkGNbfld.s5tjqXKBTTM0VK",
+  "__v": 0,
+  "address": "3",
+  "email": "3",
+  "name": "3",
+  "photoURL": ""
 }]

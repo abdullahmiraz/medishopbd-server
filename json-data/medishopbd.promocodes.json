@@ -1,70 +1,81 @@
-[
-  {
-    "_id": {
-      "$oid": "667e2fdc4a36c5635ab920e5"
-    },
-    "code": "NEW50",
-    "discount": 55,
-    "discountType": "fixed",
-    "expiryDate": {
-      "$date": "2024-07-09T00:00:00.000Z"
-    },
-    "usageLimit": 1,
-    "usageCount": 1,
-    "__v": 0
+[{
+  "_id": {
+    "$oid": "667e2fdc4a36c5635ab920e5"
   },
-  {
-    "_id": {
-      "$oid": "668374debba3392a68d387cb"
-    },
-    "code": "22",
-    "discount": 222,
-    "discountType": "fixed",
-    "expiryDate": {
-      "$date": "2024-07-23T00:00:00.000Z"
-    },
-    "usageLimit": 555,
-    "usageCount": 25,
-    "__v": 0,
-    "disabled": false
+  "code": "NEW50",
+  "discount": 55,
+  "discountType": "fixed",
+  "expiryDate": {
+    "$date": "2024-07-09T00:00:00.000Z"
   },
-  {
-    "_id": {
-      "$oid": "6683763593a51be7fe2eef15"
-    },
-    "code": "Enim aute incididunt",
-    "discount": 44,
-    "discountType": "fixed",
-    "expiryDate": "2032-07-07",
-    "usageLimit": 53,
-    "usageCount": 0,
-    "disabled": true,
-    "__v": 0
+  "usageLimit": 1,
+  "usageCount": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668374debba3392a68d387cb"
   },
-  {
-    "_id": {
-      "$oid": "668376f793a51be7fe2eef5e"
-    },
-    "code": "55",
-    "discount": 55,
-    "discountType": "fixed",
-    "expiryDate": "2028-10-11",
-    "usageLimit": 1,
-    "usageCount": 1,
-    "disabled": false,
-    "__v": 0
+  "code": "22",
+  "discount": 222,
+  "discountType": "fixed",
+  "expiryDate": {
+    "$date": "2024-07-23T00:00:00.000Z"
   },
-  {
-    "_id": {
-      "$oid": "669cda8b8629f064eed6543a"
-    },
-    "code": "11",
-    "discount": 11,
-    "discountType": "percentage",
-    "expiryDate": "2024-11-20",
-    "usageLimit": 11111,
-    "usageCount": 20,
-    "disabled": false,
-    "__v": 0
-  }
-]
+  "usageLimit": 555,
+  "usageCount": 25,
+  "__v": 0,
+  "disabled": false
+},
+{
+  "_id": {
+    "$oid": "6683763593a51be7fe2eef15"
+  },
+  "code": "Enim aute incididunt",
+  "discount": 44,
+  "discountType": "fixed",
+  "expiryDate": "2032-07-07",
+  "usageLimit": 53,
+  "usageCount": 0,
+  "disabled": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668376f793a51be7fe2eef5e"
+  },
+  "code": "55",
+  "discount": 55,
+  "discountType": "fixed",
+  "expiryDate": "2028-10-11",
+  "usageLimit": 1,
+  "usageCount": 1,
+  "disabled": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669cda8b8629f064eed6543a"
+  },
+  "code": "11",
+  "discount": 11,
+  "discountType": "percentage",
+  "expiryDate": "2024-11-20",
+  "usageLimit": 11111,
+  "usageCount": 44,
+  "disabled": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b5fc74e12edc6cdcb5fd0c"
+  },
+  "code": "jumael",
+  "discount": 2,
+  "discountType": "percentage",
+  "expiryDate": "2024-11-18",
+  "usageLimit": 5,
+  "usageCount": 0,
+  "disabled": false,
+  "__v": 0
+}]

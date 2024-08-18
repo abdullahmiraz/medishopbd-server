@@ -842,26 +842,4 @@
       "code": "hair-care"
     }
   ]
-},
-{
-  "_id": {
-    "$oid": "66955c7f8f25248fb69417ed"
-  },
-  "name": "Whoopi Lang",
-  "description": "Qui cillum aliquam d",
-  "image": "https://placehold.co/600x400?text=Category",
-  "code": "whoopi-lang",
-  "subCategories": [],
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "66955e3a8f25248fb69430df"
-  },
-  "name": "Quamar Petty",
-  "description": "Culpa proident max",
-  "image": "https://placehold.co/600x400?text=Category",
-  "code": "quamar-petty",
-  "subCategories": [],
-  "__v": 0
 }]

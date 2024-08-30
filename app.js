@@ -8,6 +8,7 @@ const promoCodeRoutes = require("./routes/promoCodeRoutes");
 const reviewRoutes = require("./routes/reviewRoutes");
 const categoryRoutes = require("./routes/categoryRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
+const deliveryFeeRoutes = require("./routes/deliveryFeeRoutes");
 
 const bodyParser = require("body-parser");
 
@@ -35,6 +36,8 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
+// connecting the api's routes
+
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/orders", orderRoutes);
@@ -42,5 +45,6 @@ app.use("/api/promocodes", promoCodeRoutes);
 app.use("/api/reviews", reviewRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/payments", paymentRoutes);
+app.use("/api/deliveryFees", deliveryFeeRoutes);
 
 module.exports = app;

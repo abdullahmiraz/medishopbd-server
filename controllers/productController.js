@@ -43,8 +43,13 @@ exports.updateProduct = async (req, res) => {
     const { id } = req.params;
 
     // Check if quantity in stockDetails is valid
-    if (req.body.stockDetails && req.body.stockDetails.some(stock => stock.quantity < 0)) {
-      return res.status(400).json({ message: "Quantity in stockDetails cannot be negative" });
+    if (
+      req.body.stockDetails &&
+      req.body.stockDetails.some((stock) => stock.quantity < 0)
+    ) {
+      return res
+        .status(400)
+        .json({ message: "Quantity in stockDetails cannot be negative" });
     }
 
     const updatedProduct = await Product.findByIdAndUpdate(id, req.body, {
@@ -61,6 +66,8 @@ exports.updateProduct = async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
+
+
 
 // Delete a product by ID
 exports.deleteProduct = async (req, res) => {

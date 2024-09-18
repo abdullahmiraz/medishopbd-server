@@ -67,7 +67,73 @@ exports.updateProduct = async (req, res) => {
   }
 };
 
+exports.updateProductStock = async (req, res) => {
+  try {
+    const { productId, quantityToDeduct } = req.body;
 
+    console.log("Received request to update stock for product ID:", productId);
+    console.log("Quantity to Deduct:", quantityToDeduct);
+
+    // Find the product by productId
+    const product = await Product.findById(productId);
+
+    if (!product) {
+      return res.status(404).json({ message: "Product not found" });
+    }
+
+    if (product.stockDetails.length === 0) {
+      return res
+        .status(400)
+        .json({ message: "No stock available for this product" });
+    }
+
+    let remainingQuantity = quantityToDeduct;
+    let updatedStockDetails = [];
+
+    // Deduct quantity from stockDetails
+    for (
+      let i = 0;
+      i < product.stockDetails.length && remainingQuantity > 0;
+      i++
+    ) {
+      const stock = product.stockDetails[i];
+
+      if (stock.quantity > 0) {
+        if (stock.quantity >= remainingQuantity) {
+          stock.quantity -= remainingQuantity;
+          remainingQuantity = 0;
+        } else {
+          remainingQuantity -= stock.quantity;
+          stock.quantity = 0;
+        }
+      }
+
+      // Only include stock entries with remaining quantity
+      if (stock.quantity > 0) {
+        updatedStockDetails.push(stock);
+      }
+    }
+
+    if (remainingQuantity > 0) {
+      return res.status(400).json({ message: "Insufficient stock to deduct" });
+    }
+
+    // Update the product with new stock details
+    const result = await Product.updateOne(
+      { _id: productId },
+      { $set: { stockDetails: updatedStockDetails } }
+    );
+
+    if (result.modifiedCount === 0) {
+      return res.status(500).json({ message: "Failed to update stock" });
+    }
+
+    res.json({ message: "Stock updated successfully" });
+  } catch (err) {
+    console.error("Error updating stock:", err);
+    res.status(400).json({ message: err.message });
+  }
+};
 
 // Delete a product by ID
 exports.deleteProduct = async (req, res) => {

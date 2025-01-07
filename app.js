@@ -17,7 +17,17 @@ require("dotenv").config();
 const app = express();
 
 // Middleware setup
-app.use(cors());
+
+const corsOpts = {
+  origin: "*",
+
+  methods: ["GET", "POST"],
+
+  allowedHeaders: ["Content-Type"],
+};
+
+app.use(cors(corsOpts));
+// app.use(cors());
 app.use(express.json());
 
 // using ssl commerz here
